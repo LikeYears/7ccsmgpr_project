@@ -65,6 +65,7 @@ public class User {
     public static boolean registerUser(String username, String password)
     {
         String directory = Paths.get(InitialListener.realPathHead,username).toString();
+
         String querysql = "select * from userlist where username='%s'";
         querysql = String.format(querysql, username);
         List<User> users = JDBCTool.executeQuery(querysql, User.class);
@@ -75,7 +76,8 @@ public class User {
         else
         {
             String sql = "insert into userlist values ('%s','%s','%s')";
-            sql = String.format(sql, username, password, directory);
+            String escapeSql = directory.replace("\\","\\\\");
+            sql = String.format(sql, username, password, escapeSql);
             if (JDBCTool.executeUpdate(sql)>0)
             {
                 logger.info("REGISTER SQL IS OK");
