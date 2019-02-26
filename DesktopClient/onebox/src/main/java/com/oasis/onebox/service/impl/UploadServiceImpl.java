@@ -6,10 +6,10 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import cn.huel.dao.UploadDao;
-import cn.huel.model.Upload;
-import cn.huel.service.UploadService;
-import cn.huel.unit.DateUtil;
+import com.oasis.onebox.dao.UploadDao;
+import com.oasis.onebox.model.Upload;
+import com.oasis.onebox.service.UploadService;
+import com.oasis.onebox.tool.DateUtil;
 
 @Service("uploadService")
 public class UploadServiceImpl implements UploadService {

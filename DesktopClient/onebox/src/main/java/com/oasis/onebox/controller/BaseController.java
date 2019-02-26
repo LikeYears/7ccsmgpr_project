@@ -17,12 +17,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.oasis.onebox.model.Receipt;
+
 import com.oasis.onebox.model.Upload;
 import com.oasis.onebox.service.AdminService;
-import com.oasis.onebox.service.ReceiptService;
 import com.oasis.onebox.service.UploadService;
-import com.oasis.onebox.unit.DateUtil;
+import com.oasis.onebox.tool.DateUtil;
 
 @Controller
 @RequestMapping("/")
@@ -34,8 +33,6 @@ public class BaseController {
 	@Autowired
 	UploadService uploadService;
 
-	@Autowired
-	ReceiptService receiptService;
 
 	@RequestMapping(value = "upload", method = RequestMethod.POST)
 	public void fileUpload(@RequestParam(value = "title", required = true) String title,
@@ -47,9 +44,9 @@ public class BaseController {
 		PrintWriter outprint = response.getWriter();
 		String message = "";
 		if (title == null || title.isEmpty() || title.length() == 0) {
-			message = "请输入稿件标题！(Please type your file\\'s title!)";
+			message = "please enter ！(Please type your file\\'s title!)";
 		} else if (author == null || author.isEmpty() || "".equals(author) || author.length() == 0) {
-			message = "请输入稿件作者！(Please type your file\\'s author!)";
+			message = "author！(Please type your file\\'s author!)";
 		} else {
 			String se = File.separator;
 			String uploadDir = "1D9670801B48A24FAE01C527F625CAF20937AF7A";
@@ -81,16 +78,16 @@ public class BaseController {
 					upload.setFileName(fileName);
 					upload.setIp_add(getIp(request));
 					uploadService.createNewRecord(upload);
-					message = "上传成功！(Upload Success!)";
+					message = "(Upload Success!)";
 				} catch (IOException e) {
-					message = "上传失败！(Upload Failed!)";
+					message = "(Upload Failed!)";
 					e.printStackTrace();
 				}
 			} else {
-				message = "请选择正确格式的文件！";
+				message = "right ！";
 			}
 		}
-		String text = "<script>alert('" + message + "');window.location.href='tougao.jsp';</script>";
+		String text = "<script>alert('" + message + "');window.location.href='submit.jsp';</script>";
 
 		outprint.write(text);
 		outprint.flush();
@@ -106,27 +103,7 @@ public class BaseController {
 	// map.addAttribute("paths", lists);
 	// return "index";
 	// }
-	@RequestMapping(value = "receipt", method = RequestMethod.POST)
-	public void receipt(Receipt receipt, HttpServletRequest request, HttpServletResponse response) {
-		int flag = 0;
-		try {
-			response.setCharacterEncoding("UTF-8");
-			response.setContentType("text/html");
-			PrintWriter out = response.getWriter();
-			int diff = DateUtil.getTimeDifference(receipt.getCheck_in(), receipt.getCheck_out());
-			if (diff > 0) {
-				flag = receiptService.createNewRecord(receipt);
-			} else if (diff < 0) {
-				flag = 0;
-			}
-			out.println(flag);
-			out.flush();
-			out.close();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
 
-	}
 
 	private String getIp(HttpServletRequest request) {
 
