@@ -9,7 +9,6 @@ import com.oasis.onebox.tool.StringTool;
 import com.oasis.onebox.tool.UserAgent;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import com.oasis.onebox.controller.RegisterController;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
