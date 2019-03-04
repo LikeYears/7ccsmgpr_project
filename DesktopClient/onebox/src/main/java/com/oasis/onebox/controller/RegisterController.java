@@ -37,12 +37,15 @@ public class RegisterController {
         password = RSA.getInstance().decryptByPriKey(password);
         System.out.println(username);
         System.out.println(password);
-        User.registerUser(username, password);
-//        if (u is True) {
-//            String token = u.createToken(request);
-//            return new ResultShowing("register success", token);
-//        }
-        throw new CustomException(401, "register failed", null);
+        User user = new User(username, password);
+        boolean u = user.registerUser(username, password);
+        if (u) {
+            String token = user.createToken(request);
+            return new ResultShowing("register success", token);
+        }else{
+            throw  new RuntimeException();
+        }
+
     }
 
 }
