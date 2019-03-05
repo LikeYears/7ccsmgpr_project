@@ -40,10 +40,11 @@ public class RegisterController {
         User user = new User(username, password);
         boolean u = user.registerUser(username, password);
         if (u) {
-            String token = user.createToken(request);
-            return new ResultShowing("register success", token);
+            //There is no need to use token for persistence
+			//String token = user.createToken(request);
+            return new ResultShowing("register success", "");
         }else{
-            throw  new RuntimeException();
+            throw  new CustomLogicException(401, "the username may have been used", null);
         }
 
     }
