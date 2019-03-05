@@ -1,0 +1,418 @@
+Last login: Sun Mar  3 00:37:46 on ttys000
+JIAWEIdeMacBook-Pro:~ jiawei$ git -config
+unknown option: -config
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+JIAWEIdeMacBook-Pro:~ jiawei$ git -config -u
+unknown option: -config
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+JIAWEIdeMacBook-Pro:~ jiawei$ git -config -c
+unknown option: -config
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+JIAWEIdeMacBook-Pro:~ jiawei$ git config --global user.name
+jiawei.ding@kcl.ac.uk
+JIAWEIdeMacBook-Pro:~ jiawei$ git status
+fatal: not a git repository (or any of the parent directories): .git
+JIAWEIdeMacBook-Pro:~ jiawei$ git init
+Initialized empty Git repository in /Users/jiawei/.git/
+JIAWEIdeMacBook-Pro:~ jiawei$ git clone https://github.com/LikeYears/7ccsmgpr_project.git
+Cloning into '7ccsmgpr_project'...
+remote: Enumerating objects: 364, done.
+remote: Total 364 (delta 0), reused 0 (delta 0), pack-reused 364
+Receiving objects: 100% (364/364), 12.80 MiB | 6.17 MiB/s, done.
+Resolving deltas: 100% (70/70), done.
+JIAWEIdeMacBook-Pro:~ jiawei$ git add .
+warning: could not open directory 'Library/Saved Application State/com.yourcompany.OntrackEasyRecoveryforMac.savedState/': Permission denied
+warning: adding embedded git repository: .Trash/7ccsmgpr_2019 12.44.58
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint: 	git submodule add <url> .Trash/7ccsmgpr_2019 12.44.58
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint: 	git rm --cached .Trash/7ccsmgpr_2019 12.44.58
+hint: 
+hint: See "git help submodule" for more information.
+warning: adding embedded git repository: .Trash/7ccsmgpr_2019 12.50.31
+warning: adding embedded git repository: .Trash/7ccsmgpr_2019 13.05.30
+warning: adding embedded git repository: .Trash/7ccsmgpr_2019
+cd error: open(".viminfo"): Permission denied
+error: unable to index file .viminfo
+fatal: adding files failed
+JIAWEIdeMacBook-Pro:~ jiawei$ cd  /Users/jiawei/.git/
+JIAWEIdeMacBook-Pro:.git jiawei$ git add .
+fatal: this operation must be run in a work tree
+JIAWEIdeMacBook-Pro:.git jiawei$ cd  /Users/jiawei/.git/
+JIAWEIdeMacBook-Pro:.git jiawei$ cd  /Users/jiawei/.git/
+JIAWEIdeMacBook-Pro:.git jiawei$ cd /
+JIAWEIdeMacBook-Pro:/ jiawei$ cd /Users/jiawei/git/7ccsmgpr_project
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ git add .
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ git commit -m 'dingjiawei test'
+[master 8927800] dingjiawei test
+ 48 files changed, 130 insertions(+), 65 deletions(-)
+ create mode 100644 .DS_Store
+ create mode 100644 .project
+ create mode 100644 DesktopClient/.DS_Store
+ create mode 100644 DesktopClient/onebox/.classpath
+ create mode 100644 DesktopClient/onebox/.gitignore
+ create mode 100644 DesktopClient/onebox/.project
+ create mode 100644 DesktopClient/onebox/.settings/.jsdtscope
+ create mode 100644 DesktopClient/onebox/.settings/org.eclipse.core.resources.prefs
+ create mode 100644 DesktopClient/onebox/.settings/org.eclipse.jdt.core.prefs
+ create mode 100644 DesktopClient/onebox/.settings/org.eclipse.m2e.core.prefs
+ create mode 100644 DesktopClient/onebox/.settings/org.eclipse.wst.common.component
+ create mode 100644 DesktopClient/onebox/.settings/org.eclipse.wst.common.project.facet.core.xml
+ create mode 100644 DesktopClient/onebox/.settings/org.eclipse.wst.jsdt.ui.superType.container
+ create mode 100644 DesktopClient/onebox/.settings/org.eclipse.wst.jsdt.ui.superType.name
+ create mode 100644 DesktopClient/onebox/.settings/org.eclipse.wst.validation.prefs
+ rewrite DesktopClient/onebox/target/classes/com/oasis/onebox/controller/LoginController.class (97%)
+ rewrite DesktopClient/onebox/target/classes/com/oasis/onebox/dao/DownloadTaskDao.class (100%)
+ rewrite DesktopClient/onebox/target/classes/com/oasis/onebox/download/DownloadTask.class (100%)
+ rewrite DesktopClient/onebox/target/classes/com/oasis/onebox/entity/User.class (98%)
+ rewrite DesktopClient/onebox/target/classes/com/oasis/onebox/exception/CustomException.class (91%)
+ rewrite DesktopClient/onebox/target/classes/com/oasis/onebox/interceptor/LoginInterceptor.class (85%)
+ rewrite DesktopClient/onebox/target/classes/com/oasis/onebox/listener/InitialListener.class (100%)
+ rewrite DesktopClient/onebox/target/classes/com/oasis/onebox/tool/EncodeTool.class (99%)
+ rewrite DesktopClient/onebox/target/classes/com/oasis/onebox/tool/JDBCTool.class (99%)
+ rewrite DesktopClient/onebox/target/classes/com/oasis/onebox/tool/RSA.class (93%)
+ rewrite DesktopClient/onebox/target/classes/com/oasis/onebox/tool/ResultShowing.class (100%)
+ rewrite DesktopClient/onebox/target/classes/com/oasis/onebox/tool/StringTool.class (100%)
+ rewrite DesktopClient/onebox/target/classes/com/oasis/onebox/tool/UserAgent.class (100%)
+ delete mode 100644 DesktopClient/onebox/target/classes/config.properties
+ delete mode 100644 DesktopClient/onebox/target/classes/log4j2.xml
+ delete mode 100644 DesktopClient/onebox/target/classes/springmvc-servlet.xml
+ rewrite DesktopClient/onebox/target/onebox/WEB-INF/classes/com/oasis/onebox/controller/LoginController.class (97%)
+ rewrite DesktopClient/onebox/target/onebox/WEB-INF/classes/com/oasis/onebox/dao/DownloadTaskDao.class (100%)
+ rewrite DesktopClient/onebox/target/onebox/WEB-INF/classes/com/oasis/onebox/download/DownloadTask.class (100%)
+ rewrite DesktopClient/onebox/target/onebox/WEB-INF/classes/com/oasis/onebox/entity/User.class (98%)
+ rewrite DesktopClient/onebox/target/onebox/WEB-INF/classes/com/oasis/onebox/exception/CustomException.class (91%)
+ rewrite DesktopClient/onebox/target/onebox/WEB-INF/classes/com/oasis/onebox/interceptor/LoginInterceptor.class (85%)
+ rewrite DesktopClient/onebox/target/onebox/WEB-INF/classes/com/oasis/onebox/listener/InitialListener.class (100%)
+ rewrite DesktopClient/onebox/target/onebox/WEB-INF/classes/com/oasis/onebox/tool/EncodeTool.class (99%)
+ rewrite DesktopClient/onebox/target/onebox/WEB-INF/classes/com/oasis/onebox/tool/JDBCTool.class (99%)
+ rewrite DesktopClient/onebox/target/onebox/WEB-INF/classes/com/oasis/onebox/tool/RSA.class (93%)
+ rewrite DesktopClient/onebox/target/onebox/WEB-INF/classes/com/oasis/onebox/tool/ResultShowing.class (100%)
+ rewrite DesktopClient/onebox/target/onebox/WEB-INF/classes/com/oasis/onebox/tool/StringTool.class (100%)
+ rewrite DesktopClient/onebox/target/onebox/WEB-INF/classes/com/oasis/onebox/tool/UserAgent.class (100%)
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ git push -u original develop 
+error: src refspec develop does not match any.
+error: failed to push some refs to 'original'
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ git push -u origin master:develop 
+remote: Permission to LikeYears/7ccsmgpr_project.git denied to JiaweiChristy.
+fatal: unable to access 'https://github.com/LikeYears/7ccsmgpr_project.git/': The requested URL returned error: 403
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Last login: Tue Mar  5 00:27:07 on ttys000
+JIAWEIdeMacBook-Pro:~ jiawei$ git  config --global  credential.helper  store 
+JIAWEIdeMacBook-Pro:~ jiawei$ cd /usr/local/git/etc
+JIAWEIdeMacBook-Pro:etc jiawei$ ls
+gitconfig
+JIAWEIdeMacBook-Pro:etc jiawei$ open gitconfig
+JIAWEIdeMacBook-Pro:etc jiawei$ cd /Users/jiawei/git/7ccsmgpr_project
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ git add .
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ git commit -m “test”
+[master e06b965] “test”
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Documentation/.DS_Store
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ git push -u origin master:develop
+remote: Permission to LikeYears/7ccsmgpr_project.git denied to JiaweiChristy.
+fatal: unable to access 'https://github.com/LikeYears/7ccsmgpr_project.git/': The requested URL returned error: 403
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ git  config user.name jiawei.ding@kcl.ac.uk 
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ git  config user.email jiawei.ding@kcl.ac.uk 
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ vi ~/.gitconfig
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ git config --global credential.helper store
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ cd ~/.ssh/ 
+JIAWEIdeMacBook-Pro:.ssh jiawei$ git config --global user.name "jiaweiChristy"
+JIAWEIdeMacBook-Pro:.ssh jiawei$ git config --global user.email "jiawei.ding@kcl.ac.uk"  
+JIAWEIdeMacBook-Pro:.ssh jiawei$ ssh-keygen -t rsa -C "jiawei.ding@kcl.ac.uk" 
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/jiawei/.ssh/id_rsa):   
+/Users/jiawei/.ssh/id_rsa already exists.
+Overwrite (y/n)? n
+JIAWEIdeMacBook-Pro:.ssh jiawei$ cd /usr/local/git/etc
+JIAWEIdeMacBook-Pro:etc jiawei$ open /usr/local/git/etc
+JIAWEIdeMacBook-Pro:etc jiawei$ open /usr/local/
+JIAWEIdeMacBook-Pro:etc jiawei$ open /Users/jiawei/.ssh/
+JIAWEIdeMacBook-Pro:etc jiawei$ open /Users/jiawei/.ssh/
+JIAWEIdeMacBook-Pro:etc jiawei$ ssh -T git@github.com
+Hi dingjiaweiww! You've successfully authenticated, but GitHub does not provide shell access.
+JIAWEIdeMacBook-Pro:etc jiawei$ git add .
+fatal: not a git repository (or any of the parent directories): .git
+JIAWEIdeMacBook-Pro:etc jiawei$ ls
+gitconfig
+JIAWEIdeMacBook-Pro:etc jiawei$ cd /Users/jiawei/git/7ccsmgpr_project 
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+	add
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ git add .
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ git commit -m 'dingjiawei test'
+[master c7e7766] dingjiawei test
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ git push -u original master:develop 
+fatal: 'original' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ git push -u origin master:develop 
+remote: Permission to LikeYears/7ccsmgpr_project.git denied to JiaweiChristy.
+fatal: unable to access 'https://github.com/LikeYears/7ccsmgpr_project.git/': The requested URL returned error: 403
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ open /Users/jiawei/.ssh/
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ ssh-keygen -t rsa -C "jiawei.ding@kcl.ac.uk"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/jiawei/.ssh/id_rsa): 
+/Users/jiawei/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Saving key "/Users/jiawei/.ssh/id_rsa" failed: passphrase is too short (minimum five characters)
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ ls -al ~/.ssh   
+total 24
+drwx------   5 jiawei  staff   160 Jan 18 01:52 .
+drwxr-xr-x+ 54 jiawei  staff  1728 Mar  5 01:35 ..
+-rw-------@  1 jiawei  staff  1679 Jan 18 01:42 id_rsa
+-rw-r--r--@  1 jiawei  staff   398 Jan 18 01:42 id_rsa.pub
+-rw-r--r--   1 jiawei  staff   799 Jan 18 01:53 known_hosts
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ ssh-keygen -t rsa -C "jiawei.ding@kcl.ac.uk"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/jiawei/.ssh/id_rsa): 
+/Users/jiawei/.ssh/id_rsa already exists.
+Overwrite (y/n)? 
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ ssh-keygen -t rsa -C "jiawei.ding@kcl.ac.uk"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/jiawei/.ssh/id_rsa): 
+/Users/jiawei/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/jiawei/.ssh/id_rsa.
+Your public key has been saved in /Users/jiawei/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:70v19H65IwzqiDQxrWDF7jZ2OnD2WSmEfSot+0IZRns jiawei.ding@kcl.ac.uk
+The key's randomart image is:
++---[RSA 2048]----+
+|                 |
+|    ..           |
+|    .o+          |
+|    o=.E .       |
+|   o.+*.S . . .  |
+|  ..oB++ + o o . |
+|    =O=.+ + o . o|
+|    ++*o.+   o +.|
+|     o+o..o.  ..=|
++----[SHA256]-----+
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ ssh-add -l
+The agent has no identities.
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ ssh-add 
+Enter passphrase for /Users/jiawei/.ssh/id_rsa: 
+Identity added: /Users/jiawei/.ssh/id_rsa (/Users/jiawei/.ssh/id_rsa)
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ ssh-add -l
+2048 SHA256:70v19H65IwzqiDQxrWDF7jZ2OnD2WSmEfSot+0IZRns /Users/jiawei/.ssh/id_rsa (RSA)
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ open /Users/jiawei/.ssh/
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ ssh -T git@github.com
+Hi JiaweiChristy! You've successfully authenticated, but GitHub does not provide shell access.
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ git add .
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ git commit -m 'dingjiawei test'
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ git push -u origin master:develop 
+remote: Permission to LikeYears/7ccsmgpr_project.git denied to JiaweiChristy.
+fatal: unable to access 'https://github.com/LikeYears/7ccsmgpr_project.git/': The requested URL returned error: 403
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ 
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ git config --global user.name
+jiaweiChristy
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ git config --show-origin --get credential.helper
+file:/Users/jiawei/.gitconfig	store
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ cd
+JIAWEIdeMacBook-Pro:~ jiawei$ cd /Users/jiawei/
+JIAWEIdeMacBook-Pro:~ jiawei$ open /Users/jiawei/.gitconfig
+JIAWEIdeMacBook-Pro:~ jiawei$ open /Users/jiawei/.gitconfig
+JIAWEIdeMacBook-Pro:~ jiawei$ open /Users/jiawei/.gitconfig
+JIAWEIdeMacBook-Pro:~ jiawei$ git config credential.helper
+osxkeychain
+JIAWEIdeMacBook-Pro:~ jiawei$ git config --show-origin --get credential.helper
+file:/usr/local/git/etc/gitconfig	osxkeychain
+JIAWEIdeMacBook-Pro:~ jiawei$ open /usr/local/git/etc/gitconfig
+JIAWEIdeMacBook-Pro:~ jiawei$ open /usr/local/git/etc/
+JIAWEIdeMacBook-Pro:~ jiawei$ git config core.filemode false
+JIAWEIdeMacBook-Pro:~ jiawei$ git config --global core.filemode false
+JIAWEIdeMacBook-Pro:~ jiawei$ git config credential.helper
+JIAWEIdeMacBook-Pro:~ jiawei$ git add .
+warning: could not open directory 'Library/Saved Application State/com.yourcompany.OntrackEasyRecoveryforMac.savedState/': Permission denied
+warning: adding embedded git repository: .Trash/7ccsmgpr_2019 12.44.58
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint: 	git submodule add <url> .Trash/7ccsmgpr_2019 12.44.58
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint: 	git rm --cached .Trash/7ccsmgpr_2019 12.44.58
+hint: 
+hint: See "git help submodule" for more information.
+warning: adding embedded git repository: .Trash/7ccsmgpr_2019 12.50.31
+warning: adding embedded git repository: .Trash/7ccsmgpr_2019 13.05.30
+warning: adding embedded git repository: .Trash/7ccsmgpr_2019
+error: open(".viminfo"): Permission denied
+error: unable to index file .viminfo
+fatal: adding files failed
+JIAWEIdeMacBook-Pro:~ jiawei$ git config --global user.name
+jiaweiChristy
+JIAWEIdeMacBook-Pro:~ jiawei$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.CFUserTextEncoding
+	.Trash/
+	.anaconda/
+	.bash_history
+	.bash_profile
+	.bash_profile.swo
+	.bash_profile.swp
+	.bash_sessions/
+	.bashrc
+	.conda/
+	.condarc
+	.config/
+	.eclipse/
+	.gitconfig
+	.ipynb_checkpoints/
+	.ipython/
+	.jupyter/
+	.kingsoft/
+	.m2/
+	.matplotlib/
+	.mysql_history
+	.oracle_jre_usage/
+	.p2/
+	.spyder/
+	.ssh/
+	.subversion/
+	.tooling/
+	.viminfo
+	7ccsmgpr_2019/
+	7ccsmgpr_project/
+	Applications/
+	Desktop/
+	Documents/
+	Downloads/
+	IdeaProjects/
+	Library/
+	Movies/
+	Music/
+	Pictures/
+	Public/
+	PycharmProjects/
+	Untitled.ipynb
+	Untitled1.ipynb
+	eclipse-workspace/
+	git/
+	iCloud 云盘（归档）/
+	image/
+	install-anaconda.sh
+	~
+
+nothing added to commit but untracked files present (use "git add" to track)
+JIAWEIdeMacBook-Pro:~ jiawei$ git init
+Reinitialized existing Git repository in /Users/jiawei/.git/
+JIAWEIdeMacBook-Pro:~ jiawei$ git clone https://github.com/LikeYears/7ccsmgpr_project.git
+fatal: destination path '7ccsmgpr_project' already exists and is not an empty directory.
+JIAWEIdeMacBook-Pro:~ jiawei$ git add .
+warning: could not open directory 'Library/Saved Application State/com.yourcompany.OntrackEasyRecoveryforMac.savedState/': Permission denied
+warning: adding embedded git repository: .Trash/7ccsmgpr_2019 12.44.58
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint: 	git submodule add <url> .Trash/7ccsmgpr_2019 12.44.58
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint: 	git rm --cached .Trash/7ccsmgpr_2019 12.44.58
+hint: 
+hint: See "git help submodule" for more information.
+warning: adding embedded git repository: .Trash/7ccsmgpr_2019 12.50.31
+warning: adding embedded git repository: .Trash/7ccsmgpr_2019 13.05.30
+warning: adding embedded git repository: .Trash/7ccsmgpr_2019
+error: open(".viminfo"): Permission denied
+error: unable to index file .viminfo
+fatal: adding files failed
+JIAWEIdeMacBook-Pro:~ jiawei$ cd /Users/jiawei/git/7ccsmgpr_project
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ git add .
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ git commit -m 'dingjiawei test'
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ git push -u origin master:develop 
+Username for 'https://github.com': jiaweiChristy
+Password for 'https://jiaweiChristy@github.com': 
+remote: Permission to LikeYears/7ccsmgpr_project.git denied to JiaweiChristy.
+fatal: unable to access 'https://github.com/LikeYears/7ccsmgpr_project.git/': The requested URL returned error: 403
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ git push -u origin develop 
+error: src refspec develop does not match any.
+error: failed to push some refs to 'https://github.com/LikeYears/7ccsmgpr_project.git'
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ git push -u origin master:develop 
+Username for 'https://github.com':  f92b9a1ec3031ec469dc567174fc3b27a8505f58
+Password for 'https:// f92b9a1ec3031ec469dc567174fc3b27a8505f58@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/LikeYears/7ccsmgpr_project.git/'
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ git push -u origin master:develop 
+Username for 'https://github.com': jiaweiChristy
+Password for 'https://jiaweiChristy@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/LikeYears/7ccsmgpr_project.git/'
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ git push -u origin master:develop 
+Username for 'https://github.com': jiaweiChristy
+Password for 'https://jiaweiChristy@github.com': 
+remote: Permission to LikeYears/7ccsmgpr_project.git denied to JiaweiChristy.
+fatal: unable to access 'https://github.com/LikeYears/7ccsmgpr_project.git/': The requested URL returned error: 403
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ git push -u origin master:develop 
+Username for 'https://github.com': jiaweiChristy
+Password for 'https://jiaweiChristy@github.com': 
+remote: Permission to LikeYears/7ccsmgpr_project.git denied to JiaweiChristy.
+fatal: unable to access 'https://github.com/LikeYears/7ccsmgpr_project.git/': The requested URL returned error: 403
+JIAWEIdeMacBook-Pro:7ccsmgpr_project jiawei$ 
+
