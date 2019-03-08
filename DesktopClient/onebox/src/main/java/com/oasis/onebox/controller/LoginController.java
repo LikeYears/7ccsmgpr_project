@@ -1,5 +1,6 @@
 package com.oasis.onebox.controller;
 
+import com.oasis.onebox.download.DownloadTask;
 import com.oasis.onebox.tool.RSA;
 import com.oasis.onebox.tool.ResultShowing;
 import com.oasis.onebox.tool.StringTool;
