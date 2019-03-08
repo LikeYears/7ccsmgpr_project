@@ -289,7 +289,7 @@
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="996" />
     <option name="y" value="15" />
     <option name="width" value="1400" />
@@ -725,7 +725,7 @@
       <workItem from="1550093771417" duration="6963000" />
       <workItem from="1550106398375" duration="76945000" />
       <workItem from="1551998299122" duration="1351000" />
-      <workItem from="1552000285568" duration="7000" />
+      <workItem from="1552000285568" duration="601000" />
     </task>
     <task id="LOCAL-00001" summary="onebox project">
       <created>1550011753693</created>
@@ -745,7 +745,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165828000" />
+    <option name="totallyTimeSpent" value="166422000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -757,7 +757,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1015,6 +1015,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="2381" column="26" lean-forward="false" selection-start-line="2381" selection-start-column="26" selection-end-line="2381" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1074,6 +1075,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="34" column="12" lean-forward="false" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1081,6 +1083,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
