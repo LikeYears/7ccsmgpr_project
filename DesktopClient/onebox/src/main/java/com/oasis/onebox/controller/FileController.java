@@ -104,7 +104,7 @@ public class FileController {
                              @RequestAttribute(LoginInterceptor.LOGIN_USER) User loginUser, HttpServletRequest request,
                              HttpServletResponse response) throws Exception {
         Path file = Paths.get(loginUser.getDirectory() + "/" + new String(EncodeTool.decoderURLBASE64(path), "utf-8"));
-        FileService.fileDownload(false, file, request, response);
+        FileService.filePlayOrDownload(false, file, request, response);
     }
 
     //delete file
@@ -207,5 +207,13 @@ public class FileController {
         } else {
             throw new CustomException(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "create file/directory fail", null);
         }
+    }
+
+    @RequestMapping(value = "/{base64filepath}/play", method = RequestMethod.GET, produces = "application/json")
+    public void filePlay(@PathVariable("base64filepath") String path,
+                         @RequestAttribute(LoginInterceptor.LOGIN_USER) User loginUser, HttpServletRequest request,
+                         HttpServletResponse response) throws Exception {
+        Path file = Paths.get(loginUser.getDirectory() + "/" + new String(EncodeTool.decoderURLBASE64(path), "utf-8"));
+        FileService.filePlayOrDownload(true, file, request, response);
     }
 }

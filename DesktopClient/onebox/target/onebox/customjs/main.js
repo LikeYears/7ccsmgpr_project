@@ -76,7 +76,7 @@ app.controller("filelist", ["$scope", "$http", "$location", "FileUploader", func
     uploader.onErrorItem = function (item, response, status, headers) {
         item.errormsg = response;
     }
-    // 加载移动modal目录列表
+    // load directory list when move file
     function moveModalLoadDir() {
         var url = "api/files";
         var movefilepath = $scope.FileModal.path;
@@ -107,7 +107,7 @@ app.controller("filelist", ["$scope", "$http", "$location", "FileUploader", func
             }
         }, errorEvent);
     }
-    // 监听页面切换显示
+    // monitor the page switching
     $scope.$watch("showCtrl", function (showCtrlValue) {
         if (showCtrlValue == 1) {
             loadDir();
@@ -116,21 +116,21 @@ app.controller("filelist", ["$scope", "$http", "$location", "FileUploader", func
             $scope.selectedFile = null;
         }
     });
-    // 文件列表对话框关闭
+    //  close the dialog of file list
     $('#FileModal').on('hidden.bs.modal', function (e) {
         $scope.filename = null;
         $scope.selectedFile = null;
         $scope.FileModal = null
         $scope.shareFile = null;
     });
-    // 初始化目录导航
+    // move file:initial the navbar of path
     var navbar = new Array();
     var file = {};
     file.base64FilePath = "";
-    file.name = "主目录";
+    file.name = "Home";
     navbar.push(file);
     $scope.dirul = navbar;
-    // 进入指定目录
+    // move file:enter the specific path
     $scope.enterDir = function (a) {
         loadDir(a.base64FilePath);
         var file = {};
@@ -138,14 +138,14 @@ app.controller("filelist", ["$scope", "$http", "$location", "FileUploader", func
         file.name = a.fileName;
         $scope.dirul.push(file);
     }
-    // 返回到指定目录
+    // move file:back to the specific path
     $scope.backup = function (li) {
         var index = li.$index;
         var length = $scope.dirul.length;
         $scope.dirul.splice(index + 1, length - index + 1);
         loadDir(li.li.base64FilePath);
     }
-    // 文件列表选中
+    // file list:select
     $scope.select = function (tr) {
         if ($scope.selectedFile == tr) {
             $scope.selectedFile = null;
@@ -153,21 +153,21 @@ app.controller("filelist", ["$scope", "$http", "$location", "FileUploader", func
             $scope.selectedFile = tr;
         }
     }
-    // 文件列表取消选择
+    // file list:cancel select
     $scope.cancelSelect = function () {
         $scope.selectedFile = null;
     }
-    // 移动文件Modal
+    // move file:Modal
     $scope.moveFileModal = function () {
         var modal = {};
         modal.title = "Move File：" + $scope.selectedFile.fileName;
         modal.type = "move";
         modal.path = $scope.selectedFile.base64FilePath;
         modal.dirul = new Array();
-        // 初始化移动Modal文件导航
+        // initial navbar of move file Modal
         var file = {};
         file.base64FilePath = "";
-        file.fileName = "主目录";
+        file.fileName = "Home";
         modal.dirul.push(file);
         $scope.FileModal = modal;
         moveModalLoadDir();
@@ -184,43 +184,43 @@ app.controller("filelist", ["$scope", "$http", "$location", "FileUploader", func
         $scope.FileModal.dirul.push(file);
         moveModalLoadDir();
     }
-    // 重命名文件Modal
+    // rename:Modal
     $scope.renameFileModal = function () {
         var modal = {};
-        modal.title = "重命名文件：" + $scope.selectedFile.fileName;
+        modal.title = "Rename File：" + $scope.selectedFile.fileName;
         modal.type = "rename";
         $scope.FileModal = modal;
         $("#FileModal").modal();
     }
-    // 删除文件Modal
+    // delete:Modal
     $scope.delFileModal = function () {
         var modal = {};
-        modal.title = "删除文件：" + $scope.selectedFile.fileName;
+        modal.title = "Delete File：" + $scope.selectedFile.fileName;
         modal.type = "del";
         $scope.FileModal = modal;
         $("#FileModal").modal();
     }
-    // 新建文件Modal
+    // newfile:Modal
     $scope.newFileModal = function () {
         var modal = {};
-        modal.title = "新建文件：";
+        modal.title = "New File：";
         modal.type = "file";
         $scope.FileModal = modal;
         $("#FileModal").modal();
     }
-    // 新建文件夹Modal
+    // newfloder:Modal
     $scope.newDirModal = function () {
         var modal = {};
-        modal.title = "新建文件夹：";
+        modal.title = "New Folder：";
         modal.type = "directory";
         $scope.FileModal = modal;
         $("#FileModal").modal();
     }
-    // 离线下载
+    // httpdownload:Modal
     $scope.addDownloadTask = function () {
         $scope.url = null;
         var modal = {};
-        modal.title = "离线下载：";
+        modal.title = "HTTP Download：";
         modal.type = "download";
         $scope.FileModal = modal;
         $("#FileModal").modal();
@@ -240,19 +240,19 @@ app.controller("filelist", ["$scope", "$http", "$location", "FileUploader", func
             }
         }, errorEvent);
     }
-    // 文件播放
+    //play file
     $scope.playFile = function () {
         window.open('play.html?url=' + $scope.selectedFile.base64FilePath + "&playtype=" + $scope.selectedFile.fileType);
     }
-    // 文件下载
+    // download file
     $scope.dlFile = function () {
         window.location.href = 'api/files/' + $scope.selectedFile.base64FilePath + "/download";
     }
-    // 上传文件
+    // upload file
     $scope.uploadFile = function () {
         $("#file_upload").trigger('click');
     }
-    // Modal提交
+    // submit Modal
     $scope.fileModalSubmit = function (modal) {
         var success = function (response) {
             if (response) {
@@ -269,7 +269,7 @@ app.controller("filelist", ["$scope", "$http", "$location", "FileUploader", func
             case "file":
             case "directory":
                 if (!$scope.filename) {
-                    toastr.error("请输入文件（夹）名称！");
+                    toastr.error("Please enter the name of file or folder");
                     return;
                 }
                 var newfilename = Base64.encodeURI($scope.filename);
@@ -284,7 +284,7 @@ app.controller("filelist", ["$scope", "$http", "$location", "FileUploader", func
                 break;
             case "rename":
                 if (!$scope.filename) {
-                    toastr.error("请输入文件（夹）名称！");
+                    toastr.error("Please enter the name of file or folder");
                     return;
                 }
                 var newfilename = Base64.encodeURI($scope.filename);
@@ -293,7 +293,7 @@ app.controller("filelist", ["$scope", "$http", "$location", "FileUploader", func
                 break;
             case "download":
                 if (!$scope.url) {
-                    toastr.error("请输入下载链接！");
+                    toastr.error("Please enter the link");
                     return;
                 }
                 var url = Base64.encodeURI($scope.url);
@@ -307,8 +307,101 @@ app.controller("filelist", ["$scope", "$http", "$location", "FileUploader", func
                     errorEvent);
                 break;
             case "share":
-                toastr.info("复制到剪切板成功！");
+                toastr.info("copy to clipborad success");
                 break;
         }
     }
 }]);
+// Transport
+app.controller("transportlist", function ($scope, $http, $interval) {
+    var reqFlag = true;
+
+    var p = $interval(function () {
+        if (reqFlag) {
+            loadDownload();
+            reqFlag = false;
+        }
+    }, 2000);
+
+
+    // load download tasks
+    function loadDownload() {
+        $http.get("api/download", $scope.$parent.token).then(function success(response) {
+            if (response) {
+                $scope.$parent.downloadlist = response.data.result;
+                reqFlag = true;
+            }
+        }, function (response) {
+            reqFlag = true;
+        });
+    }
+    // monitor download
+    $scope.$watch("downloadlist", function (downloadlist) {
+        $scope.dllist = downloadlist;
+    });
+    // clean upload tasks
+    $scope.delUpload = function (ts) {
+        ts.cancel();
+        ts.remove();
+        var uploadArray = $scope.$parent.uploadlist;
+        for (var i = 0; i < uploadArray.length; i++) {
+            if (uploadArray[i].id == ts.id) {
+                uploadArray.splice(i, 1);
+            }
+        }
+    }
+    var success = function (response) {
+        if (response) {
+            toastr.info(response.data.resultdesc);
+        }
+    }
+    // stop download
+    $scope.stopDownload = function (dl) {
+        $http.patch("api/download/" + dl.taskid, $scope.$parent.token).then(success, errorEvent);
+    }
+    // retry download
+    $scope.retryDownload = function (dl) {
+        $http.put("api/download/" + dl.taskid, $scope.$parent.token).then(success, errorEvent);
+    }
+    // delete dowoload
+    $scope.delDownload = function (dl) {
+        $http.delete("api/download/" + dl.taskid, $scope.$parent.token).then(success, errorEvent);
+    }
+});
+// share list
+app.controller("sharelist", function ($scope, $http, $location) {
+    function loadShareList() {
+        $http.get("api/share", $scope.$parent.token).then(function success(response) {
+            if (response) {
+                var url = $location.absUrl();
+                url = url.substring(0, url.indexOf("main.html")) + "share.html?link=";
+                var result = response.data.result;
+                for (var i = 0; i < result.length; i++) {
+                    result[i].link = url + result[i].id;
+                }
+                $scope.sharelist = result;
+            }
+        }, errorEvent);
+    }
+
+    // page change
+    $scope.$watch("showCtrl", function (showCtrlValue) {
+        if (showCtrlValue == -1) {
+            loadShareList();
+        }
+    });
+    // cancel share
+    $scope.cancelShare = function (file) {
+        $http.delete("api/share/" + file.id, $scope.$parent.token).then(function success(response) {
+            if (response) {
+                toastr.info(response.data.resultdesc);
+                loadShareList();
+            }
+        }, errorEvent);
+    }
+
+    // copy share link
+    $scope.copyShareLink = function () {
+        toastr.info("copy to clipborad success");
+    }
+});

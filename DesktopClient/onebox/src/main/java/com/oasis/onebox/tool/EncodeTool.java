@@ -6,7 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Base64;
 
 public class EncodeTool {
-    public static final SimpleDateFormat FORMMATTER = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    public static final SimpleDateFormat FORMMATTER = new SimpleDateFormat("MM-dd-yyyy HH:mm:ss");
 
     public static final byte[] decoderBASE64(String key) {
         return Base64.getDecoder().decode(key);
