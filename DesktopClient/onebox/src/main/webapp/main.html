@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="zh-CN" ng-app="mainPageApp">
+<html lang="en" ng-app="mainPageApp">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <head>
+    <title>OneBox</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/toastr.css" rel="stylesheet">
+    <style type="text/css">
+        .tablediv a {
+            color: #000;
+            text-decoration: none;
+            padding-left: 15px;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,13 +24,15 @@
             <nav class="navbar navbar-default" role="navigation">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="javascipt:void(0)">OneBox</a>
+                        <a class="navbar-brand" href="main.html">OneBox</a>
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav">
-                            <li><a href="javascipt:void(0)">Files</a></li>
-                            <li class="dropdown"><a href="javascipt:void(0)">Transfer&nbsp;<span class="badge"></span></a>
-                            <li><a href="javascipt:void(0)">Share</a></li>
+                            <li><a href="javascipt:void(0)" ng-click="showFileList()">Files</a></li>
+                            <li class="dropdown"><a href="javascipt:void(0)" ng-click="showTransport()">Transfer&nbsp;<span
+                                    class="badge"
+                                    ng-bind="uploadlist.length+downloadlist.length"></span></a>
+                            <li><a href="javascipt:void(0)" ng-click="showShare()">Share</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li class="dropdown">
@@ -85,11 +95,11 @@
         <div class="col-md-2">
             <ul class="nav nav-list" id="mainNav">
                 <li><a href="javascript:void(0)" ng-click="newFileModal()">New File</a></li>
-                <li><a href="javascript:void(0)" ng-click="newDirModal()">New folder</a></li>
+                <li><a href="javascript:void(0)" ng-click="newDirModal()">New Folder</a></li>
                 <li><input type="file" id="file_upload" nv-file-select uploader="uploader" ng-hide="true"/> <a
                         href="javascript:void(0)"
-                        ng-click="uploadFile()">Upload files</a></li>
-                <li class="nav-header">More</li>
+                        ng-click="uploadFile()">Upload File</a></li>
+                <li class="nav-header">Operations</li>
                 <li>
                     <div class="btn-group-vertical" role="group" ng-hide="!selectedFile">
                         <button type="button" class="btn btn-default" ng-click="dlFile()" ng-hide="selectedFile.isdir">
@@ -114,7 +124,6 @@
                         <button type="button" class="btn btn-default" ng-click="cancelSelect()">
                             <span title='Cancel' class='glyphicon glyphicon-remove'>&nbsp;Cancel</span>
                         </button>
-                        <div></div>
                     </div>
                 </li>
             </ul>
@@ -187,7 +196,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                            <button type="submit" ng-show="FileModal.type!='share'" class="btn btn-primary">Create
+                            <button type="submit" ng-show="FileModal.type!='share'" class="btn btn-primary">OK
                             </button>
                         </div>
                     </div>
@@ -300,6 +309,42 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <!-- share list -->
+    <div class="row" id="sharelist" ng-show="showCtrl<0" ng-controller="sharelist">
+        <div class="col-md-11" data-toggle="context">
+            <table class="table table-hover" id="sharefiletable">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Password</th>
+                    <th>Share Date</th>
+                    <th>Download Times</th>
+                    <th>Operations</th>
+                </tr>
+                </thead>
+                <tbody ng-init="sharelist">
+                <tr ng-repeat="file in sharelist">
+                    <td><img src='img/{{file.fileType}}.png' class='img-responsive' fallback-src="img/file.png"></td>
+                    <td ng-bind="file.fileName"></td>
+                    <td ng-bind="file.fileType"></td>
+                    <td ng-bind="file.password"></td>
+                    <td ng-bind="file.discShareDate"></td>
+                    <td ng-bind="file.downloadTimes"></td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-danger" ng-click="cancelShare(file)">Cancel Share</button>
+                            <button type="button" class="btn btn-primary" ng-click="copyShareLink()" ngclipboard
+                                    data-clipboard-text="Share Link：{{file.link}} Password：{{file.password}}">Copy Share Link
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
