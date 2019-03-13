@@ -31,6 +31,7 @@ public class User {
     private String uuid;// random id
     private String token;
     private long expirationtime;// expirationtime of user
+    private String realPathHead = InitialListener.realPathHead;
 
     public User()
     {
@@ -87,7 +88,7 @@ public class User {
                 try
                 {
                     createUserDir(directory);flat1 = true;
-                    DownloadTask.putUserDownloadDir(username, directory); flat2 = true;
+                    DownloadTask.createUserDownloadDir(username, directory); flat2 = true;
                     userlist.put(username, new User(username, password, directory));
                     return true;
                 }
