@@ -21,12 +21,40 @@ import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class FileService {
+    public static final int DEFAULT_BUFFER_SIZE = 10485760;// 10M
     private static final Pattern RANGE_PATTERN = Pattern.compile("bytes=(?<start>\\d*)-(?<end>\\d*)");
     private static final Log LOGGER = LogFactory.getLog(FileService.class);
+
+    private static final Set<String> CAN_PLAY_ONLINE_FILE_TYPES = new HashSet<String>();
+
+    private static final Set<String> CAN_PREVIEW_FILE_TYPES = new HashSet<String>();
+
+    static {
+        CAN_PLAY_ONLINE_FILE_TYPES.add("mp4");
+        CAN_PLAY_ONLINE_FILE_TYPES.add("flv");
+
+        CAN_PREVIEW_FILE_TYPES.add("bmp");
+        CAN_PREVIEW_FILE_TYPES.add("jpg");
+        CAN_PREVIEW_FILE_TYPES.add("gif");
+        CAN_PREVIEW_FILE_TYPES.add("jpeg");
+        CAN_PREVIEW_FILE_TYPES.add("png");
+    }
+
+
+    public static boolean isCanPlayOnline(String filetype) {
+        return CAN_PLAY_ONLINE_FILE_TYPES.contains(filetype);
+    }
+
+
+    public static boolean isCanPreview(String filetype) {
+        return CAN_PREVIEW_FILE_TYPES.contains(filetype);
+    }
+
 
     public static List<CloudFile> getFileList(String maindir, String filepath, String accepttype,
                                               final String filterfile) throws CustomException, IOException {
@@ -80,7 +108,7 @@ public class FileService {
     }
 
 
-    public static void fileDownload(boolean playFlag, Path file, HttpServletRequest request, HttpServletResponse response)
+    public static void filePlayOrDownload(boolean playFlag, Path file, HttpServletRequest request, HttpServletResponse response)
             throws CustomException, IOException {
         if (!Files.exists(file, new LinkOption[]{LinkOption.NOFOLLOW_LINKS})) {
             throw new CustomException(500, "file not exist", null);

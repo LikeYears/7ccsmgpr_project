@@ -16,9 +16,8 @@ public class CloudFile {
     private long fileSize;// bytes
     private String describeFileSize = "";
     private String lastModifiedTime;
-//    private boolean isPlayOnline;
-//    private boolean isCanPreview;
-
+    private boolean isPlayOnline;
+    private boolean isCanPreview;
 
     public CloudFile(String mainDir, Path fileArg, BasicFileAttributes attrs) throws IOException {
         mainDir = mainDir.replace("\\", "/");
@@ -33,8 +32,8 @@ public class CloudFile {
             if (indexOf > -1) {
                 fileType = fileName.substring(indexOf + 1).toLowerCase();
             }
-//            isPlayOnline = CloudFileService.isCanPlayOnline(fileType);
-//            isCanPreview = CloudFileService.isCanPreview(fileType);
+            isPlayOnline = FileService.isCanPlayOnline(fileType);
+            isCanPreview = FileService.isCanPreview(fileType);
             fileSize = Files.size(fileArg);
             describeFileSize = FileService.calculateDescSize(fileSize);
         }
@@ -67,12 +66,12 @@ public class CloudFile {
     public String getLastModifiedTime() {
         return lastModifiedTime;
     }
-//
-//    public boolean isPlayOnline() {
-//        return isPlayOnline;
-//    }
-//
-//    public boolean isCanPreview() {
-//        return isCanPreview;
-//    }
+
+    public boolean isPlayOnline() {
+        return isPlayOnline;
+    }
+
+    public boolean isCanPreview() {
+        return isCanPreview;
+    }
 }
