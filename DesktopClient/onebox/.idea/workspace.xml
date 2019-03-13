@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="onebox:war" />
+      <artifact name="onebox:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee29e30e-c0c9-46a0-80bc-2d8a60755d4b" name="Default Changelist" comment="" />
+    <list default="true" id="10e739cf-30de-4f4e-ba14-fddbf71001a0" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -10,73 +16,158 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="onebox" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/FileTool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
-        <option value="spring-beans.schema" />
-        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="AnnotationType" />
+        <option value="JavaScript File" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pring-boot-configuration-p</find>
-      <find>pagehelper-spring-boot-starter</find>
-      <find>setBaseTemplatePath</find>
-      <find>mybatis-spring-boot-starter</find>
-      <find>spring-boot-starter-logging</find>
-      <find>jackson-dataformat-yaml</find>
-      <find>pattern</find>
-      <find>opendoc</find>
-      <find>templates</find>
-      <find>servlet</find>
-      <find>spring-boot-starter-we</find>
-      <find>countByExample</find>
-      <find>insertSelective</find>
+      <find>/files</find>
+      <find>http.get</find>
+      <find>FileModal.path</find>
+      <find>uploader</find>
+      <find>accepttype</find>
+      <find>FileUploader</find>
+      <find>getFileLst</find>
+      <find>FileModal</find>
+      <find>path</find>
+      <find>重命名</find>
+      <find>Home Directory</find>
+      <find>moveModalLoadDir</find>
+      <find>filterfile</find>
+      <find>base64filepath</find>
+      <find>uploads</find>
+      <find>newfile</find>
+      <find>rename</find>
+      <find>enterDir</find>
+      <find>dirul</find>
+      <find>select</find>
+      <find>selectedFile.playOnline</find>
+      <find>clipboard</find>
+      <find>Trans</find>
+      <find>ng-init=&quot;filelist&quot;</find>
+      <find>play</find>
+      <find>$scope.dlFile = function ()</find>
+      <find>download</find>
+      <find>share</find>
+      <find>sharelist</find>
+      <find>sharedate</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/application-dev.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ob/OneboxApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ob/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ob/TestController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ob/common/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/log4j2.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ob/controller/TestController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/view/error.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ob/common/configuration/SpringBootConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/hello.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/login.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/error/404.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/error/500.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/error/error.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ob/controller/HelloController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ob/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/Tools/ResultShowing.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/Tools/RAS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/Tools/RSA.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/exception/CustomException.java" />
+        <option value="$PROJECT_DIR$/src/main/resource/springmvc-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/dao/DownloadTask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/download/IntialDownloadTask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/database/FieldAlias.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/customjs/cookies.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/customjs/RSA.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/cd573133-18ed-4b57-9616-17b8610db552/console.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/04b30f7a-4ef8-4fac-93fb-3150c26d5b57/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/database/Connection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/dao/Connection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/database/JDBC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/Tools/JDBCTool.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/customjs/cookie.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/Tools/FieldAlias.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/UserAgent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/interceptor/LoginInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/JDBCTool.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/customjs/login.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/RSA.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.svg" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/generator/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ob/dao/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ob/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ob/model/UserExample.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/dao/DownloadTaskDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/controller/DownloadController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/download/DownloadEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/listener/InitialListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/download/DownloadTask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/download/HttpDownload.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/EncodeTool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/service/ShareFileService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/interceptor/ShareAccessInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/entity/FileShare.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/controller/ShareController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/entity/CloudFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/service/FileService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/controller/FileController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/play.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/share.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/main.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/customjs/main.js" />
+        <option value="$PROJECT_DIR$/src/main/resource/config.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/FileTool.java" />
       </list>
     </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="/usr/local/Cellar/maven/3.6.0/libexec" />
-        <option name="userSettingsFile" value="/usr/local/Cellar/maven/3.6.0/libexec/conf/settings.xml" />
+        <option name="mavenHome" value="C:/JAVA/maven/apache-maven-3.5.3" />
       </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
@@ -84,12 +175,7 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="onebox" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="onebox" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+          <item name="onebox Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
       </expand>
       <select />
@@ -98,16 +184,20 @@
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="202" />
+    <option name="y" value="25" />
+    <option name="width" value="1255" />
+    <option name="height" value="922" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -139,40 +229,56 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ob" type="462c0819:PsiDirectoryNode" />
+              <item name="onebox" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onebox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onebox" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="onebox" type="462c0819:PsiDirectoryNode" />
+              <item name="tool" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552511893160" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+    <property name="project.structure.side.proportion" value="0.4375" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
-      <recent name="$PROJECT_DIR$/src/main/resources/view" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/view" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="C:\Users\Zhihao\Desktop\20193.13\DesktopClient\onebox\src\main\resource" />
+      <recent name="C:\Users\20875426\onebox\src\main\webapp\file\admin\admin_Downloads" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.oasis.onebox.controller" />
+      <recent name="com.oasis.onebox.service" />
+      <recent name="com.oasis.onebox.entity" />
+      <recent name="com.oasis.onebox.download" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Zhihao\Desktop\20193.13\DesktopClient\onebox\src\main\java\com\oasis\onebox\tool" />
+      <recent name="C:\Users\20875426\onebox\src\main\webapp" />
+      <recent name="C:\Users\20875426\onebox\src\main\webapp\customjs" />
+      <recent name="C:\Users\20875426\onebox\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\20875426\onebox\src\main\webapp\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -187,7 +293,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.自动生成">
+  <component name="RunManager" selected="Tomcat Server.tomcat 9.0.66">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -201,41 +313,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="自动生成" type="MavenRunConfiguration" factoryName="Maven">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="mybatis-generator:generate" />
-                <option value="-e" />
-              </list>
-            </option>
-            <option name="pomFileName" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
+    <configuration name="JsDebug" type="JavascriptDebugType" uri="http://localhost:8080/login.html">
       <method v="2" />
     </configuration>
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="onebox" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ob.Application" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG">
-      <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <properties />
       <listeners />
@@ -243,310 +324,618 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="tomcat 9.0.66" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.16" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+      <option name="START_JAVASCRIPT_DEBUGGER" value="true" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="onebox:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+        <artifact name="onebox:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/onebox_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_onebox_2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="49240" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="onebox:war exploded" />
+          <artifact name="onebox:war" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Maven.自动生成" />
-      <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="JavaScript Debug.JsDebug" />
+      <item itemvalue="Tomcat Server.tomcat 9.0.66" />
     </list>
   </component>
   <component name="SvnConfiguration">
-    <configuration useDefault="false">$USER_HOME$/.subversion</configuration>
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ee29e30e-c0c9-46a0-80bc-2d8a60755d4b" name="Default Changelist" comment="" />
-      <created>1552266787078</created>
+      <changelist id="10e739cf-30de-4f4e-ba14-fddbf71001a0" name="Default" comment="" />
+      <created>1549662664798</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1552266787078</updated>
-      <workItem from="1552266790340" duration="12083000" />
-      <workItem from="1552304362060" duration="1976000" />
-      <workItem from="1552311505167" duration="3175000" />
+      <updated>1549662664798</updated>
+      <workItem from="1549662667218" duration="64148000" />
+      <workItem from="1550010663397" duration="11791000" />
+      <workItem from="1550084330702" duration="32000" />
+      <workItem from="1550084379632" duration="3086000" />
+      <workItem from="1550088669776" duration="1416000" />
+      <workItem from="1550093630931" duration="89000" />
+      <workItem from="1550093771417" duration="6963000" />
+      <workItem from="1550106398375" duration="78424000" />
+      <workItem from="1552000203341" duration="17614000" />
+      <workItem from="1552380560112" duration="2391000" />
+      <workItem from="1552389907537" duration="4344000" />
+      <workItem from="1552511422355" duration="520000" />
     </task>
+    <task id="LOCAL-00001" summary="onebox project">
+      <created>1550011753693</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1550011753693</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Merge branch 'master' of github.com:LikeYears/7ccsmgpr_project">
+      <created>1550020074134</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1550020074134</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17234000" />
+    <option name="totallyTimeSpent" value="190818000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="-9" y="-9" width="1618" height="870" extended-state="6" />
     <layout>
-      <window_info id="UI Designer" order="0" />
-      <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info id="Web" order="2" side_tool="true" />
-      <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.19957082" />
-      <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
-      <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" order="4" />
-      <window_info anchor="bottom" id="Database Changes" order="5" />
-      <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Tail" order="7" />
-      <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Message" order="9" />
-      <window_info anchor="bottom" id="Find" order="10" />
-      <window_info anchor="bottom" id="Run" order="11" weight="0.21504113" />
-      <window_info anchor="bottom" id="Debug" order="12" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="15" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="right" id="Key Promoter X" order="1" />
-      <window_info anchor="right" id="Database" order="2" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Bean Validation" order="4" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.3297568" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7855918" visible="true" weight="0.21919584" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Web" order="5" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.21440823" side_tool="true" weight="0.2531983" />
+      <window_info id="Designer" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4978678" weight="0.32924107" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8424125" weight="0.30070922" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.76459146" weight="0.4496454" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4936034" weight="0.32924107" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.15758754" side_tool="true" visible="true" weight="0.30070922" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.47228146" weight="0.328125" />
+      <window_info anchor="bottom" id="Java Enterprise" order="9" sideWeight="0.49573562" weight="0.32924107" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" weight="0.32960895" />
+      <window_info anchor="bottom" id="Spring" order="11" sideWeight="0.4936034" weight="0.32924107" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4978678" weight="0.32924107" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32924107" />
+      <window_info anchor="bottom" id="Application Servers" order="14" sideWeight="0.4914712" weight="0.32924107" />
+      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="16" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.19509594" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32995737" />
+      <window_info anchor="right" id="Maven" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ob/Application.java</url>
-          <line>9</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="onebox project" />
+    <MESSAGE value="Merge branch 'master' of github.com:LikeYears/7ccsmgpr_project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of github.com:LikeYears/7ccsmgpr_project" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mvnw.cmd">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.5.RELEASE/spring-web-4.3.5.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="97" column="16" lean-forward="true" selection-start-line="97" selection-start-column="16" selection-end-line="97" selection-end-column="16" />
+        <state relative-caret-position="188">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml" />
-    <entry file="file://$PROJECT_DIR$/mvnw">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bootstrap.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        <state relative-caret-position="191">
+          <caret line="5" column="17562" selection-start-line="5" selection-start-column="17562" selection-end-line="5" selection-end-column="17562" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/jfinal/enjoy/3.6/enjoy-3.6.jar!/com/jfinal/template/ext/spring/JFinalViewResolver.class">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/customjs/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="285">
+          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/ob.xml" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.3.RELEASE/spring-boot-2.1.3.RELEASE.jar!/org/springframework/boot/context/logging/LoggingApplicationListener.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/interceptor/LoginInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="43" column="44" lean-forward="true" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/spring/boot/mybatis-spring-boot-autoconfigure/2.0.0/mybatis-spring-boot-autoconfigure-2.0.0.jar!/org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="82" column="46" selection-start-line="82" selection-start-column="46" selection-end-line="82" selection-end-column="46" />
+        <state relative-caret-position="191">
+          <caret line="3208" column="1" selection-start-line="3208" selection-start-column="1" selection-end-line="3208" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/onebox.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/jre/lib/deploy.jar!/com/sun/deploy/net/HttpDownload.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.5.RELEASE/spring-web-4.3.5.RELEASE.jar!/org/springframework/web/bind/annotation/RequestAttribute.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="171">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ob/controller/TestController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.yml">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/nio/file/Files.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/controller/DownloadController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="106" column="28" selection-start-line="106" selection-start-column="28" selection-end-line="106" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ob/common/configuration/SpringBootConfig.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/error.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/hello.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/regist.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ob/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="1235">
+          <caret line="65" column="105" selection-start-line="65" selection-start-column="105" selection-end-line="65" selection-end-column="105" />
           <folding>
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/download/DownloadEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        <state relative-caret-position="247">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/error/404.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/listener/InitialListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        <state relative-caret-position="399">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/error/500.html">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/lang/Override.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/FieldAlias.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        <state relative-caret-position="133">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/error/error.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/JDBCTool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        <state relative-caret-position="272">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ob/controller/HelloController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/ResultShowing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="190">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/RSA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/StringTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/exception/CustomException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="84" selection-start-line="6" selection-start-column="84" selection-end-line="6" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/download/HttpDownload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/download/DownloadTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="75" column="47" selection-start-line="75" selection-start-column="47" selection-end-line="75" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
+          <folding>
+            <element signature="e#783#797#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/flv.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/ngclipboard.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="4" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.5.RELEASE/spring-web-4.3.5.RELEASE.jar!/org/springframework/http/MediaType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="40" column="79" lean-forward="true" selection-start-line="40" selection-start-column="79" selection-end-line="40" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/EncodeTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="8" column="86" selection-start-line="8" selection-start-column="86" selection-end-line="8" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/service/ShareFileService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="649">
+          <caret line="55" column="29" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
+          <folding>
+            <element signature="imports" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/share.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/customjs/share.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1615">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/controller/ShareController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/customjs/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4968">
+          <caret line="216" column="32" selection-start-line="216" selection-start-column="32" selection-end-line="216" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/service/FileService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="943">
+          <caret line="68" column="12" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1710#1711#0" expanded="true" />
+            <element signature="e#1778#1779#0" expanded="true" />
+            <element signature="e#1838#1839#0" expanded="true" />
+            <element signature="e#1902#1903#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/controller/FileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1104">
+          <caret line="67" column="54" selection-start-line="67" selection-start-column="54" selection-end-line="67" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/interceptor/ShareAccessInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resource/config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        <state relative-caret-position="69">
+          <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/generator/generatorConfig.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resource/onebox.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        <state relative-caret-position="158">
+          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ob/controller/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/dao/DownloadTaskDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-start-column="8" selection-end-column="15" />
+        <state relative-caret-position="299">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/file.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/entity/CloudFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resource/log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/entity/FileShare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="24" column="15" lean-forward="true" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/play.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="36" column="52" lean-forward="true" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/share.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="23" column="40" lean-forward="true" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
           <folding>
-            <element signature="e#145#146#0" expanded="true" />
-            <element signature="e#172#173#0" expanded="true" />
+            <element signature="n#style#0;n#th#1;n#tr#1;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/angular-file-upload.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="105" column="89" selection-start-line="105" selection-start-column="89" selection-end-line="105" selection-end-column="89" />
+        <state relative-caret-position="69">
+          <caret line="6" column="51" lean-forward="true" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="123" column="29" selection-start-line="123" selection-start-column="14" selection-end-line="123" selection-end-column="29" />
+        <state relative-caret-position="184">
+          <caret line="8" column="49" lean-forward="true" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ob/model/UserExample.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="313">
+          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ob/model/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resource/tbl_file.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="68" column="11" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
-          <folding>
-            <element signature="e#830#831#0" expanded="true" />
-            <element signature="e#855#856#0" expanded="true" />
-            <element signature="e#892#893#0" expanded="true" />
-            <element signature="e#920#921#0" expanded="true" />
-            <element signature="e#954#955#0" expanded="true" />
-            <element signature="e#984#985#0" expanded="true" />
-            <element signature="e#1030#1031#0" expanded="true" />
-            <element signature="e#1100#1101#0" expanded="true" />
-            <element signature="e#1131#1132#0" expanded="true" />
-            <element signature="e#1158#1159#0" expanded="true" />
-            <element signature="e#1198#1199#0" expanded="true" />
-            <element signature="e#1259#1260#0" expanded="true" />
-            <element signature="e#1294#1295#0" expanded="true" />
-            <element signature="e#1325#1326#0" expanded="true" />
-            <element signature="e#1373#1374#0" expanded="true" />
-            <element signature="e#1446#1447#0" expanded="true" />
-            <element signature="e#1478#1479#0" expanded="true" />
-            <element signature="e#1506#1507#0" expanded="true" />
-            <element signature="e#1548#1549#0" expanded="true" />
-            <element signature="e#1612#1613#0" expanded="true" />
-            <element signature="e#1643#1644#0" expanded="true" />
-            <element signature="e#1669#1670#0" expanded="true" />
-            <element signature="e#1708#1709#0" expanded="true" />
-            <element signature="e#1738#1739#0" expanded="true" />
-            <element signature="e#1771#1772#0" expanded="true" />
-            <element signature="e#1800#1801#0" expanded="true" />
-            <element signature="e#1844#1845#0" expanded="true" />
-            <element signature="e#1911#1912#0" expanded="true" />
-            <element signature="e#1945#1946#0" expanded="true" />
-            <element signature="e#1974#1975#0" expanded="true" />
-            <element signature="e#2019#2020#0" expanded="true" />
-            <element signature="e#2055#2056#0" expanded="true" />
-            <element signature="e#2086#2087#0" expanded="true" />
-            <element signature="e#2113#2114#0" expanded="true" />
-            <element signature="e#2153#2154#0" expanded="true" />
-            <element signature="e#2214#2215#0" expanded="true" />
-            <element signature="e#2245#2246#0" expanded="true" />
-            <element signature="e#2272#2273#0" expanded="true" />
-            <element signature="e#2312#2313#0" expanded="true" />
-            <element signature="e#2373#2374#0" expanded="true" />
-            <element signature="e#2411#2412#0" expanded="true" />
-            <element signature="e#2445#2446#0" expanded="true" />
-            <element signature="e#2616#2617#0" expanded="true" />
-            <element signature="e#2649#2650#0" expanded="true" />
-            <element signature="e#2699#2700#0" expanded="true" />
-            <element signature="e#2743#2744#0" expanded="true" />
-            <element signature="e#2779#2780#0" expanded="true" />
-            <element signature="e#2813#2814#0" expanded="true" />
-            <element signature="e#2865#2866#0" expanded="true" />
-            <element signature="e#2911#2912#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="342">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ob/dao/UserMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/UserAgent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        <state relative-caret-position="-147">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/FileTool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="48" column="33" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
+        <state relative-caret-position="92">
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -556,11 +945,11 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>onebox:Web exploded</last-edited>
+          <last-edited>onebox:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.4375" />
                 <option value="0.5" />
               </list>
             </option>
@@ -573,7 +962,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.4375" />
               </list>
             </option>
           </splitter-proportions>
@@ -584,7 +973,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.4375" />
               </list>
             </option>
           </splitter-proportions>
@@ -596,7 +985,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.4227941" />
               </list>
             </option>
           </splitter-proportions>
@@ -604,24 +993,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>onebox</last-edited>
+          <last-edited>Web|onebox</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
+                <option value="0.4375" />
               </list>
             </option>
           </splitter-proportions>
@@ -629,22 +1005,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <last-edited>Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.5</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
+                <option value="0.4375" />
               </list>
             </option>
           </splitter-proportions>
