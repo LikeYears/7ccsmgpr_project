@@ -1,4 +1,4 @@
-package com.oasis.onebox.tool;
+
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -212,6 +212,95 @@ public class FileTool {
         comparedReader.reset();
     }
 
+
+
+    /**
+     * 文本比较方法
+     * @param txt1 需要比较的内容
+     * @param txt2 被比较的内容
+     *
+     */
+    public void txtCompare(String txt1,String txt2,String outTxt){
+        System.out.println("======Start Search!=======");
+        long startTime = System.currentTimeMillis();
+        // Read first file
+        File file = new File(txt1);
+        File comparedFile = new File(txt2);
+        BufferedReader br = null;
+        BufferedReader cbr = null;
+        BufferedWriter rbw = null;
+        try {
+            br = new BufferedReader(new FileReader(file));
+            cbr = new BufferedReader(new FileReader(comparedFile));
+            cbr.mark(90000000);
+            rbw = new BufferedWriter(new FileWriter(outTxt));
+            String lineText = null;
+            while ((lineText = br.readLine()) != null) {
+                String searchText = lineText.trim();
+                searchAndSignProcess(searchText, cbr, rbw);
+            }
+            long endTime = System.currentTimeMillis();
+            System.out.println("======Process Over!=======");
+            System.out.println("Time Spending:" + ((endTime - startTime) / 1000D) + "s");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (br != null) {
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } finally {
+                    if (cbr != null && rbw != null) {
+                        try {
+                            cbr.close();
+                            rbw.close();
+                        } catch (IOException e) {
+                            System.out.println("文本文件比对异常");
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    /**
+     * 获取构造版本号
+     * @param v 当前版本号
+     * 版本号定义规则：主版本号.次版本号.小版本 例如：1.2.1
+     * @return
+     */
+    public static String getVersion(String v){
+        if(null == v){
+            return "1.0.0";
+        }
+
+        String[] arr = v.split("\\.");
+        if(arr.length > 3){
+            System.out.println("你当前的版本号非法，请重新导入计算");
+            return null;
+        }
+        if(Integer.valueOf(arr[2]) < 10){
+            arr[2] =(Integer.valueOf(arr[2]) + Integer.valueOf(1))+"";
+        }else {
+            if(Integer.valueOf(arr[1]) < 10){
+                arr[1] = (Integer.valueOf(arr[1]) + Integer.valueOf(1))+"";
+            }else{
+                arr[0] = (Integer.valueOf(arr[0]) + Integer.valueOf(1))+"";
+            }
+        }
+        StringBuffer sb = new StringBuffer();
+        for (String a : arr) {
+            sb.append(a);
+            sb.append(".");
+        }
+
+        String temp = sb.toString();
+        return temp.substring(0,temp.length()-1);
+    }
 
     public static void main(String[] args) {
         // 测试文件比对
