@@ -1,4 +1,4 @@
-package com.im;
+
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -213,6 +213,7 @@ public class FileTool {
     }
 
 
+
     /**
      * 文本比较方法
      * @param txt1 需要比较的内容
@@ -300,6 +301,7 @@ public class FileTool {
         String temp = sb.toString();
         return temp.substring(0,temp.length()-1);
     }
+
     public static void main(String[] args) {
         // 测试文件比对
 //        String f1 = "/Users/lxt/Desktop/a/1.zip";
