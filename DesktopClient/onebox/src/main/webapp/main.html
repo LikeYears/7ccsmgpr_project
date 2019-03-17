@@ -7,6 +7,7 @@
     <title>OneBox</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/toastr.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <style type="text/css">
         .tablediv a {
             color: #000;
@@ -17,18 +18,19 @@
 </head>
 
 <body>
-<div class="container" ng-controller="container">
+<div class="container" ng-controller="container" style="width:100%">
     <!-- navbar -->
     <div class="row">
-        <div class="col-md-11">
-            <nav class="navbar navbar-default" role="navigation">
+        <div class="col-md-11" style="width: 100%;padding:0;">
+            <nav class="navbar navbar-default" role="navigation" style="margin-bottom:0;">
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="main.html">OneBox</a>
                     </div>
                     <div class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav">
-                            <li><a href="javascipt:void(0)" ng-click="showFileList()">Files</a></li>
+						<img src="img/logo.png" class="imageser" />
+                        <ul class="nav navbar-nav position">
+                            <li style="background:#796AEE;"><a href="javascipt:void(0)" style="color:#fff;" ng-click="showFileList()">Files</a></li>
                             <li class="dropdown"><a href="javascipt:void(0)" ng-click="showTransport()">Transfer&nbsp;<span
                                     class="badge"
                                     ng-bind="uploadlist.length+downloadlist.length"></span></a>
@@ -36,9 +38,7 @@
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li class="dropdown">
-                                <a href="javascipt:void(0)" class="dropdown-toggle" data-toggle="dropdown" ng-bind="username">
-                                    <span class="caret"></span>
-                                </a>
+                                <a href="javascipt:void(0)" ng-click="logout()" style="color:#fff;">Logout</a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a href="javascipt:void(0)" ng-click="logout()">Logout</a></li>
                                 </ul>
@@ -50,7 +50,19 @@
         </div>
     </div>
     <!-- Content -->
-    <div class="row" ng-show="showCtrl>0" ng-controller="filelist" id="filelist">
+	<div class="box_12">
+		<h1>Cloud Disk</h1>
+		<form action="" class="parent12">
+			<input type="text" class="search12" placeholder="Search...">
+			<input type="button" name="" id="" class="btn12">
+		</form>
+		<div class="clear:both;"></div>
+
+	</div>
+	<div class="box_13">
+		<p>Home / Tables</p>
+	</div>
+    <div class="row rights" ng-show="showCtrl>0" ng-controller="filelist" id="filelist">
         <div class="col-md-9" data-toggle="context">
             <table class="table table-hover" id="filetable">
                 <thead>
@@ -312,7 +324,7 @@
         </div>
     </div>
     <!-- share list -->
-    <div class="row" id="sharelist" ng-show="showCtrl<0" ng-controller="sharelist">
+    <div class="row" id="sharelist" ng-show="showCtrl<0" ng-controller="sharelist" style="margin-left:230px;">
         <div class="col-md-11" data-toggle="context">
             <table class="table table-hover" id="sharefiletable">
                 <thead>

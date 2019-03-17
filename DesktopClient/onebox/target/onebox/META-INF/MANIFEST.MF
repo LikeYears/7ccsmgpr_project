@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Built-By: 20875426
+Built-By: jiawei
 Created-By: IntelliJ IDEA
-Build-Jdk: 1.8.0_60
+Build-Jdk: 1.8
 
