@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="sharePageApp" >
+<head>
+    <meta charset="UTF-8">
+    <title>OneBox</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/toastr.css" rel="stylesheet">
+</head>
+<body>
+<div class="container" ng-controller="container">
+    <div class="row" ng-show="cancel">
+        <div class="col-md-12" style="text-align:center">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h4>The file has been canceled or deleted</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" ng-hide="cancel || showFile">
+        <div class="col-md-3"></div>
+        <div class="col-md-6" style="text-align:center">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <form class="form-inline" role="form" ng-submit="extractAuth()">
+                        <div class="form-group">
+                            <label>Access Password:</label>
+                            <input type="password" class="form-control" placeholder="PLEASE ENTER THE ACCESS PASSWORD" ng-model="password"
+                                   required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">ACCESS</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    <div class="row" ng-show="showFile">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8" style="text-align:center">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th colspan="6">
+                                <ol class="breadcrumb" ng-init="dirul" ng-hide="!dirul">
+                                    <li ng-repeat="li in dirul"><a href='javascript:void(0)' path='' ng-click="backup(this)"
+                                                                   ng-bind="li.name"></a>
+                                    </li>
+                                </ol>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th style="text-align: center;">Name</th>
+                            <th style="text-align: center;">Type</th>
+                            <th style="text-align: center;">Size</th>
+                            <th style="text-align: center;">Modified</th>
+                        </tr>
+                        </thead>
+                        <tbody ng-init="filelist">
+                            <tr ng-repeat="file in filelist" ng-click="select(file)" ng-class="{true:'info', false: ''}[file==selectedFile]">
+                                <td><img src='img/{{file.fileType}}.png' class='img-responsive' fallback-src="img/file.png"></td>
+                                <td>
+                                    <div ng-show="{{file.dir}}">
+                                        <a href='javascipt:void(0)' ng-click="enterDir(file)" ng-bind="file.fileName"></a>
+                                    </div>
+                                    <div ng-show="{{file.canPreview}}">
+                                        <a href='api/files/{{file.base64FilePath}}/play' target="_blank" ng-bind="file.fileName"
+                                           class="bind_hover_card"></a>
+                                    </div>
+                                    <div ng-show="!{{file.dir}} && !{{file.canPreview}}" ng-bind="file.fileName"></div>
+                                </td>
+                                <td ng-bind="file.fileType"></td>
+                                <td ng-bind="file.describeFileSize"></td>
+                                <td ng-bind="file.lastModifiedTime"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="btn-group-vertical pull-left" role="group" ng-show="buttonShow" >
+                <button type="button" class="btn btn-default" ng-click="download()">Download</button>
+                <button type="button" class="btn btn-default" ng-click="preview()" ng-show="selectedFile.canPreview">Preview</button>
+                <button type="button" class="btn btn-default" ng-click="cancelSelect()">
+                    <span title='删除' class='glyphicon glyphicon-remove'></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/toastr.js"></script>
+<script src="js/prettify.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="customjs/share.js"></script>
+</html>
