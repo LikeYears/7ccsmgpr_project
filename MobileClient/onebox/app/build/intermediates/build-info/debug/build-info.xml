@@ -6,34 +6,34 @@
     density="560dpi"
     format="10"
     plugin-version="3.0.1"
-    timestamp="1551997015839"
+    timestamp="1552941495914"
     token="7775836362381859539"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="3695" />
+        duration="1406" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="399" />
     <task
         name="verifier"
-        duration="0" />
+        duration="133" />
 
     <artifact
-        location="C:\Users\20875426\Desktop\onebox\app\build\outputs\apk\debug\app-debug.apk"
-        type="SPLIT_MAIN" />
+        location="C:\Users\20875426\Desktop\onebox\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\20875426\Desktop\onebox\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        type="SPLIT" />
     <artifact
         location="C:\Users\20875426\Desktop\onebox\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
         type="SPLIT" />
     <artifact
         location="C:\Users\20875426\Desktop\onebox\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\20875426\Desktop\onebox\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
         type="SPLIT" />
     <artifact
         location="C:\Users\20875426\Desktop\onebox\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
@@ -51,30 +51,30 @@
         location="C:\Users\20875426\Desktop\onebox\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\20875426\Desktop\onebox\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-        type="SPLIT" />
-    <artifact
         location="C:\Users\20875426\Desktop\onebox\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
         type="SPLIT" />
     <artifact
         location="C:\Users\20875426\Desktop\onebox\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
         type="SPLIT" />
+    <artifact
+        location="C:\Users\20875426\Desktop\onebox\app\build\outputs\apk\debug\app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1551997015839"
+        timestamp="1552941495914"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\20875426\Desktop\onebox\app\build\outputs\apk\debug\app-debug.apk"
-            type="SPLIT_MAIN" />
+            location="C:\Users\20875426\Desktop\onebox\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\20875426\Desktop\onebox\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
         <artifact
             location="C:\Users\20875426\Desktop\onebox\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\20875426\Desktop\onebox\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\20875426\Desktop\onebox\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\20875426\Desktop\onebox\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
@@ -92,14 +92,14 @@
             location="C:\Users\20875426\Desktop\onebox\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\20875426\Desktop\onebox\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-            type="SPLIT" />
-        <artifact
             location="C:\Users\20875426\Desktop\onebox\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\20875426\Desktop\onebox\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
+        <artifact
+            location="C:\Users\20875426\Desktop\onebox\app\build\outputs\apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

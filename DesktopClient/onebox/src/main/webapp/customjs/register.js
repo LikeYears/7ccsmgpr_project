@@ -28,7 +28,7 @@ app.controller("register", function($scope, $http) {
                 toastr.error("ERROR");
             }
         }, function error(response) {
-            toastr.error("ERROR");
+            toastr.error("ERROR:"+response.data());
         });
     }
 });
