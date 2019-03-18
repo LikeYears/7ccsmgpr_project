@@ -19,6 +19,7 @@ app.controller("register", function($scope, $http) {
                 $http.post(requrl, data, postCfg).then(function success(response) {
                     if (response) {
                         window.location.href = "login.html";
+                        window.alert("Register Success!")
                     }
                 }, function error(response) {
                     toastr.error(response.data);
@@ -27,7 +28,7 @@ app.controller("register", function($scope, $http) {
                 toastr.error("ERROR");
             }
         }, function error(response) {
-            toastr.error("ERROR");
+            toastr.error("ERROR:"+response.data());
         });
     }
 });
