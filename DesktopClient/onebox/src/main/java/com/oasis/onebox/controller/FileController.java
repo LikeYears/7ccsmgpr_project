@@ -13,14 +13,21 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
+import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.InputStream;
+import java.net.URI;
+import java.net.URL;
 import java.nio.file.*;
 import java.util.Arrays;
 import java.util.Iterator;
-
+import com.oasis.onebox.tool.FileTool;
 @Controller
 @RequestMapping("/files")
 public class FileController {
@@ -77,7 +84,7 @@ public class FileController {
                             new String(file.getOriginalFilename()));
                     boolean fileExists = Files.exists(filePath);
                     if (!fileExists) {
-                        Path tmpFile = Paths.get(filePath.toAbsolutePath().toString() + ".upload.tmp");
+                        Path tmpFile = Paths.get(filePath.toAbsolutePath().toString() + ".upload.tmp"  + FileTool.getVersion("1.0.0"));
                         Files.deleteIfExists(tmpFile);
                         Files.createFile(tmpFile);
                         byte[] readBuffer = new byte[10485760];//10mb
@@ -89,7 +96,83 @@ public class FileController {
                         Files.move(tmpFile, filePath, StandardCopyOption.REPLACE_EXISTING);
                     }
                     else {
-                        throw new CustomException(400, "file exist", null);
+
+                        Path tmpFile = Paths.get(filePath.toAbsolutePath().toString()+ FileTool.getVersion("0.0.0") );
+                        Files.deleteIfExists(tmpFile);
+                        Files.createFile(tmpFile);
+                        System.out.println(tmpFile);
+
+                        byte[] readBuffer1 = new byte[10485760];//10mb
+                        InputStream is = file.getInputStream();
+                        int hasReadSize;
+                        while ((hasReadSize = is.read(readBuffer1)) != -1) {
+                            Files.write(tmpFile, Arrays.copyOf(readBuffer1, hasReadSize), StandardOpenOption.APPEND);
+
+                            String path1 =tmpFile.toString();
+                            System.out.println(path1);
+                            String path2 =filePath.toString();
+                            System.out.println(path2);
+
+                            BufferedImage image = ImageIO.read(new File(path1));
+                            System.out.println(image);
+                            if (image == null) {
+                                boolean A = FileTool.isSameMd5(path1, path2);
+                                System.out.println(A);
+                                if (A == true){
+                                    FileService.delFile(path1);
+                                    System.out.println("please do not upload the same file!");
+                                    throw new CustomException(400, "please do not upload the same file!", null);
+                                }
+                            }
+                            else   {
+                                String A = FileTool.compareImage(path1, path2);
+                                System.out.println(A);
+
+                                int length=A.length();
+                                if(length>=3){
+                                    String str=A.substring(length-4,length);
+                                    System.out.println(str);
+                                    if (str == "100%"){
+                                        FileService.delFile(path1);
+                                        System.out.println("please do not upload the same file!");
+                                        throw new CustomException(400, "please do not upload the same file!", null);
+                                    }
+                                }
+                            }
+                        }
+
+//                        Files.move(tmpFile, filePath);
+
+
+
+
+
+// 需要上传文件  然后 获取路径path1，文件可用 FileTool.getVersion("1.2.0") 加版本号。
+//                      得到文件类型 if 文本文件：  String A = FileTool.txtCompare(path1, path2);
+//                        if 文件
+//                      String f1 = "/Users/lxt/Desktop/a/1.zip";
+//                      String f2 = "/Users/lxt/Desktop/b/1.zip";
+//                      boolean compare = isSameMd5(f1,f2);
+//                        if 图片文件：
+//                        File file1 = new File(path1);
+//                        file1.getAbsolutePath();
+//                        String b = multiRequest.getAbsolutePath();
+
+//                        String A = FileTool.compareImage(path1, path2);
+//                        System.out.println("-A--");
+//                        System.out.println(A);
+//                      如果A 相似度不等于100 ，保留文件，else 提示请勿上传相同文件。
+//                        System.out.println("-path2--");
+//                        System.out.println(path2);
+//                        System.out.println("-path1--");
+//                        System.out.println(path1);
+//                        if (FileTool.compareImage( path1, path2) ) {
+//                            throw new CustomException(400, "file exist", null);}
+//                        else{
+
+//                        throw new CustomException(400, "can not upload", null);
+
+//                    }
                     }
                 }
             }
