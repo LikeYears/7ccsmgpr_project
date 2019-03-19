@@ -5,22 +5,25 @@
     background: #fff;
     padding-bottom: 40px;
     border-radius: 15px;
-    text-align: center;
 }
 .form-horizontal .heading{
+
     display: block;
     font-size: 35px;
     font-weight: 700;
-    padding: 35px 0;
+    padding: 45px;
     border-bottom: 1px solid #f0f0f0;
-    margin-bottom: 30px;
+    margin-bottom: 90px;
 }
 .form-horizontal .form-group{
     padding: 0 40px;
-    margin: 0 0 25px 0;
+    margin-top: 100px;
     position: relative;
 }
 .form-horizontal .form-control{
+    margin-right: 150px;
+    width: 35%;
+    float: right;
     background: #f0f0f0;
     border: none;
     border-radius: 20px;
@@ -97,13 +100,14 @@
     opacity: 1;
 }
 .form-horizontal .text{
-    float: left;
-    margin-left: 7px;
+    margin-left: 613px;
     line-height: 20px;
     padding-top: 5px;
     text-transform: capitalize;
 }
 .form-horizontal .btn{
+    margin-top: -80px;
+    margin-right: 150px;
     float: right;
     font-size: 14px;
     border-radius: 30px;
