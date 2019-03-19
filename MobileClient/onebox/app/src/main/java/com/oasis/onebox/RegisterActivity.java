@@ -92,56 +92,89 @@ public class RegisterActivity extends AppCompatActivity {
 
     public void getPublicKey()
     {
-        OkHttpUtils
-                .get()
-                .url(url)
-                .build()
-                .execute(new StringCallback()
-                {
-                    @Override
-                    public void onError(Call call, Exception e, int id) {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                OkHttpUtils
+                        .get()
+                        .url(url)
+                        .build()
+                        .execute(new StringCallback()
+                        {
+                            @Override
+                            public void onError(Call call, Exception e, int id) {
 
-                    }
+                            }
 
-                    @Override
-                    public void onResponse(String response, int id) {
+                            @Override
+                            public void onResponse(String response, int id) {
 //                        Toast.makeText(WelcomeActivity.this,response.toString(),Toast.LENGTH_LONG).show();
-                        try {
-                            JSONObject jsonObject = new JSONObject(response);
-                            pubKey = jsonObject.getString("result");
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
+                                try {
+                                    JSONObject jsonObject = new JSONObject(response);
+                                    pubKey = jsonObject.getString("result");
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                }
 
-                        Log.e(TAG,pubKey);
-                    }
+                                Log.e(TAG,pubKey);
+                            }
 
-                });
+                        });
+            }
+        }).start();
+
     }
 
     public void postUser()
     {
-        RSA rsa = new RSA();
-        OkHttpUtils
-                .post()
-                .url(url)
-                .addParams("username", rsa.encryptByPubKey(pubKey,etUsername.getText().toString()))
-                .addParams("password", rsa.encryptByPubKey(pubKey,etPassword.getText().toString()))
-                .build()
-                .execute(new StringCallback() {
-                    @Override
-                    public void onError(Call call, Exception e, int id) {
-                        Log.e(TAG,e.getMessage());
-                    }
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                RSA rsa = new RSA();
+                OkHttpUtils
+                        .post()
+                        .url(url)
+                        .addParams("username", rsa.encryptByPubKey(pubKey,etUsername.getText().toString()))
+                        .addParams("password", rsa.encryptByPubKey(pubKey,etPassword.getText().toString()))
+                        .build()
+                        .execute(new StringCallback() {
+                            @Override
+                            public void onError(Call call, Exception e, int id) {
+                                Log.e(TAG,e.getMessage());
+                            }
 
-                    @Override
-                    public void onResponse(String response, int id) {
-                        Log.e(TAG,response.toString());
-                        Toast.makeText(RegisterActivity.this,"Register Success!",Toast.LENGTH_LONG).show();
-                        fab.performClick();
-                    }
-                });
+                            @Override
+                            public void onResponse(String response, int id) {
+                                Log.e(TAG,response.toString());
+//                                Toast.makeText(RegisterActivity.this,"Register Success!",Toast.LENGTH_LONG).show();
+                                toastString("Register Success!",Toast.LENGTH_LONG);
+                                fabClick();
+                            }
+                        });
+            }
+        }).start();
 
+    }
+
+    private void fabClick()
+    {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                fab.performClick();
+            }
+        });
+    }
+
+    private void toastString(final String toastContent, final int longOrShort)
+    {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(RegisterActivity.this,toastContent,longOrShort).show();
+
+            }
+        });
     }
 
     private void initView(){
@@ -172,7 +205,8 @@ public class RegisterActivity extends AppCompatActivity {
                 }
                 else
                 {
-                    Toast.makeText(RegisterActivity.this,"Please make sure your password is correct",Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(RegisterActivity.this,"Please make sure your password is correct",Toast.LENGTH_SHORT).show();
+                    toastString("Please make sure your password is correct",Toast.LENGTH_SHORT);
                 }
             }
         });
