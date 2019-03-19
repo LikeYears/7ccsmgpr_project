@@ -3,7 +3,9 @@ package com.oasis.onebox.tool;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
+import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
+import javax.crypto.IllegalBlockSizeException;
 import java.io.ByteArrayOutputStream;
 import java.security.Key;
 import java.security.KeyFactory;
@@ -32,7 +34,9 @@ public class RSA {
             return pk;
         }
         try {
+            logger.info("pubKeyDecode::"+pubKey);
             pk = EncodeTool.encoderBASE64(pubKey);
+            logger.info("PubKeyEncode::"+pk);
             return pk;
         } catch (Exception e) {
             logger.error(e);
@@ -109,7 +113,7 @@ public class RSA {
             Key privateKey = keyFactory.generatePrivate(pkcs8KeySpec);
 
             // decrypt
-            Cipher cipher = Cipher.getInstance(keyFactory.getAlgorithm());
+            Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
             cipher.init(Cipher.DECRYPT_MODE, privateKey);
 
             byte[] encryptedData = EncodeTool.decoderBASE64(data);
