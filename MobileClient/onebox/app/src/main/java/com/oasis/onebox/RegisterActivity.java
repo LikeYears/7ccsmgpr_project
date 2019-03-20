@@ -28,6 +28,7 @@ import java.util.concurrent.TimeUnit;
 
 import okhttp3.Call;
 import okhttp3.OkHttpClient;
+import okhttp3.Response;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -103,7 +104,7 @@ public class RegisterActivity extends AppCompatActivity {
                         {
                             @Override
                             public void onError(Call call, Exception e, int id) {
-
+                                toastString("fail to connect the server, please try it again",Toast.LENGTH_SHORT);
                             }
 
                             @Override
@@ -213,76 +214,94 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void showEnterAnimation(){
-        Transition transition = TransitionInflater.from(this).inflateTransition(R.transition.fabtransition);
-        getWindow().setSharedElementEnterTransition(transition);
-
-        transition.addListener(new Transition.TransitionListener() {
+        runOnUiThread(new Runnable() {
             @Override
-            public void onTransitionStart(Transition transition) {
-                cvAdd.setVisibility(View.GONE);
-            }
+            public void run() {
+                Transition transition = TransitionInflater.from(getApplicationContext()).inflateTransition(R.transition.fabtransition);
+                getWindow().setSharedElementEnterTransition(transition);
 
-            @Override
-            public void onTransitionEnd(Transition transition) {
-                transition.removeListener(this);
-                animateRevealShow();
-            }
+                transition.addListener(new Transition.TransitionListener() {
+                    @Override
+                    public void onTransitionStart(Transition transition) {
+                        cvAdd.setVisibility(View.GONE);
+                    }
 
-            @Override
-            public void onTransitionCancel(Transition transition) {
+                    @Override
+                    public void onTransitionEnd(Transition transition) {
+                        transition.removeListener(this);
+                        animateRevealShow();
+                    }
 
-            }
+                    @Override
+                    public void onTransitionCancel(Transition transition) {
 
-            @Override
-            public void onTransitionPause(Transition transition) {
+                    }
 
-            }
+                    @Override
+                    public void onTransitionPause(Transition transition) {
 
-            @Override
-            public void onTransitionResume(Transition transition) {
+                    }
 
+                    @Override
+                    public void onTransitionResume(Transition transition) {
+
+                    }
+                });
             }
         });
+
     }
 
     public void animateRevealShow() {
-        Animator mAnimator = ViewAnimationUtils.createCircularReveal(cvAdd, cvAdd.getWidth()/2,0, fab.getWidth() / 2, cvAdd.getHeight());
-        mAnimator.setDuration(500);
-        mAnimator.setInterpolator(new AccelerateInterpolator());
-        mAnimator.addListener(new AnimatorListenerAdapter() {
+        runOnUiThread(new Runnable() {
             @Override
-            public void onAnimationEnd(Animator animation) {
-                super.onAnimationEnd(animation);
-            }
+            public void run() {
+                Animator mAnimator = ViewAnimationUtils.createCircularReveal(cvAdd, cvAdd.getWidth()/2,0, fab.getWidth() / 2, cvAdd.getHeight());
+                mAnimator.setDuration(500);
+                mAnimator.setInterpolator(new AccelerateInterpolator());
+                mAnimator.addListener(new AnimatorListenerAdapter() {
+                    @Override
+                    public void onAnimationEnd(Animator animation) {
+                        super.onAnimationEnd(animation);
+                    }
 
-            @Override
-            public void onAnimationStart(Animator animation) {
-                cvAdd.setVisibility(View.VISIBLE);
-                super.onAnimationStart(animation);
+                    @Override
+                    public void onAnimationStart(Animator animation) {
+                        cvAdd.setVisibility(View.VISIBLE);
+                        super.onAnimationStart(animation);
+                    }
+                });
+                mAnimator.start();
             }
         });
-        mAnimator.start();
+
     }
 
     public void animateRevealClose() {
-        Animator mAnimator = ViewAnimationUtils.createCircularReveal(cvAdd,cvAdd.getWidth()/2,0, cvAdd.getHeight(), fab.getWidth() / 2);
-        mAnimator.setDuration(500);
-        mAnimator.setInterpolator(new AccelerateInterpolator());
-        mAnimator.addListener(new AnimatorListenerAdapter() {
+        runOnUiThread(new Runnable() {
             @Override
-            public void onAnimationEnd(Animator animation) {
-                cvAdd.setVisibility(View.INVISIBLE);
-                super.onAnimationEnd(animation);
-                fab.setImageResource(R.drawable.plus);
-                RegisterActivity.super.onBackPressed();
-            }
+            public void run() {
+                Animator mAnimator = ViewAnimationUtils.createCircularReveal(cvAdd,cvAdd.getWidth()/2,0, cvAdd.getHeight(), fab.getWidth() / 2);
+                mAnimator.setDuration(500);
+                mAnimator.setInterpolator(new AccelerateInterpolator());
+                mAnimator.addListener(new AnimatorListenerAdapter() {
+                    @Override
+                    public void onAnimationEnd(Animator animation) {
+                        cvAdd.setVisibility(View.INVISIBLE);
+                        super.onAnimationEnd(animation);
+                        fab.setImageResource(R.drawable.plus);
+                        RegisterActivity.super.onBackPressed();
+                    }
 
-            @Override
-            public void onAnimationStart(Animator animation) {
-                super.onAnimationStart(animation);
+                    @Override
+                    public void onAnimationStart(Animator animation) {
+                        super.onAnimationStart(animation);
+                    }
+                });
+                mAnimator.start();
             }
         });
-        mAnimator.start();
+
     }
 
     @Override
