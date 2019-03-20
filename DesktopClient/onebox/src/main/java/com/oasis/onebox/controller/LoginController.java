@@ -41,6 +41,7 @@ public class LoginController {
             String token = u.createToken(request);
             return new ResultShowing("login success", token);
         }
+
         throw new CustomException(401, "username or password not correct", null);
     }
 

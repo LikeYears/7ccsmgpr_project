@@ -5,24 +5,24 @@
     build-mode="COLD"
     density="560dpi"
     format="10"
-    ir-eligibility="CLASS_ADDED"
+    ir-eligibility="IMPLEMENTED_INTERFACES_CHANGE"
     plugin-version="3.0.1"
-    timestamp="1552949491146"
+    timestamp="1553040221926"
     token="7775836362381859539"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="2232" />
+        duration="1540" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="174" />
+        duration="360" />
     <task
         name="verifier"
-        duration="38" />
+        duration="214" />
 
     <artifact
         location="C:\Users\20875426\Desktop\onebox\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
@@ -30,7 +30,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1552947247306"
+        timestamp="1553037318703"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\20875426\Desktop\onebox\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
@@ -71,8 +71,8 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="CLASS_ADDED"
-        timestamp="1552949491146"
+        ir-eligibility="IMPLEMENTED_INTERFACES_CHANGE"
+        timestamp="1553040221926"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\20875426\Desktop\onebox\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
