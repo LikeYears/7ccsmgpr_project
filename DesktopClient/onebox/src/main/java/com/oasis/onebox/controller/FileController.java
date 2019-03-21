@@ -28,7 +28,7 @@ import java.nio.file.*;
 import java.util.Arrays;
 import java.util.Iterator;
 import com.oasis.onebox.tool.FileTool;
-import com.oasis.onebox.tool.MySimHash;
+
 @Controller
 @RequestMapping("/files")
 public class FileController {
