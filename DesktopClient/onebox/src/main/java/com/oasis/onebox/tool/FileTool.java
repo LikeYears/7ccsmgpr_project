@@ -1,4 +1,4 @@
-
+package com.oasis.onebox.tool;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
