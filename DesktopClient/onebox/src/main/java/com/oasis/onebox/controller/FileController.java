@@ -347,14 +347,14 @@ public class FileController {
 
 
 
-                            else if (v.equals("txt")) {
-                                String l = "";
-                                FileTool.txtCompare("dd","1.txt",l);
-//                                MySimHash.
-                                System.out.println("l");
-                                System.out.println(l);
+//                             else if (v.equals("txt")) {
+//                                 String l = "";
+//                                 FileTool.txtCompare("dd","1.txt",l);
+// //                                MySimHash.
+//                                 System.out.println("l");
+//                                 System.out.println(l);
 
-                            }
+//                             }
 //                            the other types of file
 
 
