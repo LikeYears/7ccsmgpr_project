@@ -221,8 +221,6 @@ public class FileTool {
      *
      */
 
-    public static void txtCompare(String txt1,String txt2,String outTxt){
-
     public void txtCompare(String txt1,String txt2,String outTxt){
 
         System.out.println("======Start Search!=======");
