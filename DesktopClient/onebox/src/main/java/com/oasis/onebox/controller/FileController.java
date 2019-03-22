@@ -28,7 +28,9 @@ import java.nio.file.*;
 import java.util.Arrays;
 import java.util.Iterator;
 import com.oasis.onebox.tool.FileTool;
+
 import com.oasis.onebox.tool.distance;
+
 
 @Controller
 @RequestMapping("/files")
@@ -62,6 +64,7 @@ public class FileController {
         }
         return new ResultShowing("get file list success", FileService.getFileList(loginUser.getDirectory(), path, accepttype, filterfile));
     }
+
 
     public static void main(String[] args){
 
@@ -182,6 +185,7 @@ public class FileController {
         return d[n][m];
 
     }
+
 
 
 
@@ -473,6 +477,7 @@ public class FileController {
 
 
 
+
                             else if (v.equals("txt")) {
                                 System.out.println("l");
                                 String cc = dd.toString();
@@ -547,6 +552,17 @@ public class FileController {
 //                                System.out.println(CosineSimilarAlgorithm.cosSimilarityByFile("C:\\Users\\Zhihao\\Desktop\\recommend-system-master\\lib","C:\\Users\\Zhihao\\Desktop\\recommend-system-master\\src"));
                             }
 //                            the other types of file   i
+
+//                             else if (v.equals("txt")) {
+//                                 String l = "";
+//                                 FileTool.txtCompare("dd","1.txt",l);
+// //                                MySimHash.
+//                                 System.out.println("l");
+//                                 System.out.println(l);
+
+//                             }
+//                            the other types of file
+
 
 
                             else {

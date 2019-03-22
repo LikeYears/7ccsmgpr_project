@@ -220,7 +220,11 @@ public class FileTool {
      * @param txt2 被比较的内容
      *
      */
+
     public static void txtCompare(String txt1,String txt2,String outTxt){
+
+    public void txtCompare(String txt1,String txt2,String outTxt){
+
         System.out.println("======Start Search!=======");
         long startTime = System.currentTimeMillis();
         // Read first file
@@ -302,6 +306,7 @@ public class FileTool {
         return temp.substring(0,temp.length()-1);
     }
 
+
     public static String readTxt(String filePath) {// D:\\a.txt
         StringBuilder result = new StringBuilder();
         try {
@@ -317,6 +322,7 @@ public class FileTool {
         }
         return result.toString();
     }
+
 
     public static void main(String[] args) {
         // 测试文件比对
