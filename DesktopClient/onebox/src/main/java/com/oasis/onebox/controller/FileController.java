@@ -28,7 +28,10 @@ import java.nio.file.*;
 import java.util.Arrays;
 import java.util.Iterator;
 import com.oasis.onebox.tool.FileTool;
-import com.oasis.onebox.tool.MySimHash;
+
+import com.oasis.onebox.tool.distance;
+
+
 @Controller
 @RequestMapping("/files")
 public class FileController {
@@ -61,6 +64,133 @@ public class FileController {
         }
         return new ResultShowing("get file list success", FileService.getFileList(loginUser.getDirectory(), path, accepttype, filterfile));
     }
+
+
+    public static void main(String[] args){
+
+        distance dis = new distance();
+
+        String s1="比干缘何落马死，勾践因此可吞吴省长市长共商议，抓好米袋菜篮子饭店是事实上是个 规范的炎热他依然额头";
+
+        String s2="比干缘何落马死勾践因此可吞吴省长市长共商议，抓好米袋分舵是否但是发斯蒂芬斯蒂芬的说法都是菜篮子";
+
+//     System.out.println((s1.length()));
+
+        System.out.println(dis.LD(s2, s1));
+
+    }
+
+    // ****************************
+
+    // Get minimum of three values
+
+    // ****************************
+
+    public int Minimum(int a, int b, int c) {
+
+        int mi;
+        mi = a;
+        if (b < mi) {
+            mi = b;
+        }
+        if (c < mi) {
+
+            mi = c;
+
+        }
+        return mi;
+    }
+    // *****************************
+
+    // Compute Levenshtein distance
+
+    // *****************************
+
+    public int LD(String s, String t) {
+
+        int d[][]; // matrix
+
+        int n; // length of s
+
+        int m; // length of t
+
+        int i; // iterates through s
+
+        int j; // iterates through t
+
+        char s_i; // ith character of s
+
+        char t_j; // jth character of t
+
+        int cost; // cost
+
+        // Step 1
+        n = s.length();
+
+        m = t.length();
+
+        if (n == 0) {
+
+            return m;
+
+        }
+
+        if (m == 0) {
+
+            return n;
+        }
+
+        d = new int[n + 1][m + 1];
+
+        // Step 2
+
+        for (i = 0; i <= n; i++) {
+
+            d[i][0] = i;
+
+        }
+
+        for (j = 0; j <= m; j++) {
+
+            d[0][j] = j;
+        }
+
+        // Step 3
+        for (i = 1; i <= n; i++) {
+            s_i = s.charAt(i - 1);
+
+            // Step 4
+            for (j = 1; j <= m; j++) {
+
+                t_j = t.charAt(j - 1);
+                // Step 5
+
+                if (s_i == t_j) {
+
+                    cost = 0;
+
+                } else {
+
+                    cost = 1;
+
+                }
+                // Step 6
+
+                d[i][j] = Minimum(d[i - 1][j] + 1, d[i][j - 1] + 1,
+
+                        d[i - 1][j - 1] + cost);
+            }
+        }
+        // Step 7
+        return d[n][m];
+
+    }
+
+
+
+
+
+
 
     //upload file
     @RequestMapping(method = RequestMethod.POST)
@@ -347,15 +477,92 @@ public class FileController {
 
 
 
-                            else if (v.equals("txt")) {
-                                String l = "";
-                                FileTool.txtCompare("dd","1.txt",l);
-//                                MySimHash.
-                                System.out.println("l");
-                                System.out.println(l);
 
+                            else if (v.equals("txt")) {
+                                System.out.println("l");
+                                String cc = dd.toString();
+                                System.out.println(path1);
+                                System.out.println(path2);
+                                System.out.println(cc);
+                                System.out.println(FileTool.readTxt(path1));
+                                String v2 =FileTool.readTxt(path1);
+                                String v0 =FileTool.readTxt(path2);
+                                String v1=FileTool.readTxt(cc);
+
+                                System.out.println(FileTool.readTxt(path2));
+
+                                distance dis = new distance();
+                                int dis1 = dis.LD(v1, v0);
+                                int dis2 = dis.LD(v1, v2);
+                                int dis3 = dis.LD(v2, v0);
+                                int len1 = v0.length();
+                                int len2 = v1.length();
+                                int len3 = v2.length();
+                                System.out.println(len1);
+                                System.out.println(len2);
+                                System.out.println(len3);
+
+//                                v1-v0
+                                System.out.println(dis1);
+//                                v2-v1
+                                System.out.println(dis2);
+//                                v2-v0
+                                System.out.println(dis3);
+                                if (dis2 ==0){
+                                    FileService.delFile(path1);
+                                    System.out.print("please do not upload the same version!");
+                                    throw new CustomException(400, "please do not upload the same version!", null);
+                                }
+                                else if (len3 > len2 ){
+                                    copy.copyFile(cc, path2);
+                                    FileService.delFile(cc);
+                                    File file22 = new File(path1);
+
+                                    file22.renameTo(new File(cc));
+                                    System.out.print("upload the file success1!");
+
+                                }
+                                else if (len3 < len2){
+                                    if (len3 > len1){
+                                        copy.copyFile(path1, path2);
+                                        FileService.delFile(path1);
+                                        File file22 = new File(path2);
+
+                                        file22.renameTo(new File(path2));
+                                        System.out.print(path1);
+                                        System.out.print(path2);
+                                        System.out.print("upload the file success2!");
+                                    }
+                                    else {
+                                        FileService.delFile(path1);
+                                        System.out.print("please do not upload the old version!");
+                                        throw new CustomException(400, "please do not upload the old version!", null);
+                                    }
+                                }
+                                else {
+                                    FileService.delFile(path1);
+                                    System.out.print("please check the file version you uploaded!");
+                                    throw new CustomException(400, "please check the file version you uploaded!", null);
+
+                                }
+
+
+//                                double a = CosineSimilarAlgorithm.cosSimilarityByString(FileTool.readTxt(path1),FileTool.readTxt(path2));
+//
+//                                System.out.println(CosineSimilarAlgorithm.cosSimilarityByFile("C:\\Users\\Zhihao\\Desktop\\recommend-system-master\\lib","C:\\Users\\Zhihao\\Desktop\\recommend-system-master\\src"));
                             }
+//                            the other types of file   i
+
+//                             else if (v.equals("txt")) {
+//                                 String l = "";
+//                                 FileTool.txtCompare("dd","1.txt",l);
+// //                                MySimHash.
+//                                 System.out.println("l");
+//                                 System.out.println(l);
+
+//                             }
 //                            the other types of file
+
 
 
                             else {
