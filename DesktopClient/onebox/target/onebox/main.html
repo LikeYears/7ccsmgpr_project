@@ -29,9 +29,10 @@
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav">
                             <li><a href="javascipt:void(0)" ng-click="showFileList()">Files</a></li>
-                            <li class="dropdown"><a href="javascipt:void(0)" ng-click="showTransport()">Transfer&nbsp;<span
-                                    class="badge"
-                                    ng-bind="uploadlist.length+downloadlist.length"></span></a>
+                            <li class="dropdown">
+                                <a href="javascipt:void(0)" ng-click="showTransport()">Transfer&nbsp;
+                                <span class="badge" ng-bind="uploadlist.length"></span></a>
+                            </li>
                             <li><a href="javascipt:void(0)" ng-click="showShare()">Share</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
@@ -50,7 +51,7 @@
         </div>
     </div>
     <!-- Content -->
-    <div class="row" ng-show="showCtrl>0" ng-controller="filelist" id="filelist">
+    <div class="row" ng-controller="filelist" ng-show="showCtrl > 0" id="filelist">
         <div class="col-md-9" data-toggle="context">
             <table class="table table-hover" id="filetable">
                 <thead>
@@ -247,72 +248,9 @@
                 </div>
             </div>
         </div>
-        <!-- Download -->
-        <div ng-init="dllist" ng-repeat="dl in dllist">
-            <div class="col-md-11" data-toggle="context">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-md-1">
-                                <h4>
-                                    <span class="label label-success">Download</span>
-                                </h4>
-                            </div>
-                            <div class="col-md-10">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="2"
-                                         aria-valuemin="0"
-                                         ng-bind="dl.percentcomplete+'%'" aria-valuemax="100"
-                                         style="min-width: 2em; width: {{dl.percentcomplete}}%"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-1">
-                                <div class="btn-group" role="group">
-                                    <button type="button" class="btn btn-default" ng-click="stopDownload(dl)"
-                                            ng-show="dl.status == 1">
-                                        <span title='Stop' class='glyphicon glyphicon-stop'></span>
-                                    </button>
-                                    <button type="button" class="btn btn-default" ng-click="retryDownload(dl)"
-                                            ng-show="dl.status == 3||dl.status == -1 ">
-                                        <span title='Retry' class='glyphicon glyphicon-repeat'></span>
-                                    </button>
-                                    <button type="button" class="btn btn-default" ng-click="delDownload(dl)"
-                                            ng-show="dl.status == 2||dl.status == -1 ||dl.status == 3 ">
-                                        <span title='Delete' class='glyphicon glyphicon-trash'></span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-1"></div>
-                            <div class="col-md-11">
-                                <span>Downloading：<span ng-bind="dl.url"></span></span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-1"></div>
-                            <div class="col-md-11">
-									<span>Name：<span ng-bind="dl.filename"></span>&nbsp;&nbsp;
-									</span> <span>Size：<span ng-bind="dl.filesize"></span>&nbsp;&nbsp;
-									</span> <span>Speed：<span ng-bind="dl.downloadSpeed"></span>&nbsp;&nbsp;
-									</span> <span>Resume：<span ng-show="dl.continuetrans"
-                                                               style="color: red">Yes</span><span
-                                    ng-hide="dl.continuetrans" style="color: red">No</span>&nbsp;&nbsp;
-									</span> <span>Status： <span ng-show="dl.status == 1">Downloading</span> <span
-                                    ng-show="dl.status == 0">Start</span> <span
-                                    ng-show="dl.status == 2">Finished</span> <span ng-show="dl.status == 3">Stop</span> <span
-                                    ng-show="dl.status == -1"
-                                    style="color: red">Error in downloading</span>
-									</span> <span ng-bind="dl.message" style="color: red"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     <!-- share list -->
-    <div class="row" id="sharelist" ng-show="showCtrl<0" ng-controller="sharelist">
+    <div class="row" id="sharelist" ng-show="showCtrl < 0" ng-controller="sharelist">
         <div class="col-md-11" data-toggle="context">
             <table class="table table-hover" id="sharefiletable">
                 <thead>
@@ -326,19 +264,20 @@
                     <th>Operations</th>
                 </tr>
                 </thead>
-                <tbody ng-init="sharelist">
-                <tr ng-repeat="file in sharelist">
-                    <td><img src='img/{{file.fileType}}.png' class='img-responsive' fallback-src="img/file.png"></td>
-                    <td ng-bind="file.fileName"></td>
-                    <td ng-bind="file.fileType"></td>
-                    <td ng-bind="file.password"></td>
-                    <td ng-bind="file.discShareDate"></td>
-                    <td ng-bind="file.downloadTimes"></td>
+                <tbody ng-init="sharelists">
+                <tr ng-repeat="share in sharelists">
+                    <td><img src='img/{{share.fileType}}.png' class='img-responsive' fallback-src="img/file.png"></td>
+                    <td ng-bind="share.fileName"></td>
+                    <td ng-bind="share.fileType"></td>
+                    <td ng-bind="share.password"></td>
+                    <td ng-bind="share.shareDate"></td>
+                    <td ng-bind="share.downloadTimes"></td>
                     <td>
                         <div class="btn-group" role="group">
-                            <button type="button" class="btn btn-danger" ng-click="cancelShare(file)">Cancel Share</button>
+                            <button type="button" class="btn btn-danger" ng-click="cancelShare(share)">Cancel Share</button>
+                            <span>&nbsp;</span>
                             <button type="button" class="btn btn-primary" ng-click="copyShareLink()" ngclipboard
-                                    data-clipboard-text="Share Link：{{file.link}} Password：{{file.password}}">Copy Share Link
+                                    data-clipboard-text="Share Link：{{share.link}} Password：{{share.password}}">Copy Share Link
                             </button>
                         </div>
                     </td>

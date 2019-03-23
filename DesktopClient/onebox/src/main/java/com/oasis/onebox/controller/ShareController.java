@@ -14,6 +14,7 @@ import com.oasis.onebox.tool.StringTool;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletResponse;
 import java.nio.file.Files;
 import java.nio.file.LinkOption;
 import java.nio.file.Path;
@@ -59,23 +60,32 @@ public class ShareController {
     }
 
     //search all share files
-    @RequestMapping(value = "/access", produces = "application/json")
+    @RequestMapping(value = "/access", method = RequestMethod.POST, produces = "application/json")
     @ResponseBody
-    public ResultShowing getShareFileByID(@RequestAttribute(ShareAccessInterceptor.SHARE_FILE) FileShare fileShare, @RequestParam(value = "parent", required = false) String parentDir) throws Exception {
-        String mainDir = User.getUserDirectory(fileShare.getOwner());
-        if (mainDir == null) {
-            ShareFileService.cancelShare(fileShare.getId(), fileShare.getOwner());
-            throw new CustomException(404, "share file canceled", null);
+    public ResultShowing getShareFileByID( @RequestParam(value = "shareid", required = true) String shareID, @RequestParam(value = "password", required = true) String password, @RequestParam(value = "parent", required = false) String parentDir) throws Exception {
+        FileShare fileShare = ShareFileService.searchShareByID(shareID);
+        if (fileShare.getPassword().equals(password))
+        {
+            String owner = fileShare.getOwner();
+            String mainDir = User.getUserDirectory(fileShare.getOwner());
+            if (mainDir == null) {
+                ShareFileService.cancelShare(fileShare.getId(), fileShare.getOwner());
+                throw new CustomException(404, "share file canceled", null);
+            }
+            Path mainPath = Paths.get(mainDir, fileShare.getFilePath());
+            if (!Files.exists(mainPath, new LinkOption[]{LinkOption.NOFOLLOW_LINKS})) {
+                throw new CustomException(404, "file not exist", null);
+            }
+            String parent = "";
+            if (parentDir != null) {
+                parent = new String(EncodeTool.decoderURLBASE64(parentDir), "utf-8");
+            }
+            String mainPathString = mainPath.toAbsolutePath().toString();
+            return new ResultShowing(owner+"-"+parent, FileService.getFileList(mainPathString, mainPathString += parent, null, null));
         }
-        Path mainPath = Paths.get(mainDir, fileShare.getFilePath());
-        if (!Files.exists(mainPath, new LinkOption[]{LinkOption.NOFOLLOW_LINKS})) {
-            throw new CustomException(404, "file not exist", null);
+        else
+        {
+            throw new CustomException(404,"password not correct", null);
         }
-        String parent = "";
-        if (parentDir != null) {
-            parent = new String(EncodeTool.decoderURLBASE64(parentDir), "utf-8");
-        }
-        String mainPathString = mainPath.toAbsolutePath().toString();
-        return new ResultShowing("search all share files success", FileService.getFileList(mainPathString, mainPathString += parent, null, null));
     }
 }
