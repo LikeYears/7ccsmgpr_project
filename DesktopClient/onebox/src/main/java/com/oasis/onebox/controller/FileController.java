@@ -190,13 +190,14 @@ public class FileController {
         FileService.filePlayOrDownload(false, file, request, response);
     }
 
-    //download sharefile
-    @RequestMapping(value = "/{base64filepath}/sharedownload")
-    public void fileDownload(@PathVariable("base64filepath") String path, @PathVariable("owner") String owner, HttpServletRequest request,
-                             HttpServletResponse response) throws Exception {
-        Path file = Paths.get(User.getUserDirectory(EncodeTool.decoderBASE64(owner).toString()) + "/" + new String(EncodeTool.decoderURLBASE64(path), "utf-8"));
-        FileService.filePlayOrDownload(false, file, request, response);
-    }
+////    download sharefile
+//    @RequestMapping(value = "/{base64filepath}/sharedownload")
+//    public void fileDownload(@PathVariable("base64filepath") String path, @PathVariable("owner") String owner, HttpServletRequest request,
+//                             HttpServletResponse response) throws Exception {
+//        Path file = Paths.get(User.getUserDirectory(EncodeTool.decoderBASE64(owner).toString()) + "/" + new String(EncodeTool.decoderURLBASE64(path), "utf-8"));
+//        FileService.filePlayOrDownload(false, file, request, response);
+//    }
+
     //delete file
     @RequestMapping(value = "/{base64filepath}", method = RequestMethod.DELETE, produces = "application/json")
     @ResponseBody

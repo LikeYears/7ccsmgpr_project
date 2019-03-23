@@ -109,8 +109,9 @@ app.controller("container", function ($scope, $http) {
     }
 
     $scope.download = function(){
-        var path64 = Base64.encode(array[1]+Base64.decode($scope.selectedFile.base64FilePath));
-        window.location.href = 'api/files/' + path64 + "/sharedownload"+"&owner="+Base64.encode(array[0]);
+        // var path64 = Base64.encode(array[1]+Base64.decode($scope.selectedFile.base64FilePath));
+        // window.location.href = 'api/files/' + path64 + "/sharedownload"+"&owner="+Base64.encode(array[0]);
+        toastr.error("Share File Has Been Canceled")
     }
 });
 
