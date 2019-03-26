@@ -18,6 +18,7 @@ app.controller("login", function($scope, $http) {
                 data.password = RSAEncrypt.encrypt(response.data.result, $scope.password);
                 $http.post(requrl, data, postCfg).then(function success(response) {
                     if (response) {
+                        toastr.success("Login Success!");
                         CookieUtil.delCookie("onebox");
                         CookieUtil.setCookie("onebox", response.data.result);
                         CookieUtil.setCookie("username", $scope.username);

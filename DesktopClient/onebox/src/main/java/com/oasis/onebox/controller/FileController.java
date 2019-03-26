@@ -5,6 +5,7 @@ import com.oasis.onebox.exception.CustomException;
 import com.oasis.onebox.interceptor.LoginInterceptor;
 import com.oasis.onebox.service.FileService;
 import com.oasis.onebox.tool.EncodeTool;
+import com.oasis.onebox.tool.FileTool;
 import com.oasis.onebox.tool.ResultShowing;
 import com.oasis.onebox.tool.StringTool;
 import org.springframework.stereotype.Controller;
@@ -27,7 +28,6 @@ import java.net.URL;
 import java.nio.file.*;
 import java.util.Arrays;
 import java.util.Iterator;
-import com.oasis.onebox.tool.FileTool;
 @Controller
 @RequestMapping("/files")
 public class FileController {
@@ -66,7 +66,7 @@ public class FileController {
     @ResponseBody
     public ResultShowing fileUpload(HttpServletRequest request, @RequestAttribute(LoginInterceptor.LOGIN_USER) User loginUser)
             throws Exception {
-        Path uploadDir = Paths.get(loginUser.getDirectory(), "uploads");
+        Path uploadDir = Paths.get(loginUser.getDirectory(), "Uploads");
         boolean uploadDirExists = Files.exists(uploadDir, new LinkOption[]{LinkOption.NOFOLLOW_LINKS});
         if (!uploadDirExists) {
             Files.createDirectory(uploadDir);
@@ -189,6 +189,14 @@ public class FileController {
         Path file = Paths.get(loginUser.getDirectory() + "/" + new String(EncodeTool.decoderURLBASE64(path), "utf-8"));
         FileService.filePlayOrDownload(false, file, request, response);
     }
+
+////    download sharefile
+//    @RequestMapping(value = "/{base64filepath}/sharedownload")
+//    public void fileDownload(@PathVariable("base64filepath") String path, @PathVariable("owner") String owner, HttpServletRequest request,
+//                             HttpServletResponse response) throws Exception {
+//        Path file = Paths.get(User.getUserDirectory(EncodeTool.decoderBASE64(owner).toString()) + "/" + new String(EncodeTool.decoderURLBASE64(path), "utf-8"));
+//        FileService.filePlayOrDownload(false, file, request, response);
+//    }
 
     //delete file
     @RequestMapping(value = "/{base64filepath}", method = RequestMethod.DELETE, produces = "application/json")

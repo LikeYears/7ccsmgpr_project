@@ -1,7 +1,5 @@
 package com.oasis.onebox.entity;
 
-import com.oasis.onebox.dao.DownloadTaskDao;
-import com.oasis.onebox.download.DownloadTask;
 import com.oasis.onebox.listener.InitialListener;
 import com.oasis.onebox.tool.EncodeTool;
 import com.oasis.onebox.tool.JDBCTool;
@@ -88,7 +86,7 @@ public class User {
                 try
                 {
                     createUserDir(directory);flat1 = true;
-                    DownloadTask.createUserDownloadDir(username, directory); flat2 = true;
+                    createUserDefaultDir(directory); flat2 = true;
                     userlist.put(username, new User(username, password, directory));
                     return true;
                 }
@@ -143,9 +141,12 @@ public class User {
 
 
     public static String getUserDirectory(String username) {
-        if (userlist.containsKey(username)) {
-            User u = userlist.get(username);
-            return u.getDirectory();
+        String querysql = "select * from userlist where username='%s'";
+        querysql = String.format(querysql, username);
+        List<User> users = JDBCTool.executeQuery(querysql, User.class);
+        if (users != null && !users.isEmpty()) {
+            User u1 = users.get(0);
+            return u1.getDirectory();
         }
         return null;
     }
@@ -171,6 +172,14 @@ public class User {
 
     public static void createUserDir(String directory) throws IOException {
         Path userDir = Paths.get(directory);
+        if (!Files.exists(userDir, new LinkOption[]{LinkOption.NOFOLLOW_LINKS }))
+        {
+            Files.createDirectory(userDir);
+        }
+    }
+
+    public static void createUserDefaultDir(String userdir) throws IOException {
+        Path userDir = Paths.get(userdir, "Default");
         if (!Files.exists(userDir, new LinkOption[]{LinkOption.NOFOLLOW_LINKS }))
         {
             Files.createDirectory(userDir);

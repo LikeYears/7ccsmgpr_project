@@ -1,6 +1,5 @@
 package com.oasis.onebox.listener;
 
-import com.oasis.onebox.download.DownloadTask;
 import com.oasis.onebox.tool.RSA;
 import com.oasis.onebox.entity.User;
 import org.apache.commons.logging.Log;
@@ -25,7 +24,6 @@ public class InitialListener implements ServletContextListener{
         boolean ton = u2.registerUser("user2","123456");
         logger.info("registerUser::"+ton);
         //download test
-        DownloadTask.initDownloadTasks();
         logger.info("initDownload success");
     }
 

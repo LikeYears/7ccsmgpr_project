@@ -9,7 +9,7 @@
 }
 .form-horizontal .heading{
     display: block;
-    font-size: 35px;
+    font-size: 50px;
     font-weight: 700;
     padding: 35px 0;
     border-bottom: 1px solid #f0f0f0;
@@ -106,13 +106,14 @@
 .form-horizontal .btn{
     float: right;
     font-size: 14px;
+    color: #fff;
     border-radius: 30px;
     padding: 10px 25px;
     border: none;
     text-transform: capitalize;
     transition: all 0.5s ease 0s;
 }
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 479px){
     .form-horizontal .form-group{
         padding: 0 25px;
     }
@@ -121,5 +122,11 @@
     }
     .form-horizontal .btn{
         padding: 10px 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 100%;
     }
 }

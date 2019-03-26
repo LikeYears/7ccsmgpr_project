@@ -3,51 +3,45 @@ package com.oasis.onebox.entity;
 import com.oasis.onebox.exception.CustomException;
 import com.oasis.onebox.service.ShareFileService;
 import com.oasis.onebox.tool.EncodeTool;
-import com.oasis.onebox.tool.FieldAlias;
 import com.oasis.onebox.tool.StringTool;
 
 import java.nio.file.Files;
 import java.nio.file.LinkOption;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.text.DateFormat;
 import java.util.Date;
 
 public class FileShare {
 
-    @FieldAlias
+
     private String id;// key id
-    @FieldAlias
     private String owner;// file owner
-    @FieldAlias(alias = "filename")
-    private String fileName;
-    @FieldAlias(alias = "filetype")
-    private String fileType = "";
-    @FieldAlias
+    private String filename;
+    private String filetype;
     private String password;// password for share file
-    @FieldAlias(alias = "filepath")
-    private String filePath;
-    @FieldAlias(alias = "sharedate")
-    private long shareDate;// millisecond
-    @FieldAlias(alias = "downloadtimes")
-    private int downloadTimes;
+    private String filepath;
+    private String sharedate;// millisecond
+    private int downloadtimes;
+
 
     public FileShare(User loginUser, String filepath) throws Exception {
         this.id = StringTool.getUUID();
-        this.shareDate = new Date().getTime();
-        this.filePath = filepath;
+        this.sharedate = ""+new Date().getTime();
+        this.filepath = filepath;
         this.owner = loginUser.getUsername();
         this.password = ShareFileService.generatePassword();
         Path file = Paths.get(loginUser.getDirectory(), filepath);
         if (!Files.exists(file, new LinkOption[]{LinkOption.NOFOLLOW_LINKS})) {
             throw new CustomException(400, "The file not exist", null);
         }
-        fileName = file.getFileName().toString();
+        filename = file.getFileName().toString();
         if (Files.isDirectory(file, new LinkOption[]{LinkOption.NOFOLLOW_LINKS})) {
-            this.fileType = "folder";
+            this.filetype = "folder";
         } else {
-            int indexOf = fileName.lastIndexOf(".");
+            int indexOf = filename.lastIndexOf(".");
             if (indexOf > -1) {
-                this.fileType = fileName.substring(indexOf + 1).toLowerCase();
+                this.filetype = filename.substring(indexOf + 1).toLowerCase();
             }
         }
     }
@@ -65,11 +59,11 @@ public class FileShare {
     }
 
     public String getFileName() {
-        return fileName;
+        return filename;
     }
 
     public String getFileType() {
-        return fileType;
+        return filetype;
     }
 
     public String getOwner() {
@@ -81,18 +75,21 @@ public class FileShare {
     }
 
     public String getFilePath() {
-        return filePath;
+        return filepath;
     }
 
-    public long getShareDate() {
-        return shareDate;
+    public String getShareDate(String a) {
+        return sharedate;
+    }
+    public String getShareDate() {
+        return EncodeTool.FORMMATTER.format(new Date(Long.parseLong(sharedate)));
     }
 
     public int getDownloadTimes() {
-        return downloadTimes;
+        return downloadtimes;
     }
 
     public String getDiscShareDate() {
-        return EncodeTool.FORMMATTER.format(new Date(shareDate));
+        return EncodeTool.FORMMATTER.format(new Date(Long.parseLong(sharedate)));
     }
 }
