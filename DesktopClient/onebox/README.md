@@ -1,2 +1,0 @@
-# 7ccsmgpr_project
-
