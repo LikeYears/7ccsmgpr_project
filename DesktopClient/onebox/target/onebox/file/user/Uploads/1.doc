@@ -1,0 +1,165 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>调查问卷</title>
+<link rel="stylesheet" href="css/ShowPage.css" type="text/css">
+</head>
+<body>
+
+<form action="Download.jsp">
+<div class="page">
+    <div class="background">
+        <img src="img/symbol.PNG">
+    </div>
+    <div class="mainBody">
+	<div class="part1">
+	<h2 align="center">软件工程(中外合作)<input type="text" name="Major_Content" value=软件工程(中外合作)> 专业 王超<input type="text" name="Name_Content" value=王超> 自我介绍 </h2>
+	<strong>亲爱的新同学：</strong><br>
+	<strong>&nbsp;&nbsp;&nbsp;&nbsp;你好！为了让我们更好地认识你、了解你，请你认真填写本表内容。相信一个好的开始，就注定会启动你四年美好的大学之旅！让我们一起期待！</strong><br>
+	<p align="right"><strong>数理与信息工程学院</strong></p>
+	<p align="right"><strong>二〇一六年七月</strong></p>
+	<hr>
+	<h3 align="center">第一部分：我的风采</h3>
+	<div class="pic">
+		请随后附上你最满意的个人生活照！照片请以“专业+姓名”来命名，如“物理学张三”<br>
+	
+		用于实现图片上传的区域
+	</div>
+	<hr>
+	
+	<h3 align="center">第二部分：可以这样来了解我、认识我</h3>
+	<p>
+	    &nbsp;&nbsp;&nbsp;&nbsp;我的名字是 王超<input type="text" name="Name_Content" value=王超>，性别 男<input type="text" name="Gender" value=男>，我喜欢朋友叫我 超哥<input type="text" name="Nickname" value=超哥>。<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;我来自 浙江<input type="text" name="Province" value=浙江> 省 绍兴<input type="text" name="City" value=绍兴> 市 柯桥<input type="text" name="County" value=柯桥> 县<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;毕业于 绍兴一中<input type="text" name="High_School" value=绍兴一中>（学校），高中主要任职： SB<input type="text" name="Post" value=SB>。<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;现在被录取为 软件工程(中外合作)<input type="text" name="Major_Content" value=软件工程(中外合作)> 专业2015级学生。 <br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;我的QQ： 456789111<input type="text" name="QQ_Number" value=456789111>，我的微信：456789111<input type="text" name="Wechat" value=456789111>，<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;在家使用的手机号码： 13788888888<input type="text" name="Phone_Number" value=13788888888>
+	</p>
+	
+	<p><strong>关于我的一些特质：</strong></p>
+	<p>
+	    &nbsp;&nbsp;&nbsp;&nbsp;我一般会选择 黄色<input type="text" name="Color" value=黄色> 色来代表自己，因为 我很黄<input type="text" name="Reson_Color" value=我很黄>。<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;最擅长/最自豪/最感兴趣的是 看书,喜欢猥琐 <input type="text" name="Interest" value=看书,喜欢猥琐>；最喜欢的食物是 什么都可以吃<input type="text" name="Favorite_Food" value=什么都可以吃>；<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;喜欢的一部电影是 最好的我们 <input type="text" name="Favorite_Movie" value=最好的我们>，因为 等了多年不如一句我来晚了 <input type="text" name="Reson_Movie" value=等了多年不如一句我来晚了>；<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;最喜欢的一首歌是 人来人往 <input type="text" name="Favorite_Song" value=人来人往>，因为 我也不知道 <input type="text" name="Reson_Song" value=我也不知道>。</p>
+	<p><strong>关于我的家庭：</strong></p>
+	
+	<p>
+	    &nbsp;&nbsp;&nbsp;&nbsp;我家固定电话：0571<input type="text" name="Area_code" value=0571>-56565656<input type="text" name="Telephone_Number" value=56565656><br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;我家住在：浙江<input type="text" name="Family_Province" value=浙江> 省 绍兴<input type="text" name="Family_City" value=绍兴> 市 柯桥<input type="text"name="Family_County" value=柯桥> 县<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;邮编：310020<input type="text" name="Zip_code" value=310020><br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;父亲姓名：王刚<input type="text" name="Father_Name" value=王刚>职业：刚<input type="text" name="Father_Career" value=刚>手机：13222222222<input type="text" name="Father_Phone" value=13222222222><br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;母亲姓名：马冬梅<input type="text" name="Mother_Name" value=马冬梅>职业：没<input type="text" name="Mother_Career" value=没>手机：13666666666<input type="text" name="Mother_Phone" value=13666666666><br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;此外，我还有这些亲人：姐姐 <input type="text" name="Family_Member" value=姐姐>。<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;家人和朋友认为我是一个 觉得我是绍兴狼 <input type="text" name="Family_Impression" value=觉得我是绍兴狼>的人<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;而我认为如果要选择一句话来描述我自己，那会是 我觉得我是东北虎 <input type="text" name="Self_Description" value=我觉得我是东北虎>。
+	</p>
+	
+	<hr>
+	
+	<h3 align="center">第三部分：作为新生，其实我……</h3>
+	<p>我最需要的帮助是：读书<input type="text" name="Help_I_Need" value=读书></p>
+	<p>我最想了解的是：怎么变成好人<input type="text" name="Want_To_Know" value=怎么变成好人></p>
+	<p>我最想认识的人是：好人<input type="text" name="Want_To_Meet" value=好人></p>
+	<p>其他：没有了<input type="text" name="Others" value=没有了></p>
+	<input type="button" value="导出所有内容" onclick="Action()">
+	</div>
+		<div class="part2">
+	<h2 align="center">大学规划意向书</h2>
+	<strong>亲爱的新同学：</strong><br>
+	<strong>&nbsp;&nbsp;&nbsp;&nbsp;为了便于给你制定个性化培养方案，更好地助你成长成才，我们需要了解你对大学生活的规划。请你结合实际情况，仔细斟酌，认真填写这份调查问卷。预祝你在大学生里谱写人生又一个新篇章！ </strong><br><hr>
+	<p align="right"><strong>数理与信息工程学院</strong></p>
+	<p align="right"><strong>二〇一六年七月</strong></p>
+	<h3 align="center">第一部分：个人发展规划</h3>
+	<p>1.大学生活的主要目标是___A_____。</p>
+	<p><input type="radio" name="Question1" value="A" />A.提高综合素质，培养各种能力</p>
+	<p><input type="radio" name="Question1" value="B" />B.学习专业知识，培养专业技能</p>
+	<p><input type="radio" name="Question1" value="C" />C.结识更多朋友</p>
+	<p><input type="radio" name="Question1" value="D" />D. 进入更高层次的学校继续深造</p>
+	<p>2.大学本科毕业时你的首选是__A______。</p>
+	
+	<p><input type="radio" name="Question2" value="A" />A.立即工作</p>
+	<p><input type="radio" name="Question2" value="B" />B.选择在国内攻读研究生</p>
+	<p><input type="radio" name="Question2" value="C" />C.准备出国出境留学</p>
+	<p><input type="radio" name="Question2" value="D" />D. 其他。请说明:没有<input type="text" name="2text" value=没有></p>
+	
+	<p>3.家长对你大学毕业的期望是__A______。</p>
+	
+	<p><input type="radio" name="Question3" value="A" />A.就业</p>
+	<p><input type="radio" name="Question3" value="B" />B.在国内读研究生</p>
+	<p><input type="radio" name="Question3" value="C" />C.出国出境留学</p>
+	<p><input type="radio" name="Question3" value="D" />D.其他 </p>
+	
+	<p>4.家长对你的要求与你的人生发展目标是否一致？__A______。</p>
+	
+	<p><input type="radio" name="Question4" value="A" />A.一致</p>
+	<p><input type="radio" name="Question4" value="B" />B.不一致（如果不一致，家长是否会尊重你的选择？没有<input type="text" name="4text" value=没有>）</p>
+	
+	<p>5.你的家庭经济情况能否支持你在毕业后继续读研深造（如出国、读研等）？___A_____。</p>
+	
+	<p><input type="radio" name="Question5" value="A" />A.完全能支持</p>
+	<p><input type="radio" name="Question5" value="B" />B.有一定影响，但可以支持</p>
+	<p><input type="radio" name="Question5" value="C" />C.不能支持</p>
+	
+	<hr>
+	<h3 align="center">第二部分：个人生活习惯及兴趣爱好调查</h3>
+	<p>6.当我学习的时候我喜欢的环境是：__A______。</p>
+	
+	<p><input type="radio" name="Question6" value="A" />A.一个只有我一个人安静的地方</p>
+	<p><input type="radio" name="Question6" value="B" />B.和其他人一起学习（如教室或图书馆）</p>
+	<p><input type="radio" name="Question6" value="C" />C.一个只有我一个人但是有一点音乐或电视的背景的环境</p>
+	
+	<p>7.我一般喜欢住的房间是:___A_____。</p>
+	
+	<p><input type="radio" name="Question7" value="A" />A.干净，但不会总是打扫</p>
+	<p><input type="radio" name="Question7" value="B" />B.不是很干净，甚至有时有点脏乱  </p>
+	<p><input type="radio" name="Question7" value="C" />C.非常整洁干净</p>
+	
+	<p>8.我是一个:___A_____。</p>
+	
+	<p><input type="radio" name="Question8" value="A" />A.早睡早起的人（晚上十一点前入睡）</p>
+	<p><input type="radio" name="Question8" value="B" />B.夜猫子（晚上十一点之后入睡）</p>
+	
+	<p>9.你的睡眠好么（比如睡眠较浅，寝室稍有动静就容易醒过来等）？___A_____。</p>
+	
+	<p><input type="radio" name="Question9" value="A" />A.好</p>
+	<p><input type="radio" name="Question9" value="B" />B.不好</p>
+	
+	<p>10.我希望和我住在一起的人__A______。</p>
+	
+	<p><input type="radio" name="Question10" value="A" />A.和我相似的</p>
+	<p><input type="radio" name="Question10" value="B" />B.和我不同</p>
+	<p><input type="radio" name="Question10" value="C" />C.无所谓</p>
+	
+	<p>11.我希望我的寝室是：__A______。</p>
+	
+	<p><input type="radio" name="Question11" value="A" />A.充满人气，喜欢有很多人在周围</p>
+	<p><input type="radio" name="Question11" value="B" />B.适度社交，会带朋友来玩但不太频繁</p>
+	<p><input type="radio" name="Question11" value="C" />C.安静有保留的，我的寝室是我的圣地，我需要自己的隐私</p>
+	
+	<p>12.你希望进入什么样的学生组织：___A_____。</p>
+	
+	<p><input type="radio" name="Question12" value="A" />A.学生会</p>
+	<p><input type="radio" name="Question12" value="B" />B.社管会</p>
+	<p><input type="radio" name="Question12" value="C" />C.专业学习相关的社团 </p>
+	<p><input type="radio" name="Question12" value="D" />D.音乐社团</p>
+	<p><input type="radio" name="Question12" value="E" />E.体育社团</p>
+	
+	<p>13.进入大学，你觉得自己在哪方面最需要帮助：___A_____。</p>
+	
+	<p><input type="radio" name="Question13" value="A" />A.学习指导</p>
+	<p><input type="radio" name="Question13" value="B" />B.生活帮助</p>
+	<p><input type="radio" name="Question13" value="C" />C.学生工作指导 </p>
+	<p><input type="radio" name="Question13" value="D" />D.人际交往指点</p>
+	<p><input type="radio" name="Question13" value="E" />E.其他。请说明：没有<input type="text" name="13text" value=没有></p>
+	</div>
+	</div>
+</div>
+</form>
+
+</body>
+</html>
