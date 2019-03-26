@@ -220,6 +220,7 @@ public class FileTool {
      * @param txt2 被比较的内容
      *
      */
+
     public void txtCompare(String txt1,String txt2,String outTxt){
         System.out.println("======Start Search!=======");
         long startTime = System.currentTimeMillis();

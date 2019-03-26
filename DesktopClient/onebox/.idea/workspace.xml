@@ -8,24 +8,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10e739cf-30de-4f4e-ba14-fddbf71001a0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/onebox_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/onebox_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_5.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_5.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_5.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/onebox.iml" afterPath="$PROJECT_DIR$/onebox.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/onebox.sql" afterPath="$PROJECT_DIR$/target/classes/onebox.sql" />
-      <change beforePath="$PROJECT_DIR$/target/onebox.war" afterPath="$PROJECT_DIR$/target/onebox.war" />
-      <change beforePath="$PROJECT_DIR$/target/onebox/WEB-INF/classes/onebox.sql" afterPath="$PROJECT_DIR$/target/onebox/WEB-INF/classes/onebox.sql" />
-      <change beforePath="$PROJECT_DIR$/target/onebox/customjs/main.js" afterPath="$PROJECT_DIR$/target/onebox/customjs/main.js" />
-      <change beforePath="$PROJECT_DIR$/target/onebox/customjs/share.js" afterPath="$PROJECT_DIR$/target/onebox/customjs/share.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/onebox_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/onebox_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/onebox_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/onebox_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/oasis/onebox/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oasis/onebox/controller/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/FileTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/FileTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/copy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/copy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/distance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/distance.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,102 +43,95 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FileController.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/controller/FileController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="186" column="54" lean-forward="false" selection-start-line="186" selection-start-column="54" selection-end-line="186" selection-end-column="54" />
-              <folding />
+            <state relative-caret-position="927">
+              <caret line="755" column="30" lean-forward="true" selection-start-line="755" selection-start-column="30" selection-end-line="755" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginInterceptor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/interceptor/LoginInterceptor.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/FileTool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="33" column="49" lean-forward="false" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
-              <folding />
+            <state relative-caret-position="657">
+              <caret line="319" column="28" lean-forward="true" selection-start-line="319" selection-start-column="28" selection-end-line="319" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShareController.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/controller/ShareController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="565">
-              <caret line="83" column="41" lean-forward="false" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
-              <folding />
+            <state relative-caret-position="1104">
+              <caret line="65" column="38" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/customjs/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-              <folding />
+            <state relative-caret-position="805">
+              <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/customjs/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="23" column="40" lean-forward="false" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
-              <folding />
+            <state relative-caret-position="529">
+              <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="40" column="34" lean-forward="false" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
-              <folding />
+            <state relative-caret-position="598">
+              <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="718">
-              <caret line="39" column="124" lean-forward="false" selection-start-line="39" selection-start-column="116" selection-end-line="39" selection-end-column="124" />
-              <folding />
+            <state relative-caret-position="897">
+              <caret line="39" column="124" selection-start-line="39" selection-start-column="116" selection-end-line="39" selection-end-column="124" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/entity/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="162" column="59" lean-forward="false" selection-start-line="162" selection-start-column="59" selection-end-line="162" selection-end-column="59" />
-              <folding />
+            <state relative-caret-position="3174">
+              <caret line="162" column="59" selection-start-line="162" selection-start-column="59" selection-end-line="162" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cookie.js" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/customjs/cookie.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-              <folding />
+            <state relative-caret-position="69">
+              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="82" column="49" lean-forward="false" selection-start-line="82" selection-start-column="49" selection-end-line="82" selection-end-column="49" />
-              <folding />
+            <state relative-caret-position="1886">
+              <caret line="82" column="49" selection-start-line="82" selection-start-column="49" selection-end-line="82" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -166,7 +152,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dlf</find>
       <find>api/share</find>
       <find>shar</find>
       <find>shareFileModal</find>
@@ -196,20 +181,11 @@
       <find>Cancel</find>
       <find>.info</find>
       <find>username</find>
+      <find>read</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
-  </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
-    <option name="projectSyncType">
-      <map>
-        <entry key="$USER_HOME$/IdeaProjects/FS-Blog-master" value="PREVIEW" />
-      </map>
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -239,7 +215,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/play.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/jsencrypt.min.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/RSA.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/FileTool.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/login.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/register.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/login.html" />
@@ -261,18 +236,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/entity/FileShare.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/share.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/controller/ShareController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/controller/FileController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/customjs/main.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/customjs/share.js" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/FileTool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/controller/FileController.java" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -286,6 +256,11 @@
       <MavenGeneralSettings>
         <option name="mavenHome" value="C:/JAVA/maven/apache-maven-3.5.3" />
       </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
@@ -302,7 +277,7 @@
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="612" />
     <option name="y" value="9" />
     <option name="width" value="1255" />
@@ -310,20 +285,11 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -355,25 +321,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="onebox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="onebox" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="oasis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="onebox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="onebox" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="oasis" type="462c0819:PsiDirectoryNode" />
               <item name="onebox" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -382,10 +329,17 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="oasis" type="462c0819:PsiDirectoryNode" />
               <item name="onebox" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onebox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onebox" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="onebox" type="462c0819:PsiDirectoryNode" />
+              <item name="tool" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="onebox" type="b2602c69:ProjectViewProjectNode" />
@@ -406,23 +360,20 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/2019.3.22" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -456,80 +407,35 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.tomcat 9.0.66">
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
+    <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="JsDebug" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:8080/login.html" />
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
+    <configuration name="JsDebug" type="JavascriptDebugType" uri="http://localhost:8080/login.html">
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
+    <configuration default="true" type="TestNG">
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="tomcat 9.0.66" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.6" ALTERNATIVE_JRE_ENABLED="false">
       <option name="START_JAVASCRIPT_DEBUGGER" value="true" />
@@ -544,12 +450,11 @@
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_onebox_2" />
       </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="49240" />
       </RunnerSettings>
@@ -598,26 +503,27 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method>
+      <method v="2">
+        <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="onebox:war exploded" />
           <artifact name="onebox:war" />
         </option>
       </method>
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.JsDebug" />
-      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.tomcat 9.0.66" />
+    <list>
+      <item itemvalue="JavaScript Debug.JsDebug" />
+      <item itemvalue="Tomcat Server.tomcat 9.0.66" />
     </list>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -642,6 +548,8 @@
       <workItem from="1552768211347" duration="1640000" />
       <workItem from="1552780939546" duration="104789000" />
       <workItem from="1553381201885" duration="13686000" />
+      <workItem from="1553594612233" duration="309000" />
+      <workItem from="1553594948874" duration="292000" />
     </task>
     <task id="LOCAL-00001" summary="onebox project">
       <created>1550011753693</created>
@@ -661,7 +569,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="308139000" />
+    <option name="totallyTimeSpent" value="308740000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -673,75 +581,77 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1618" height="870" extended-state="6" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4960894" sideWeight="0.26918977" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.4914712" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19509594" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40446928" sideWeight="0.7308102" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.4936034" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3273743" sideWeight="0.46588486" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32849163" sideWeight="0.4936034" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.4978678" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4111732" sideWeight="0.7942431" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.4936034" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.4978678" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20788912" sideWeight="0.7855918" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2531983" sideWeight="0.21440823" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32849163" sideWeight="0.4978678" order="1" side_tool="false" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7855918" visible="true" weight="0.21530479" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Web" order="5" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.21440823" side_tool="true" weight="0.2531983" />
+      <window_info id="Designer" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4978678" weight="0.32849163" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7942431" visible="true" weight="0.4111732" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7308102" weight="0.40446928" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4936034" weight="0.32924107" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.26918977" side_tool="true" weight="0.4960894" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.46588486" weight="0.3273743" />
+      <window_info anchor="bottom" id="Java Enterprise" order="9" sideWeight="0.4936034" weight="0.32849163" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.4978678" weight="0.32960895" />
+      <window_info anchor="bottom" id="Spring" order="11" sideWeight="0.4936034" weight="0.32924107" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4978678" weight="0.32924107" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32924107" />
+      <window_info anchor="bottom" id="Application Servers" order="14" sideWeight="0.4914712" weight="0.32924107" />
+      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="16" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.19509594" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32995737" />
+      <window_info anchor="right" id="Maven" order="9" />
     </layout>
     <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4960894" sideWeight="0.26918977" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.4914712" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19509594" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4960894" sideWeight="0.7308102" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.4936034" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3273743" sideWeight="0.46588486" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32849163" sideWeight="0.4936034" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.4978678" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4111732" sideWeight="0.7942431" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.4936034" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.4978678" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20575693" sideWeight="0.7855918" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.4978678" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2531983" sideWeight="0.21440823" order="6" side_tool="true" content_ui="tabs" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7855918" visible="true" weight="0.20575693" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Web" order="5" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.21440823" side_tool="true" weight="0.2531983" />
+      <window_info id="Designer" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4978678" weight="0.32924107" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7942431" weight="0.4111732" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7308102" visible="true" weight="0.4960894" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4936034" weight="0.32924107" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.26918977" side_tool="true" visible="true" weight="0.4960894" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.46588486" weight="0.3273743" />
+      <window_info anchor="bottom" id="Java Enterprise" order="9" sideWeight="0.4936034" weight="0.32849163" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.4978678" weight="0.32960895" />
+      <window_info anchor="bottom" id="Spring" order="11" sideWeight="0.4936034" weight="0.32924107" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4978678" weight="0.32924107" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32924107" />
+      <window_info anchor="bottom" id="Application Servers" order="14" sideWeight="0.4914712" weight="0.32924107" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.19509594" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32995737" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -782,9 +692,20 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -794,47 +715,18 @@
     <MESSAGE value="Merge branch 'master' of github.com:LikeYears/7ccsmgpr_project" />
     <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of github.com:LikeYears/7ccsmgpr_project" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
-      <option name="time" value="86" />
-    </breakpoint-manager>
-    <watches-manager />
-  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="2064" column="17" lean-forward="false" selection-start-line="2064" selection-start-column="17" selection-end-line="2064" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/text/DateFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-118">
-          <caret line="822" column="14" lean-forward="false" selection-start-line="822" selection-start-column="14" selection-end-line="822" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/util/Date.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="176" column="11" lean-forward="false" selection-start-line="176" selection-start-column="11" selection-end-line="176" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/lang/Class.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/text/DateFormat.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/util/Date.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.5.RELEASE/spring-web-4.3.5.RELEASE.jar!/org/springframework/web/bind/annotation/PathVariable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -843,15 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/FileTool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -859,7 +742,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/listener/InitialListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-86">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -868,85 +751,84 @@
     <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar!/javax/servlet/http/HttpServletResponse.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1337">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/interceptor/ShareAccessInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="55" column="26" lean-forward="false" selection-start-line="53" selection-start-column="11" selection-end-line="55" selection-end-column="26" />
+          <caret line="55" column="26" selection-start-line="53" selection-start-column="11" selection-end-line="55" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar!/com/mysql/jdbc/StringUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
-          <caret line="958" column="0" lean-forward="false" selection-start-line="958" selection-start-column="0" selection-end-line="958" selection-end-column="0" />
+          <caret line="958" selection-start-line="958" selection-end-line="958" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar!/com/mysql/jdbc/NonRegisteringDriver.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
-          <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar!/com/mysql/jdbc/PreparedStatement.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="993" column="0" lean-forward="false" selection-start-line="993" selection-start-column="0" selection-end-line="993" selection-end-column="0" />
+          <caret line="993" selection-start-line="993" selection-end-line="993" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar!/com/mysql/jdbc/ResultSetMetaData.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
-          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar!/com/mysql/jdbc/ResultSetImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
-          <caret line="422" column="0" lean-forward="false" selection-start-line="422" selection-start-column="0" selection-end-line="422" selection-end-column="0" />
+          <caret line="422" selection-start-line="422" selection-end-line="422" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar!/com/mysql/jdbc/StatementImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
-          <caret line="225" column="0" lean-forward="false" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
+          <caret line="225" selection-start-line="225" selection-end-line="225" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar!/com/mysql/jdbc/ConnectionImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
-          <caret line="969" column="0" lean-forward="false" selection-start-line="969" selection-start-column="0" selection-end-line="969" selection-end-column="0" />
+          <caret line="969" selection-start-line="969" selection-end-line="969" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/JDBCTool.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
-          <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-          <folding />
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/entity/FileShare.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
-          <caret line="76" column="25" lean-forward="false" selection-start-line="76" selection-start-column="25" selection-end-line="76" selection-end-column="25" />
+          <caret line="76" column="25" selection-start-line="76" selection-start-column="25" selection-end-line="76" selection-end-column="25" />
           <folding>
-            <element signature="e#1961#1962#0" expanded="false" />
-            <element signature="e#1989#1990#0" expanded="false" />
-            <element signature="e#2024#2025#0" expanded="false" />
-            <element signature="e#2055#2056#0" expanded="false" />
-            <element signature="e#2090#2091#0" expanded="false" />
-            <element signature="e#2121#2122#0" expanded="false" />
+            <element signature="e#1961#1962#0" />
+            <element signature="e#1989#1990#0" />
+            <element signature="e#2024#2025#0" />
+            <element signature="e#2055#2056#0" />
+            <element signature="e#2090#2091#0" />
+            <element signature="e#2121#2122#0" />
           </folding>
         </state>
       </provider>
@@ -954,9 +836,9 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/EncodeTool.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
-            <element signature="e#765#766#0" expanded="false" />
+            <element signature="e#765#766#0" />
           </folding>
         </state>
       </provider>
@@ -964,7 +846,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/ResultShowing.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding />
         </state>
       </provider>
@@ -972,78 +854,77 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/service/ShareFileService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-181">
-          <caret line="39" column="1" lean-forward="false" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
-          <folding />
+          <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
-          <caret line="7439" column="4" lean-forward="false" selection-start-line="7439" selection-start-column="4" selection-end-line="7439" selection-end-column="4" />
+          <caret line="7439" column="4" selection-start-line="7439" selection-start-column="4" selection-end-line="7439" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/service/FileService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.5.RELEASE/spring-web-4.3.5.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.5.RELEASE/spring-webmvc-4.3.5.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.5.RELEASE/spring-webmvc-4.3.5.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
-          <caret line="454" column="0" lean-forward="false" selection-start-line="454" selection-start-column="0" selection-end-line="454" selection-end-column="0" />
+          <caret line="454" selection-start-line="454" selection-end-line="454" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.5.RELEASE/spring-webmvc-4.3.5.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
-          <caret line="407" column="0" lean-forward="false" selection-start-line="407" selection-start-column="0" selection-end-line="407" selection-end-column="0" />
+          <caret line="407" selection-start-line="407" selection-end-line="407" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.5.RELEASE/spring-webmvc-4.3.5.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
-          <caret line="404" column="0" lean-forward="false" selection-start-line="404" selection-start-column="0" selection-end-line="404" selection-end-column="0" />
+          <caret line="404" selection-start-line="404" selection-end-line="404" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.5.RELEASE/spring-webmvc-4.3.5.RELEASE.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/entity/CloudFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/share.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
-          <caret line="24" column="80" lean-forward="false" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="80" />
+          <caret line="24" column="80" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="80" />
           <folding />
         </state>
       </provider>
@@ -1051,7 +932,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/angular.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
-          <caret line="92" column="50" lean-forward="false" selection-start-line="92" selection-start-column="50" selection-end-line="92" selection-end-column="50" />
+          <caret line="92" column="50" selection-start-line="92" selection-start-column="50" selection-end-line="92" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -1059,7 +940,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/resource/onebox.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-671">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1067,15 +947,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/customjs/share.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="427">
-          <caret line="113" column="49" lean-forward="false" selection-start-line="113" selection-start-column="49" selection-end-line="113" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/customjs/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+          <caret line="113" column="49" selection-start-line="113" selection-start-column="49" selection-end-line="113" selection-end-column="49" />
           <folding />
         </state>
       </provider>
@@ -1083,7 +955,7 @@
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
-          <caret line="347" column="4" lean-forward="false" selection-start-line="347" selection-start-column="4" selection-end-line="347" selection-end-column="4" />
+          <caret line="347" column="4" selection-start-line="347" selection-start-column="4" selection-end-line="347" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -1091,7 +963,7 @@
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
-          <caret line="850" column="4" lean-forward="false" selection-start-line="850" selection-start-column="4" selection-end-line="850" selection-end-column="4" />
+          <caret line="850" column="4" selection-start-line="850" selection-start-column="4" selection-end-line="850" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -1099,23 +971,7 @@
     <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar!/javax/servlet/http/HttpServletRequest.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="162" column="59" lean-forward="false" selection-start-line="162" selection-start-column="59" selection-end-line="162" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/controller/ShareController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="83" column="41" lean-forward="false" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1123,64 +979,88 @@
     <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar!/javax/servlet/http/Cookie.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
-          <caret line="83" column="18" lean-forward="false" selection-start-line="83" selection-start-column="18" selection-end-line="83" selection-end-column="18" />
+          <caret line="83" column="18" selection-start-line="83" selection-start-column="18" selection-end-line="83" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/interceptor/LoginInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="33" column="49" lean-forward="false" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
-          <folding />
+        <state relative-caret-position="598">
+          <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/controller/FileController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/controller/ShareController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="186" column="54" lean-forward="false" selection-start-line="186" selection-start-column="54" selection-end-line="186" selection-end-column="54" />
-          <folding />
+        <state relative-caret-position="1104">
+          <caret line="65" column="38" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/main.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/customjs/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="718">
-          <caret line="39" column="124" lean-forward="false" selection-start-line="39" selection-start-column="116" selection-end-line="39" selection-end-column="124" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="40" column="34" lean-forward="false" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="805">
+          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/customjs/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="23" column="40" lean-forward="false" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
-          <folding />
+        <state relative-caret-position="529">
+          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="897">
+          <caret line="39" column="124" selection-start-line="39" selection-start-column="116" selection-end-line="39" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3174">
+          <caret line="162" column="59" selection-start-line="162" selection-start-column="59" selection-end-line="162" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/customjs/cookie.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-          <folding />
+        <state relative-caret-position="69">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="82" column="49" lean-forward="false" selection-start-line="82" selection-start-column="49" selection-end-line="82" selection-end-column="49" />
-          <folding />
+        <state relative-caret-position="1886">
+          <caret line="82" column="49" selection-start-line="82" selection-start-column="49" selection-end-line="82" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/FileTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="319" column="28" lean-forward="true" selection-start-line="319" selection-start-column="28" selection-end-line="319" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/controller/FileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="927">
+          <caret line="755" column="30" lean-forward="true" selection-start-line="755" selection-start-column="30" selection-end-line="755" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
