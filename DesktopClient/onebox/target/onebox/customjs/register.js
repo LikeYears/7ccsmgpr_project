@@ -22,13 +22,13 @@ app.controller("register", function($scope, $http) {
                         window.alert("Register Success!")
                     }
                 }, function error(response) {
-                    toastr.error(response.data);
+                    toastr.error("Username Already Exist");
                 });
             } else {
-                toastr.error("ERROR");
+                toastr.error("Fail To Connect Server");
             }
         }, function error(response) {
-            toastr.error("ERROR:"+response.data());
+            toastr.error("Fail To Connect Server:"+response.data);
         });
     }
 });

@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.oasis.onebox"
-        minSdkVersion 23
+        minSdkVersion 24
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -29,4 +29,12 @@ dependencies {
     implementation 'com.android.support:design:26.1.0'
     implementation 'com.android.support:cardview-v7:26.1.0'
     compile 'com.zhy:okhttputils:2.6.2'
+
+
+    androidTestImplementation 'androidx.test:rules:1.1.1'
+
+
+
+
+
 }

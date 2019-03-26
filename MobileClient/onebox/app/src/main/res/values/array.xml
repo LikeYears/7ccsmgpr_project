@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="drawer_list">
+        <item>Files</item>
+        <item>Transport</item>
+        <item>Share</item>
+    </string-array>
+</resources>

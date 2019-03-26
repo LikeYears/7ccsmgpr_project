@@ -17,26 +17,27 @@ public class ShareAccessInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object o) throws Exception {
-        String shareID = request.getParameter(LINK_PARAMETER);
-        if (StringTool.isNullOrEmpty(shareID)) {
-            constructResponse(response, HttpServletResponse.SC_BAD_REQUEST, "shareId is null");
-            return false;
-        }
-        String password = request.getParameter(PWD_PARAMETER);
-        if (StringTool.isNullOrEmpty(password)) {
-            constructResponse(response, HttpServletResponse.SC_BAD_REQUEST, "password is null");
-            return false;
-        }
-        FileShare fileShare = ShareFileService.searchShareByID(shareID);
-        if (fileShare == null) {
-            constructResponse(response, HttpServletResponse.SC_NOT_FOUND, "file share is canceled");
-            return false;
-        } else if (!fileShare.getPassword().equals(password)) {
-            constructResponse(response, HttpServletResponse.SC_UNAUTHORIZED, "incorrect password");
-            response.getWriter().write("incorrect password");
-            return false;
-        }
-        request.setAttribute(SHARE_FILE, fileShare);
+//        String shareID = request.getParameter(LINK_PARAMETER);
+//        System.out.println(shareID);
+//        if (StringTool.isNullOrEmpty(shareID)) {
+//            constructResponse(response, HttpServletResponse.SC_BAD_REQUEST, "shareId is null");
+//            return false;
+//        }
+//        String password = request.getParameter(PWD_PARAMETER);
+//        if (StringTool.isNullOrEmpty(password)) {
+//            constructResponse(response, HttpServletResponse.SC_BAD_REQUEST, "password is null");
+//            return false;
+//        }
+//        FileShare fileShare = ShareFileService.searchShareByID(shareID);
+//        if (fileShare == null) {
+//            constructResponse(response, HttpServletResponse.SC_NOT_FOUND, "file share is canceled");
+//            return false;
+//        } else if (!fileShare.getPassword().equals(password)) {
+//            constructResponse(response, HttpServletResponse.SC_UNAUTHORIZED, "incorrect password");
+//            response.getWriter().write("incorrect password");
+//            return false;
+//        }
+//        request.setAttribute(SHARE_FILE, fileShare);
         return true;
     }
 
@@ -50,7 +51,7 @@ public class ShareAccessInterceptor implements HandlerInterceptor {
 
     }
 
-    private static void constructResponse(HttpServletResponse response, int responseCode, String msg) throws IOException {
+    public static void constructResponse(HttpServletResponse response, int responseCode, String msg) throws IOException {
         response.setContentType("text/plain;charset=UTF-8");
         response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
         response.getWriter().write(msg);

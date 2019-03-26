@@ -33,7 +33,7 @@ import okhttp3.Response;
 public class WelcomeActivity extends AppCompatActivity {
 
     private String IP_ADDRESS = "169.254.146.86";
-    private String url = "http://"+IP_ADDRESS+":8080/api/register";
+    private String url = "http://"+IP_ADDRESS+":8080/api/login";
 
     private static final String TAG = "WelcomeActivity";
 
@@ -44,6 +44,7 @@ public class WelcomeActivity extends AppCompatActivity {
     private FloatingActionButton fab;
 
     public String pubKey;
+    public String token;
 
     public class MyCallback extends StringCallback
     {
@@ -73,72 +74,93 @@ public class WelcomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
-        initOkHttp();
         getPublicKey();
         initView();
         setListener();
 
     }
 
-    public void initOkHttp()
-    {
-        OkHttpClient okHttpClient = new OkHttpClient.Builder()
-                .connectTimeout(10000L, TimeUnit.MILLISECONDS)
-                .readTimeout(10000L, TimeUnit.MILLISECONDS)
-                .build();
-        OkHttpUtils.initClient(okHttpClient);
-    }
+
 
     public void getPublicKey()
     {
-        OkHttpUtils
-                .get()
-                .url(url)
-                .build()
-                .execute(new StringCallback()
-                {
-                    @Override
-                    public void onError(Call call, Exception e, int id) {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                OkHttpUtils
+                        .get()
+                        .url(url)
+                        .build()
+                        .execute(new StringCallback()
+                        {
+                            @Override
+                            public void onError(Call call, Exception e, int id) {
+                                toastString("fail to connect the server, please try it again",Toast.LENGTH_SHORT);
+                            }
 
-                    }
-
-                    @Override
-                    public void onResponse(String response, int id) {
+                            @Override
+                            public void onResponse(String response, int id) {
 //                        Toast.makeText(WelcomeActivity.this,response.toString(),Toast.LENGTH_LONG).show();
-                        try {
-                            JSONObject jsonObject = new JSONObject(response);
-                            pubKey = jsonObject.getString("result");
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
+                                try {
+                                    JSONObject jsonObject = new JSONObject(response);
+                                    pubKey = jsonObject.getString("result");
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                }
 
-                        Log.e(TAG,pubKey);
-                    }
+                                Log.e(TAG,pubKey);
+                            }
 
-                });
+                        });
+            }
+        }).start();
+
     }
 
     public void postUser()
     {
-        RSA rsa = new RSA();
-        OkHttpUtils
-                .post()
-                .url(url)
-                .addParams("username", rsa.encryptByPubKey(pubKey,etUsername.getText().toString()))
-                .addParams("password", rsa.encryptByPubKey(pubKey,etPassword.getText().toString()))
-                .build()
-                .execute(new StringCallback() {
-                    @Override
-                    public void onError(Call call, Exception e, int id) {
-                        Log.e(TAG,e.getMessage());
-                    }
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                RSA rsa = new RSA();
+                OkHttpUtils
+                        .post()
+                        .url(url)
+                        .addParams("username", rsa.encryptByPubKey(pubKey,etUsername.getText().toString()))
+                        .addParams("password", rsa.encryptByPubKey(pubKey,etPassword.getText().toString()))
+                        .build()
+                        .execute(new StringCallback() {
+                            @Override
+                            public void onError(Call call, Exception e, int id) {
+                                toastString("Login Fail!",Toast.LENGTH_SHORT);
+                                Log.e(TAG,e.getMessage());
+                            }
 
-                    @Override
-                    public void onResponse(String response, int id) {
-                        Log.e(TAG,response.toString());
-                    }
-                });
+                            @Override
+                            public void onResponse(String response, int id) {
+                                Log.e(TAG,response.toString());
+//                                Toast.makeText(RegisterActivity.this,"Register Success!",Toast.LENGTH_LONG).show();
+                                toastString("Login Success!",Toast.LENGTH_LONG);
+                                Intent intent = new Intent();
+                                intent.putExtra("username",etUsername.getText().toString());
+                                intent.putExtra("onebox",pubKey);
+                                startActivity(new Intent(WelcomeActivity.this,MainActivity.class));
+                            }
+                        });
+            }
+        }).start();
 
+    }
+
+    private void toastString(final String toastContent, final int longOrShort)
+    {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(WelcomeActivity.this,toastContent,longOrShort).show();
+
+            }
+        });
     }
 
     private void initView() {
@@ -155,13 +177,10 @@ public class WelcomeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Explode explode = new Explode();
                 explode.setDuration(500);
-
                 getWindow().setExitTransition(explode);
                 getWindow().setEnterTransition(explode);
 
-                ActivityOptionsCompat oc2 = ActivityOptionsCompat.makeSceneTransitionAnimation(WelcomeActivity.this);
-                Intent i2 = new Intent(WelcomeActivity.this,MainActivity.class);
-                startActivity(i2, oc2.toBundle());
+                postUser();
             }
         });
 

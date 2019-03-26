@@ -31,24 +31,23 @@ app.controller("container", function ($scope, $http) {
     $scope.username = CookieUtil.getCookie("username").toString();
 	$("[data-toggle='popover']").popover();
 	$scope.uploadlist = new Array();
-	$scope.downloadlist = new Array();
 	// token
 	var token = {};
 	token.onebox = CookieUtil.getCookie("onebox");
 	$scope.token = token;
-	$scope.showCtrl = 3;
 	$scope.showCtrl = 1;
-	// Files
+
+    // Files
 	$scope.showFileList = function () {
 		$scope.showCtrl = 1;
-	}
-	// Download
+    }
+	// Transport
 	$scope.showTransport = function () {
 		$scope.showCtrl = 0;
-	}
+    }
 	// Share
 	$scope.showShare = function () {
-		$scope.showCtrl = -1;
+        $scope.showCtrl = -1;
 	}
 	// Logout
 	$scope.logout = function () {
@@ -201,7 +200,7 @@ app.controller("filelist", ["$scope", "$http", "$location", "FileUploader", func
         $("#FileModal").modal();
     }
     // newfile:Modal
-    $scope.newFileModal = function () {
+    $scope.newFileModal = function() {
         var modal = {};
         modal.title = "New File：";
         modal.type = "file";
@@ -216,16 +215,7 @@ app.controller("filelist", ["$scope", "$http", "$location", "FileUploader", func
         $scope.FileModal = modal;
         $("#FileModal").modal();
     }
-    // httpdownload:Modal
-    $scope.addDownloadTask = function () {
-        $scope.url = null;
-        var modal = {};
-        modal.title = "HTTP Download：";
-        modal.type = "download";
-        $scope.FileModal = modal;
-        $("#FileModal").modal();
-    }
-    // 文件分享Modal
+    // sharefile:Modal
     $scope.shareFileModal = function () {
         $http.post("api/share/" + $scope.selectedFile.base64FilePath, $scope.$parent.token, postCfg).then(function (response) {
             if (response) {
@@ -233,7 +223,7 @@ app.controller("filelist", ["$scope", "$http", "$location", "FileUploader", func
                 response.data.result.link = url.substring(0, url.indexOf("main.html")) + "share.html?link=" + response.data.result.id;
                 $scope.shareFile = response.data.result;
                 var modal = {};
-                modal.title = "分享成功！";
+                modal.title = "Share File Success";
                 modal.type = "share";
                 $scope.FileModal = modal;
                 $("#FileModal").modal();
@@ -291,15 +281,6 @@ app.controller("filelist", ["$scope", "$http", "$location", "FileUploader", func
                 $http.patch("api/files/" + $scope.selectedFile.base64FilePath + "/" + newfilename, $scope.$parent.token, postCfg).then(success,
                     errorEvent);
                 break;
-            case "download":
-                if (!$scope.url) {
-                    toastr.error("Please enter the link");
-                    return;
-                }
-                var url = Base64.encodeURI($scope.url);
-                $http.post("api/download/" + url, $scope.$parent.token, postCfg).then(success,
-                    errorEvent);
-                break;
             case "move":
                 var nowdir = $scope.FileModal.dirul[$scope.FileModal.dirul.length - 1].base64FilePath;
                 var filepath = $scope.selectedFile.base64FilePath;
@@ -307,38 +288,14 @@ app.controller("filelist", ["$scope", "$http", "$location", "FileUploader", func
                     errorEvent);
                 break;
             case "share":
-                toastr.info("copy to clipborad success");
+                toastr.info("Copy to clipborad success");
                 break;
         }
     }
 }]);
 // Transport
 app.controller("transportlist", function ($scope, $http, $interval) {
-    var reqFlag = true;
 
-    var p = $interval(function () {
-        if (reqFlag) {
-            loadDownload();
-            reqFlag = false;
-        }
-    }, 2000);
-
-
-    // load download tasks
-    function loadDownload() {
-        $http.get("api/download", $scope.$parent.token).then(function success(response) {
-            if (response) {
-                $scope.$parent.downloadlist = response.data.result;
-                reqFlag = true;
-            }
-        }, function (response) {
-            reqFlag = true;
-        });
-    }
-    // monitor download
-    $scope.$watch("downloadlist", function (downloadlist) {
-        $scope.dllist = downloadlist;
-    });
     // clean upload tasks
     $scope.delUpload = function (ts) {
         ts.cancel();
@@ -349,23 +306,6 @@ app.controller("transportlist", function ($scope, $http, $interval) {
                 uploadArray.splice(i, 1);
             }
         }
-    }
-    var success = function (response) {
-        if (response) {
-            toastr.info(response.data.resultdesc);
-        }
-    }
-    // stop download
-    $scope.stopDownload = function (dl) {
-        $http.patch("api/download/" + dl.taskid, $scope.$parent.token).then(success, errorEvent);
-    }
-    // retry download
-    $scope.retryDownload = function (dl) {
-        $http.put("api/download/" + dl.taskid, $scope.$parent.token).then(success, errorEvent);
-    }
-    // delete dowoload
-    $scope.delDownload = function (dl) {
-        $http.delete("api/download/" + dl.taskid, $scope.$parent.token).then(success, errorEvent);
     }
 });
 // share list
@@ -379,7 +319,7 @@ app.controller("sharelist", function ($scope, $http, $location) {
                 for (var i = 0; i < result.length; i++) {
                     result[i].link = url + result[i].id;
                 }
-                $scope.sharelist = result;
+                $scope.sharelists = response.data.result;
             }
         }, errorEvent);
     }
@@ -391,10 +331,10 @@ app.controller("sharelist", function ($scope, $http, $location) {
         }
     });
     // cancel share
-    $scope.cancelShare = function (file) {
-        $http.delete("api/share/" + file.id, $scope.$parent.token).then(function success(response) {
+    $scope.cancelShare = function (share) {
+        $http.delete("api/share/" + share.id, $scope.$parent.token).then(function success(response) {
             if (response) {
-                toastr.info(response.data.resultdesc);
+                toastr.info("Cancel Success");
                 loadShareList();
             }
         }, errorEvent);
@@ -402,6 +342,6 @@ app.controller("sharelist", function ($scope, $http, $location) {
 
     // copy share link
     $scope.copyShareLink = function () {
-        toastr.info("copy to clipborad success");
+        toastr.info("Copy link to clipborad success");
     }
 });

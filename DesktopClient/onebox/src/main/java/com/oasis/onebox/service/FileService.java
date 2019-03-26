@@ -37,6 +37,7 @@ public class FileService {
     static {
         CAN_PLAY_ONLINE_FILE_TYPES.add("mp4");
         CAN_PLAY_ONLINE_FILE_TYPES.add("flv");
+        CAN_PLAY_ONLINE_FILE_TYPES.add("avi");
 
         CAN_PREVIEW_FILE_TYPES.add("bmp");
         CAN_PREVIEW_FILE_TYPES.add("jpg");

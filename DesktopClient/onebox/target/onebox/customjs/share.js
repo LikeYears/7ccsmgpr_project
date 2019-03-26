@@ -18,11 +18,11 @@ app.directive('fallbackSrc', function () {
     return fallbackSrc;
 });
 
-// 主面板
+// Main Controller
 app.controller("container", function ($scope, $http) {
     $scope.shareid = getUrlParam('link');
 
-    //获取url参数
+    //get url parameter
     function getUrlParam(name) {
         var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
         var r = window.location.search.substr(1).match(reg);
@@ -30,7 +30,8 @@ app.controller("container", function ($scope, $http) {
             return unescape(r[2]);
         return null;
     }
-    //加载目录
+    //load directory
+    var array;
     function loadDir(parentdir) {
         var data = {
             "shareid": $scope.shareid,
@@ -40,6 +41,7 @@ app.controller("container", function ($scope, $http) {
         $http.post("api/share/access", data, postCfg).then(function (response) {
             $scope.showFile = true;
             $scope.filelist = response.data.result;
+            array = response.data.resultInDesc.split("-");
         },
         function (response) {
             if (response.status == 401) {
@@ -56,19 +58,19 @@ app.controller("container", function ($scope, $http) {
     $scope.cancel = false;
     $scope.showFile = false;
     $scope.buttonShow = false;
-    // 初始化目录导航
+    // initial navbar for path
     var navbar = new Array();
     var file = {};
     file.base64FilePath = "";
-    file.name = "主目录";
+    file.name = "Home";
     navbar.push(file);
     $scope.dirul = navbar;
-    //请求分享文件
+    //request share file
     $scope.extractAuth = function () {
         loadDir("");
     }
 
-    // 进入指定目录
+    // enter the directory
     $scope.enterDir = function (a) {
         loadDir(a.base64FilePath);
         var file = {};
@@ -77,7 +79,7 @@ app.controller("container", function ($scope, $http) {
         $scope.dirul.push(file);
         $scope.buttonShow = false;
     }
-    // 返回到指定目录
+    // back the directory
     $scope.backup = function (li) {
         var index = li.$index;
         var length = $scope.dirul.length;
@@ -85,7 +87,7 @@ app.controller("container", function ($scope, $http) {
         loadDir(li.li.base64FilePath);
         $scope.buttonShow = false;
     }
-    //列表选中    
+    // select on list
     $scope.select = function (file) {
         if ($scope.selectedFile == file) {
             $scope.selectedFile = null;
@@ -100,14 +102,16 @@ app.controller("container", function ($scope, $http) {
         }
 
     }
-    //取消选择
+    // cancel select
     $scope.cancelSelect = function (file) {
         $scope.selectedFile = null;
         $scope.buttonShow = false;
     }
 
     $scope.download = function(){
-
+        // var path64 = Base64.encode(array[1]+Base64.decode($scope.selectedFile.base64FilePath));
+        // window.location.href = 'api/files/' + path64 + "/sharedownload"+"&owner="+Base64.encode(array[0]);
+        toastr.error("Share file has been timeout")
     }
 });
 

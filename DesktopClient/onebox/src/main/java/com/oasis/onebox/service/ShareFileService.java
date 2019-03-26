@@ -1,12 +1,18 @@
 package com.oasis.onebox.service;
 
 import com.oasis.onebox.entity.FileShare;
+import com.oasis.onebox.tool.EncodeTool;
 import com.oasis.onebox.tool.JDBCTool;
 import com.oasis.onebox.tool.StringTool;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
+import java.io.File;
 import java.util.List;
 
 public class ShareFileService {
+    private final Log logger = LogFactory.getLog(ShareFileService.class);
+
 
     //generate random password
     public static String generatePassword() {
@@ -27,10 +33,10 @@ public class ShareFileService {
             fileshare = shareList.get(0);
             return fileshare;
         } else {
-            String sql = "insert into fileshare values ('%s','%s','%s','%s','%s','%s', %s ,0)";
+            String sql = "insert into fileshare values ('%s','%s','%s','%s','%s','%s', '%s' ,0)";
             sql = String.format(sql, fileshare.getId(), fileshare.getOwner(), fileshare.getPassword(),
                     fileshare.getFileName(), fileshare.getFileType(), fileshare.getFilePath(),
-                    fileshare.getShareDate());
+                    fileshare.getShareDate(""));
             if (JDBCTool.executeUpdate(sql) > 0) {
                 return fileshare;
             } else {
@@ -43,6 +49,11 @@ public class ShareFileService {
     public static List<FileShare> searchAllShare(String owner) {
         String querysql = "select * from fileshare where owner='%s'";
         querysql = String.format(querysql, owner);
+        List<FileShare> list = JDBCTool.executeQuery(querysql, FileShare.class);
+        for (FileShare share:list)
+        {
+            System.out.println(share.getPassword());
+        }
         return JDBCTool.executeQuery(querysql, FileShare.class);
     }
 
@@ -55,9 +66,9 @@ public class ShareFileService {
 
     //search share file by id
     public static FileShare searchShareByID(String id) {
-        String deleteSQL = "select * from fileshare where id ='%s'";
-        deleteSQL = String.format(deleteSQL, id);
-        List<FileShare> fileShareList = JDBCTool.executeQuery(deleteSQL, FileShare.class);
+        String querysql = "select * from fileshare where id ='%s'";
+        querysql = String.format(querysql, id);
+        List<FileShare> fileShareList = JDBCTool.executeQuery(querysql, FileShare.class);
         if (fileShareList != null && fileShareList.size() > 0) {
             return fileShareList.get(0);
         } else {
