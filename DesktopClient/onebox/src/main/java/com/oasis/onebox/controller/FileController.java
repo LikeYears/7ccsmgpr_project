@@ -18,10 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.net.URI;
 import java.net.URL;
 import java.nio.file.*;
@@ -35,6 +32,7 @@ import com.oasis.onebox.tool.distance;
 @Controller
 @RequestMapping("/files")
 public class FileController {
+
 
    //get the list of all files
     @RequestMapping(method = RequestMethod.GET, produces = "application/json")
@@ -199,6 +197,8 @@ public class FileController {
             throws Exception {
         Path uploadDir = Paths.get(loginUser.getDirectory(), "old version");
         boolean uploadDirExists = Files.exists(uploadDir, new LinkOption[]{LinkOption.NOFOLLOW_LINKS});
+
+
         if (!uploadDirExists) {
             Files.createDirectory(uploadDir);
         }
@@ -275,9 +275,9 @@ public class FileController {
                         int hasReadSize;
                         while ((hasReadSize = is.read(readBuffer)) != -1) {
                             Files.write(tmpFile, Arrays.copyOf(readBuffer, hasReadSize), StandardOpenOption.APPEND);
+                        }
+                        Files.move(tmpFile, dd, StandardCopyOption.REPLACE_EXISTING);
                     }
-                    Files.move(tmpFile, dd, StandardCopyOption.REPLACE_EXISTING);
-                }
                 else {
                         Path versionDir = Paths.get(loginUser.getDirectory(), "new version");
                         boolean versionDirDirExists = Files.exists(versionDir, new LinkOption[]{LinkOption.NOFOLLOW_LINKS});
@@ -430,6 +430,10 @@ public class FileController {
                                     FileService.delFile(path1);
                                     System.out.print("please do not upload the same file 1!");
                                     throw new CustomException(400, "please do not upload the same file!", null);
+
+
+
+
                                 } else if (i == t && !D1.equals("100")) {
                                     copy.copyFile(cc, path2);
                                     FileService.delFile(cc);
@@ -470,6 +474,7 @@ public class FileController {
                                 } else {
                                     FileService.delFile(path1);
                                     System.out.print("please do not upload the old version!");
+                                    request.setAttribute("message", "此用户名不存在，请确认后再输入！");
                                     throw new CustomException(400, "please do not upload the old version!", null);
                                 }
                             }
@@ -511,7 +516,10 @@ public class FileController {
                                 if (dis2 ==0){
                                     FileService.delFile(path1);
                                     System.out.print("please do not upload the same version!");
+                                    request.setAttribute("message", "please do not upload the same version!");
                                     throw new CustomException(400, "please do not upload the same version!", null);
+
+
                                 }
                                 else if (len3 > len2 ){
                                     copy.copyFile(cc, path2);
@@ -566,6 +574,9 @@ public class FileController {
 
 
                             else {
+
+
+
                                 String cc = dd.toString();
                                 boolean A = FileTool.isSameMd5(path1, cc);
                                 boolean B = FileTool.isSameMd5(path1,path2);
