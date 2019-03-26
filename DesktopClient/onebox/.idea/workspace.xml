@@ -8,11 +8,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10e739cf-30de-4f4e-ba14-fddbf71001a0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/onebox_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/onebox_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/onebox_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/onebox_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/oasis/onebox/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oasis/onebox/controller/FileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/FileTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/FileTool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/copy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/copy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/distance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/distance.java" afterDir="false" />
     </list>
@@ -46,20 +41,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/controller/FileController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="927">
-              <caret line="755" column="30" lean-forward="true" selection-start-line="755" selection-start-column="30" selection-end-line="755" selection-end-column="30" />
+            <state relative-caret-position="594">
+              <caret line="755" column="30" selection-start-line="755" selection-start-column="30" selection-end-line="755" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/FileTool.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="657">
-              <caret line="319" column="28" lean-forward="true" selection-start-line="319" selection-start-column="28" selection-end-line="319" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -190,8 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/customjs/cookies.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/customjs/RSA.js" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/cd573133-18ed-4b57-9616-17b8610db552/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/04b30f7a-4ef8-4fac-93fb-3150c26d5b57/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/database/Connection.java" />
@@ -241,6 +225,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/FileTool.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/controller/FileController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/distance.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/copy.java" />
       </list>
     </option>
   </component>
@@ -290,6 +276,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -360,12 +347,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553595726518" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/2019.3.22" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -550,6 +537,7 @@
       <workItem from="1553381201885" duration="13686000" />
       <workItem from="1553594612233" duration="309000" />
       <workItem from="1553594948874" duration="292000" />
+      <workItem from="1553595669704" duration="63000" />
     </task>
     <task id="LOCAL-00001" summary="onebox project">
       <created>1550011753693</created>
@@ -569,7 +557,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="308740000" />
+    <option name="totallyTimeSpent" value="308803000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -583,7 +571,7 @@
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1618" height="870" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7855918" visible="true" weight="0.21530479" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7855918" visible="true" weight="0.21919584" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -720,8 +708,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/lang/Class.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/text/DateFormat.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/util/Date.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.5.RELEASE/spring-web-4.3.5.RELEASE.jar!/org/springframework/web/bind/annotation/PathVariable.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -991,6 +977,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/FileTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7245">
+          <caret line="319" column="28" selection-start-line="319" selection-start-column="28" selection-end-line="319" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/controller/ShareController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1104">
@@ -1047,17 +1040,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/FileTool.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/distance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="319" column="28" lean-forward="true" selection-start-line="319" selection-start-column="28" selection-end-line="319" selection-end-column="28" />
+        <state relative-caret-position="167">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/tool/copy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/oasis/onebox/controller/FileController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="927">
-          <caret line="755" column="30" lean-forward="true" selection-start-line="755" selection-start-column="30" selection-end-line="755" selection-end-column="30" />
+        <state relative-caret-position="594">
+          <caret line="755" column="30" selection-start-line="755" selection-start-column="30" selection-end-line="755" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
