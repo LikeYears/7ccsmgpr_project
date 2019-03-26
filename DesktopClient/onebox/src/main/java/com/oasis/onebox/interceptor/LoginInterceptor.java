@@ -54,6 +54,6 @@ public class LoginInterceptor implements HandlerInterceptor{
     public void setAuthFailResponse(HttpServletResponse arg1) throws Exception {
         arg1.setContentType("text/plain;charset=UTF-8");
         arg1.setStatus(401);
-        arg1.getWriter().write("auth fail, please login again");
+        arg1.getWriter().write("Auth Fail, Please Login Again");
     }
 }

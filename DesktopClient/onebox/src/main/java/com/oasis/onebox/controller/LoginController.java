@@ -1,5 +1,6 @@
 package com.oasis.onebox.controller;
 
+
 import com.oasis.onebox.tool.RSA;
 import com.oasis.onebox.tool.ResultShowing;
 import com.oasis.onebox.tool.StringTool;
@@ -40,6 +41,7 @@ public class LoginController {
             String token = u.createToken(request);
             return new ResultShowing("login success", token);
         }
+
         throw new CustomException(401, "username or password not correct", null);
     }
 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>预览</title>
+    <link href="css/video-js.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div style="text-align:center">
+    <video id="videoElement" style="height:600px;width:1024px;" controls="controls"></video>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/video.min.js"></script>
+<script src="js/flv.min.js"></script>
+<script src="customjs/cookie.js"></script>
+<script>
+$(function() {
+	$.getUrlParam = function(name) {
+		var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+		var r = window.location.search.substr(1).match(reg);
+		if (r != null)
+			return unescape(r[2]);
+		return null;
+	}
+	var filepath = $.getUrlParam('url');
+	var playtype = $.getUrlParam('playtype');
+    var player = document.getElementById('videoElement');
+	if (flvjs.isSupported()) {
+            var flvPlayer = flvjs.createPlayer({
+                type: playtype,
+                url: "api/files/" + filepath+"/play"
+            });
+            flvPlayer.attachMediaElement(player);
+            flvPlayer.load();
+            flvPlayer.play();
+        }else{
+            alert("You need to update your browser");
+        }
+});
+</script>
+</body>
+
+</html>
