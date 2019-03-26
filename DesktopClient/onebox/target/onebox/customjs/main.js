@@ -288,7 +288,7 @@ app.controller("filelist", ["$scope", "$http", "$location", "FileUploader", func
                     errorEvent);
                 break;
             case "share":
-                toastr.info("copy to clipborad success");
+                toastr.info("Copy to clipborad success");
                 break;
         }
     }
@@ -334,7 +334,7 @@ app.controller("sharelist", function ($scope, $http, $location) {
     $scope.cancelShare = function (share) {
         $http.delete("api/share/" + share.id, $scope.$parent.token).then(function success(response) {
             if (response) {
-                toastr.info(Cancel);
+                toastr.info("Cancel Success");
                 loadShareList();
             }
         }, errorEvent);
@@ -342,6 +342,6 @@ app.controller("sharelist", function ($scope, $http, $location) {
 
     // copy share link
     $scope.copyShareLink = function () {
-        toastr.info("copy to clipborad success");
+        toastr.info("Copy link to clipborad success");
     }
 });

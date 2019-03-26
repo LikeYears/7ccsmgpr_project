@@ -44,6 +44,7 @@ public class WelcomeActivity extends AppCompatActivity {
     private FloatingActionButton fab;
 
     public String pubKey;
+    public String token;
 
     public class MyCallback extends StringCallback
     {
@@ -73,27 +74,13 @@ public class WelcomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
-        initOkHttp();
         getPublicKey();
         initView();
         setListener();
 
     }
 
-    public void initOkHttp()
-    {
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                OkHttpClient okHttpClient = new OkHttpClient.Builder()
-                        .connectTimeout(10000L, TimeUnit.MILLISECONDS)
-                        .readTimeout(10000L, TimeUnit.MILLISECONDS)
-                        .build();
-                OkHttpUtils.initClient(okHttpClient);
-            }
-        }).start();
 
-    }
 
     public void getPublicKey()
     {
@@ -154,6 +141,9 @@ public class WelcomeActivity extends AppCompatActivity {
                                 Log.e(TAG,response.toString());
 //                                Toast.makeText(RegisterActivity.this,"Register Success!",Toast.LENGTH_LONG).show();
                                 toastString("Login Success!",Toast.LENGTH_LONG);
+                                Intent intent = new Intent();
+                                intent.putExtra("username",etUsername.getText().toString());
+                                intent.putExtra("onebox",pubKey);
                                 startActivity(new Intent(WelcomeActivity.this,MainActivity.class));
                             }
                         });
