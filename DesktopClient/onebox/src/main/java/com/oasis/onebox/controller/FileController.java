@@ -5,7 +5,6 @@ import com.oasis.onebox.exception.CustomException;
 import com.oasis.onebox.interceptor.LoginInterceptor;
 import com.oasis.onebox.service.FileService;
 import com.oasis.onebox.tool.EncodeTool;
-import com.oasis.onebox.tool.FileTool;
 import com.oasis.onebox.tool.ResultShowing;
 import com.oasis.onebox.tool.StringTool;
 import org.springframework.stereotype.Controller;
@@ -13,20 +12,32 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
-
+import com.oasis.onebox.tool.copy;
 import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.awt.image.BufferedImage;
+<<<<<<< HEAD
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
+=======
+import java.io.*;
+import java.net.URI;
+import java.net.URL;
+>>>>>>> 0802047270cbe510ce0372eba8401c207a827eed
 import java.nio.file.*;
 import java.util.Arrays;
 import java.util.Iterator;
+import com.oasis.onebox.tool.FileTool;
+
+import com.oasis.onebox.tool.distance;
+
+
 @Controller
 @RequestMapping("/files")
 public class FileController {
+
 
    //get the list of all files
     @RequestMapping(method = RequestMethod.GET, produces = "application/json")
@@ -57,13 +68,142 @@ public class FileController {
         return new ResultShowing("get file list success", FileService.getFileList(loginUser.getDirectory(), path, accepttype, filterfile));
     }
 
+
+    public static void main(String[] args){
+
+        distance dis = new distance();
+
+        String s1="比干缘何落马死，勾践因此可吞吴省长市长共商议，抓好米袋菜篮子饭店是事实上是个 规范的炎热他依然额头";
+
+        String s2="比干缘何落马死勾践因此可吞吴省长市长共商议，抓好米袋分舵是否但是发斯蒂芬斯蒂芬的说法都是菜篮子";
+
+//     System.out.println((s1.length()));
+
+        System.out.println(dis.LD(s2, s1));
+
+    }
+
+    // ****************************
+
+    // Get minimum of three values
+
+    // ****************************
+
+    public int Minimum(int a, int b, int c) {
+
+        int mi;
+        mi = a;
+        if (b < mi) {
+            mi = b;
+        }
+        if (c < mi) {
+
+            mi = c;
+
+        }
+        return mi;
+    }
+    // *****************************
+
+    // Compute Levenshtein distance
+
+    // *****************************
+
+    public int LD(String s, String t) {
+
+        int d[][]; // matrix
+
+        int n; // length of s
+
+        int m; // length of t
+
+        int i; // iterates through s
+
+        int j; // iterates through t
+
+        char s_i; // ith character of s
+
+        char t_j; // jth character of t
+
+        int cost; // cost
+
+        // Step 1
+        n = s.length();
+
+        m = t.length();
+
+        if (n == 0) {
+
+            return m;
+
+        }
+
+        if (m == 0) {
+
+            return n;
+        }
+
+        d = new int[n + 1][m + 1];
+
+        // Step 2
+
+        for (i = 0; i <= n; i++) {
+
+            d[i][0] = i;
+
+        }
+
+        for (j = 0; j <= m; j++) {
+
+            d[0][j] = j;
+        }
+
+        // Step 3
+        for (i = 1; i <= n; i++) {
+            s_i = s.charAt(i - 1);
+
+            // Step 4
+            for (j = 1; j <= m; j++) {
+
+                t_j = t.charAt(j - 1);
+                // Step 5
+
+                if (s_i == t_j) {
+
+                    cost = 0;
+
+                } else {
+
+                    cost = 1;
+
+                }
+                // Step 6
+
+                d[i][j] = Minimum(d[i - 1][j] + 1, d[i][j - 1] + 1,
+
+                        d[i - 1][j - 1] + cost);
+            }
+        }
+        // Step 7
+        return d[n][m];
+
+    }
+
+
+
+
+
+
+
     //upload file
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
     public ResultShowing fileUpload(HttpServletRequest request, @RequestAttribute(LoginInterceptor.LOGIN_USER) User loginUser)
             throws Exception {
-        Path uploadDir = Paths.get(loginUser.getDirectory(), "Uploads");
+        Path uploadDir = Paths.get(loginUser.getDirectory(), "old version");
         boolean uploadDirExists = Files.exists(uploadDir, new LinkOption[]{LinkOption.NOFOLLOW_LINKS});
+
+
         if (!uploadDirExists) {
             Files.createDirectory(uploadDir);
         }
@@ -78,9 +218,61 @@ public class FileController {
                 if (file != null) {
                     Path filePath = Paths.get(uploadDir.toAbsolutePath().toString(),
                             new String(file.getOriginalFilename()));
-                    boolean fileExists = Files.exists(filePath);
+//                    boolean fileExists = Files.exists(filePath);
+
+                    Path versionDir1 = Paths.get(loginUser.getDirectory(), "new version");
+                    boolean versionDirDir1Exists = Files.exists(versionDir1, new LinkOption[]{LinkOption.NOFOLLOW_LINKS});
+                    if (!versionDirDir1Exists) {
+                        Files.createDirectory(versionDir1);
+                    }
+                    Path tmpFile61 = Paths.get(filePath.toAbsolutePath().toString() );
+                    String path71 =tmpFile61.toString();
+                    String tmpFile81 = new StringBuffer(path71).reverse().toString();
+                    System.out.println(tmpFile81);
+
+                    String str11 = tmpFile81.substring(0, tmpFile81.indexOf("\\"));
+                    System.out.println(str11);
+                    String d1 = new StringBuffer(str11).reverse().toString();
+                    System.out.println("d1：");
+                    Path tmpFile91 = Paths.get(d1);
+                    System.out.println("filename1：");
+                    System.out.println(tmpFile91);
+
+                    Path tmpFile01= versionDir1 ;
+                    String path41 =tmpFile01.toString();
+                    String path81 =tmpFile91.toString();
+                    StringBuffer s11 = new StringBuffer(path41);
+                    StringBuffer s21 = new StringBuffer("\\");
+                    StringBuffer s31 = new StringBuffer(path81);
+                    s11.append(s21);
+                    s11.append(s31);
+                    System.out.println("s11:");
+                    System.out.println(s11);
+
+                    String tmpFile11 = new StringBuffer(s11).reverse().toString();
+//                        System.out.println(tmpFile1);
+
+                    StringBuilder stringBuilder21=new StringBuilder(tmpFile11);
+                    int index11=stringBuilder21.indexOf(".");
+                    System.out.println(index11);
+
+                    String index111 = stringBuilder21.insert(index11+1,")1.0.1(-"  ).toString();
+
+                    String c1 = new StringBuffer(index111).reverse().toString();
+                    System.out.println("C1");
+                    System.out.println(c1);
+                    Path dd = Paths.get(c1);
+                    System.out.println("dd");
+                    System.out.println(dd);
+
+
+
+                    boolean fileExists = Files.exists(dd);
+
                     if (!fileExists) {
-                        Path tmpFile = Paths.get(filePath.toAbsolutePath().toString() + ".upload.tmp"  + FileTool.getVersion("1.0.0"));
+                        System.out.println("no such file");
+                        Path tmpFile = Paths.get(dd.toAbsolutePath().toString() + ".upload.tmp"  + FileTool.getVersion("1.0.0"));
+                        System.out.println(tmpFile);
                         Files.deleteIfExists(tmpFile);
                         Files.createFile(tmpFile);
                         byte[] readBuffer = new byte[10485760];//10mb
@@ -89,14 +281,64 @@ public class FileController {
                         while ((hasReadSize = is.read(readBuffer)) != -1) {
                             Files.write(tmpFile, Arrays.copyOf(readBuffer, hasReadSize), StandardOpenOption.APPEND);
                         }
-                        Files.move(tmpFile, filePath, StandardCopyOption.REPLACE_EXISTING);
+                        Files.move(tmpFile, dd, StandardCopyOption.REPLACE_EXISTING);
                     }
-                    else {
+                else {
+                        Path versionDir = Paths.get(loginUser.getDirectory(), "new version");
+                        boolean versionDirDirExists = Files.exists(versionDir, new LinkOption[]{LinkOption.NOFOLLOW_LINKS});
+                        if (!versionDirDirExists) {
+                            Files.createDirectory(versionDir);
+                        }
 
-                        Path tmpFile = Paths.get(filePath.toAbsolutePath().toString()+ FileTool.getVersion("0.0.0") );
+
+//                       get the name of the file.
+                        Path tmpFile6 = Paths.get(filePath.toAbsolutePath().toString() );
+                        String path7 =tmpFile6.toString();
+                        String tmpFile8 = new StringBuffer(path7).reverse().toString();
+                        System.out.println(tmpFile8);
+
+                        String str1 = tmpFile8.substring(0, tmpFile8.indexOf("\\"));
+                        System.out.println(str1);
+                        String d = new StringBuffer(str1).reverse().toString();
+                        Path tmpFile9 = Paths.get(d);
+                        System.out.println("filename：");
+                        System.out.println(tmpFile9);
+
+
+
+                        Path tmpFile0= versionDir ;
+                        String path4 =tmpFile0.toString();
+                        String path8 =tmpFile9.toString();
+                        StringBuffer s1 = new StringBuffer(path4);
+                        StringBuffer s2 = new StringBuffer("\\");
+                        StringBuffer s3 = new StringBuffer(path8);
+                        s1.append(s2);
+                        s1.append(s3);
+                        System.out.println("s1:");
+                        System.out.println(s1);
+
+
+                        String tmpFile1 = new StringBuffer(s1).reverse().toString();
+//                        System.out.println(tmpFile1);
+
+                        StringBuilder stringBuilder2=new StringBuilder(tmpFile1);
+                        int index=stringBuilder2.indexOf(".");
+                        System.out.println(index);
+
+                        String index1 = stringBuilder2.insert(index+1,")"+FileTool.getVersion("1.0.1" )+"(-" ).toString();
+
+                        String c = new StringBuffer(index1).reverse().toString();
+                        Path tmpFile = Paths.get(c);
+                        System.out.println("111");
+                        System.out.println(c);
+                        System.out.println("222");
+                        System.out.println(tmpFile);
+
+
                         Files.deleteIfExists(tmpFile);
                         Files.createFile(tmpFile);
                         System.out.println(tmpFile);
+
 
                         byte[] readBuffer1 = new byte[10485760];//10mb
                         InputStream is = file.getInputStream();
@@ -104,36 +346,291 @@ public class FileController {
                         while ((hasReadSize = is.read(readBuffer1)) != -1) {
                             Files.write(tmpFile, Arrays.copyOf(readBuffer1, hasReadSize), StandardOpenOption.APPEND);
 
-                            String path1 =tmpFile.toString();
-                            System.out.println(path1);
-                            String path2 =filePath.toString();
-                            System.out.println(path2);
+                        String path1 =tmpFile.toString();
+                        System.out.println(path1);
+                        String path2 =filePath.toString();
+                        System.out.println(path2);
 
+//                      whether exist old version, if not exist copy, delete and upload
+                        Path uploadfile = filePath;
+                        System.out.println("uploadfile");
+                        System.out.println(uploadfile);
+
+                        File file2 = new File(path1);
+//                        get filename txt
+                        String filename = file2.getName();
+                        String x = new StringBuffer(filename).reverse().toString();
+                        String v = x.substring(0, x.indexOf("."));
+                        System.out.println("v");
+                        System.out.println(v);
+                        System.out.println("x");
+                        System.out.println(x);
+
+                        boolean uploadfileExists = Files.exists(uploadfile, new LinkOption[]{LinkOption.NOFOLLOW_LINKS});
+                        if (!uploadfileExists) {
+                            String cc = dd.toString();
+                            System.out.println("cc");
+                            System.out.println(cc);
+                            System.out.println(path2);
+                            System.out.println(path1);
+                            copy.copyFile(cc, path2);
+                            System.out.print("upload the file success0!");
+                            FileService.delFile(cc);
+                            System.out.print("upload the file success1!");
+
+
+                            File file22=new File(path1);
+                            file22.renameTo(new File(cc));
+                            System.out.print("upload the file success2!");
+
+                        }
+
+                        else{
                             BufferedImage image = ImageIO.read(new File(path1));
                             System.out.println(image);
-                            if (image == null) {
-                                boolean A = FileTool.isSameMd5(path1, path2);
+//                            if the file is image
+                            if (image != null) {
+                                String cc = dd.toString();
+                                String A = FileTool.compareImage(path1, cc);
+                                String B = FileTool.compareImage(path1, path2);
+                                String G = FileTool.compareImage(path2, cc);
+                                System.out.println(path1);
+                                System.out.println(path2);
+                                System.out.println(cc);
                                 System.out.println(A);
-                                if (A == true){
+                                System.out.println(B);
+                                System.out.println(G);
+
+                                String C = new StringBuffer(A).reverse().toString();
+                                System.out.println(C);
+                                String D = C.substring(1, C.indexOf("：率"));
+                                System.out.println(D);
+                                String D1 = new StringBuffer(D).reverse().toString();
+                                System.out.println("D1");
+                                System.out.println(D1);
+
+                                String E = new StringBuffer(B).reverse().toString();
+                                String F = E.substring(1, E.indexOf("：率"));
+                                String F1 = new StringBuffer(F).reverse().toString();
+                                System.out.println("F1");
+                                System.out.println(F1);
+
+                                String H = new StringBuffer(G).reverse().toString();
+                                String J = H.substring(1, H.indexOf("：率"));
+                                String J1 = new StringBuffer(J).reverse().toString();
+                                System.out.println("J1");
+                                System.out.println(J1);
+
+                                int t = Integer.parseInt(D1);
+                                int i = Integer.parseInt(F1);
+                                int q = Integer.parseInt(J1);
+                                System.out.print("T");
+                                System.out.print(t);
+                                System.out.print("i");
+                                System.out.print(i);
+                                System.out.print("q");
+                                System.out.print(q);
+
+                                if (D1.equals("100")) {
                                     FileService.delFile(path1);
-                                    System.out.println("please do not upload the same file!");
+                                    System.out.print("please do not upload the same file 1!");
                                     throw new CustomException(400, "please do not upload the same file!", null);
+
+
+
+
+                                } else if (i == t && !D1.equals("100")) {
+                                    copy.copyFile(cc, path2);
+                                    FileService.delFile(cc);
+                                    File file22 = new File(path1);
+
+                                    file22.renameTo(new File(cc));
+                                    System.out.print("upload the file success2!5");
+                                } else if (i < q) {
+
+                                    copy.copyFile(cc, path2);
+                                    FileService.delFile(cc);
+                                    File file22 = new File(path1);
+
+                                    file22.renameTo(new File(cc));
+                                    System.out.print("upload the file success2!");
+//                                    Files.createFile(dd);
+//
+//                                    byte[] readBuffer12 = new byte[10485760];//10mb
+//                                    InputStream is1 = file.getInputStream();
+//                                    int hasReadSize1;
+//                                    while ((hasReadSize1 = is1.read(readBuffer12)) != -1) {
+//                                        Files.write(dd, Arrays.copyOf(readBuffer1, hasReadSize1), StandardOpenOption.APPEND);
+//                                        System.out.print("upload the file success1!");
+//                                    }
+
+
+                                } else if (i > q && !F1.equals("100")) {
+                                    FileService.delFile(path1);
+                                    Files.createFile(filePath);
+
+                                    byte[] readBuffer12 = new byte[10485760];//10mb
+                                    InputStream is1 = file.getInputStream();
+                                    int hasReadSize1;
+                                    while ((hasReadSize1 = is1.read(readBuffer12)) != -1) {
+                                        Files.write(filePath, Arrays.copyOf(readBuffer1, hasReadSize1), StandardOpenOption.APPEND);
+                                        System.out.print("upload the file success3!");
+                                    }
+                                } else {
+                                    FileService.delFile(path1);
+                                    System.out.print("please do not upload the old version!");
+                                    request.setAttribute("message", "此用户名不存在，请确认后再输入！");
+                                    throw new CustomException(400, "please do not upload the old version!", null);
                                 }
                             }
-                            else   {
-                                String A = FileTool.compareImage(path1, path2);
-                                System.out.println(A);
+//                            if the file is text
 
-                                int length=A.length();
-                                if(length>=3){
-                                    String str=A.substring(length-4,length);
-                                    System.out.println(str);
-                                    if (str == "100%"){
+
+
+
+                            else if (v.equals("txt")) {
+                                System.out.println("l");
+                                String cc = dd.toString();
+                                System.out.println(path1);
+                                System.out.println(path2);
+                                System.out.println(cc);
+                                System.out.println(FileTool.readTxt(path1));
+                                String v2 =FileTool.readTxt(path1);
+                                String v0 =FileTool.readTxt(path2);
+                                String v1=FileTool.readTxt(cc);
+
+                                System.out.println(FileTool.readTxt(path2));
+
+                                distance dis = new distance();
+                                int dis1 = dis.LD(v1, v0);
+                                int dis2 = dis.LD(v1, v2);
+                                int dis3 = dis.LD(v2, v0);
+                                int len1 = v0.length();
+                                int len2 = v1.length();
+                                int len3 = v2.length();
+                                System.out.println(len1);
+                                System.out.println(len2);
+                                System.out.println(len3);
+
+//                                v1-v0
+                                System.out.println(dis1);
+//                                v2-v1
+                                System.out.println(dis2);
+//                                v2-v0
+                                System.out.println(dis3);
+                                if (dis2 ==0){
+                                    FileService.delFile(path1);
+                                    System.out.print("please do not upload the same version!");
+                                    request.setAttribute("message", "please do not upload the same version!");
+                                    throw new CustomException(400, "please do not upload the same version!", null);
+
+
+                                }
+                                else if (len3 > len2 ){
+                                    copy.copyFile(cc, path2);
+                                    FileService.delFile(cc);
+                                    File file22 = new File(path1);
+
+                                    file22.renameTo(new File(cc));
+                                    System.out.print("upload the file success1!");
+
+                                }
+                                else if (len3 < len2){
+                                    if (len3 > len1){
+                                        copy.copyFile(path1, path2);
                                         FileService.delFile(path1);
-                                        System.out.println("please do not upload the same file!");
-                                        throw new CustomException(400, "please do not upload the same file!", null);
+                                        File file22 = new File(path2);
+
+                                        file22.renameTo(new File(path2));
+                                        System.out.print(path1);
+                                        System.out.print(path2);
+                                        System.out.print("upload the file success2!");
+                                    }
+                                    else {
+                                        FileService.delFile(path1);
+                                        System.out.print("please do not upload the old version!");
+                                        throw new CustomException(400, "please do not upload the old version!", null);
                                     }
                                 }
+                                else {
+                                    FileService.delFile(path1);
+                                    System.out.print("please check the file version you uploaded!");
+                                    throw new CustomException(400, "please check the file version you uploaded!", null);
+
+                                }
+
+
+//                                double a = CosineSimilarAlgorithm.cosSimilarityByString(FileTool.readTxt(path1),FileTool.readTxt(path2));
+//
+//                                System.out.println(CosineSimilarAlgorithm.cosSimilarityByFile("C:\\Users\\Zhihao\\Desktop\\recommend-system-master\\lib","C:\\Users\\Zhihao\\Desktop\\recommend-system-master\\src"));
+                            }
+//                            the other types of file   i
+
+//                             else if (v.equals("txt")) {
+//                                 String l = "";
+//                                 FileTool.txtCompare("dd","1.txt",l);
+// //                                MySimHash.
+//                                 System.out.println("l");
+//                                 System.out.println(l);
+
+//                             }
+//                            the other types of file
+
+
+
+                            else {
+
+
+
+                                String cc = dd.toString();
+                                boolean A = FileTool.isSameMd5(path1, cc);
+                                boolean B = FileTool.isSameMd5(path1,path2);
+                                boolean C = FileTool.isSameMd5(path2,cc);
+                                System.out.println(path1);
+                                System.out.println(path2);
+                                System.out.println(cc);
+                                System.out.println(A);
+                                if (A) {
+                                    FileService.delFile(path1);
+                                    System.out.print("please do not upload the same file !");
+                                    throw new CustomException(400, "please do not upload the same file!", null);
+
+                                }
+                                else if (!A && B){
+                                    FileService.delFile(path1);
+                                    System.out.print("please do not upload the old version file !");
+                                    throw new CustomException(400, "please do not upload the old version file !", null);
+
+
+                                }
+                                else {
+//                                    String cc = dd.toString();
+                                    copy.copyFile(cc, path2);
+                                    FileService.delFile(cc);
+                                    File file22 = new File(path1);
+
+                                    file22.renameTo(new File(cc));
+                                    System.out.print("upload the file success!");
+                                    return new ResultShowing("upload file success", null);
+                                }
+                            }
+                            }
+
+
+//                            int length=A.length();
+//                            if(length>=3){
+//                                String str=A.substring(length-4,length);
+//                                System.out.println(str);
+//                                String one = "100%";
+//                                if (str .equals(one)){
+//                                    FileService.delFile(path1);
+//                                    System.out.print("please do not upload the same file 1!");
+//                                    throw new CustomException(400, "please do not upload the same file!", null);
+//                                }
+//                                else{
+//                                    System.out.print("upload the file success!");
+//                                    return new ResultShowing("upload file success", null);}
+//                                }
                             }
                         }
 
@@ -169,7 +666,7 @@ public class FileController {
 //                        throw new CustomException(400, "can not upload", null);
 
 //                    }
-                    }
+
                 }
             }
             return new ResultShowing("upload file success", null);
@@ -185,14 +682,6 @@ public class FileController {
         Path file = Paths.get(loginUser.getDirectory() + "/" + new String(EncodeTool.decoderURLBASE64(path), "utf-8"));
         FileService.filePlayOrDownload(false, file, request, response);
     }
-
-////    download sharefile
-//    @RequestMapping(value = "/{base64filepath}/sharedownload")
-//    public void fileDownload(@PathVariable("base64filepath") String path, @PathVariable("owner") String owner, HttpServletRequest request,
-//                             HttpServletResponse response) throws Exception {
-//        Path file = Paths.get(User.getUserDirectory(EncodeTool.decoderBASE64(owner).toString()) + "/" + new String(EncodeTool.decoderURLBASE64(path), "utf-8"));
-//        FileService.filePlayOrDownload(false, file, request, response);
-//    }
 
     //delete file
     @RequestMapping(value = "/{base64filepath}", method = RequestMethod.DELETE, produces = "application/json")
