@@ -14,9 +14,9 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-core:4.3.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.3.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-web:4.3.5.RELEASE" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.11.2" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.8.11.2" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.11.2" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.8" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.8.8" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.8" />
           <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-api:2.7" />
           <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-core:2.7" />
           <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-jcl:2.7" />

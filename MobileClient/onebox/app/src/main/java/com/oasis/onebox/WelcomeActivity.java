@@ -123,10 +123,12 @@ public class WelcomeActivity extends AppCompatActivity {
             @Override
             public void run() {
                 RSA rsa = new RSA();
+                final String username = etUsername.getText().toString();
+                final String token = pubKey;
                 OkHttpUtils
                         .post()
                         .url(url)
-                        .addParams("username", rsa.encryptByPubKey(pubKey,etUsername.getText().toString()))
+                        .addParams("username", rsa.encryptByPubKey(pubKey,username))
                         .addParams("password", rsa.encryptByPubKey(pubKey,etPassword.getText().toString()))
                         .build()
                         .execute(new StringCallback() {
@@ -141,10 +143,11 @@ public class WelcomeActivity extends AppCompatActivity {
                                 Log.e(TAG,response.toString());
 //                                Toast.makeText(RegisterActivity.this,"Register Success!",Toast.LENGTH_LONG).show();
                                 toastString("Login Success!",Toast.LENGTH_LONG);
-                                Intent intent = new Intent();
-                                intent.putExtra("username",etUsername.getText().toString());
-                                intent.putExtra("onebox",pubKey);
-                                startActivity(new Intent(WelcomeActivity.this,MainActivity.class));
+                                Intent intent = new Intent(WelcomeActivity.this,MainActivity.class);
+                                intent.putExtra("username",username);
+                                intent.putExtra("onebox",token);
+                                startActivity(intent);
+
                             }
                         });
             }

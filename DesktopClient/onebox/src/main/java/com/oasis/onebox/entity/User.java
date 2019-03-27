@@ -170,6 +170,18 @@ public class User {
         return null;
     }
 
+    public  static User checkMobileToken(String _token)
+    {
+        if (userlist.containsKey(_token)){
+            User u = userlist.get(_token);
+            return u;
+        }
+        else
+        {
+            return null;
+        }
+    }
+
     public static void createUserDir(String directory) throws IOException {
         Path userDir = Paths.get(directory);
         if (!Files.exists(userDir, new LinkOption[]{LinkOption.NOFOLLOW_LINKS }))
