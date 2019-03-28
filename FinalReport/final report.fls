@@ -1,0 +1,83 @@
+PWD /Users/jiawei/Desktop/未命名文件夹 2
+INPUT /usr/local/texlive/2018/texmf.cnf
+INPUT /usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2018/texmf-var/web2c/xetex/xelatex.fmt
+INPUT final report.tex
+OUTPUT final report.log
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/size12.clo
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/size12.clo
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/xetex.def
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/xetex.def
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/epsfig.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/epsfig.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/latexsym.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/latexsym.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
+INPUT final report.aux
+INPUT final report.aux
+OUTPUT final report.aux
+INPUT figure/title.jpg
+OUTPUT final report.xdv
+INPUT final report.toc
+INPUT final report.toc
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/ulasy.fd
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/ulasy.fd
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/latex-fonts/lasy8.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm
+OUTPUT final report.toc
+INPUT figure/1.png
+INPUT figure/2.jpg
+INPUT figure/3.jpg
+INPUT figure/4.png
+INPUT figure/conflict.png
+INPUT figure/5.png
+INPUT figure/first.png
+INPUT figure/second.png
+INPUT figure/third.png
+INPUT figure/third2.png
+INPUT figure/except1.png
+INPUT figure/except2.png
+INPUT figure/except3.png
+INPUT figure/except4.png
+INPUT figure/4211.png
+INPUT figure/4212.png
+INPUT figure/421333.png
+INPUT figure/4221.png
+INPUT figure/4231.png
+INPUT figure/4232.png
+INPUT figure/4241.png
+INPUT figure/ffirst.png
+INPUT figure/blur.png
+INPUT figure/white.png
+INPUT figure/white2.png
+INPUT figure/n.png
+INPUT figure/n1.png
+INPUT figure/4331.png
+INPUT figure/4332.png
+INPUT figure/4333.png
+INPUT figure/4334.png
+INPUT final report.aux

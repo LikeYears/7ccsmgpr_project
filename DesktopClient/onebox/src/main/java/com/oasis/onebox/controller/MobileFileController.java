@@ -31,11 +31,10 @@ public class MobileFileController {
     //get the list of all files
     @RequestMapping(method = RequestMethod.GET, produces = "application/json")
     @ResponseBody
-    public ResultShowing getFileLst(@RequestParam(value = "onebox") String token,
-                                    @RequestParam(value = "accepttype", required = false) String filtertype,
-                                    @RequestParam(value = "filterfile", required = false) String filterfile) throws Exception {
+    public ResultShowing getFileLst(@RequestParam(value = "onebox") String token) throws Exception {
         User loginUser = User.checkMobileToken(token);
-        return getFileList(null, loginUser, filtertype, filterfile);
+        String path = loginUser.getDirectory();
+        return new ResultShowing("get file list success", FileService.getFileList(loginUser.getDirectory(), path, null, null));
     }
 
 
@@ -43,9 +42,10 @@ public class MobileFileController {
     @RequestMapping(value = "/{base64filepath}", method = RequestMethod.GET, produces = "application/json")
     @ResponseBody
     public ResultShowing getFileList(@PathVariable("base64filepath") String path,
-                                     @RequestAttribute(MobileInterceptor.LOGIN_USER) User loginUser,
+                                     @RequestParam(value = "onebox") String token,
                                      @RequestParam(value = "accepttype", required = false) String accepttype,
                                      @RequestParam(value = "filterfile", required = false) String filterfile) throws Exception {
+        User loginUser = User.checkMobileToken(token);
         if (StringTool.isNullOrEmpty(path)) {
             path = loginUser.getDirectory();
         } else {

@@ -1,0 +1,52 @@
+\contentsline {section}{\numberline {1}Introduction}{3}
+\contentsline {section}{\numberline {2}Review}{3}
+\contentsline {subsection}{\numberline {2.1}Free Storage Cloud}{4}
+\contentsline {subsection}{\numberline {2.2}Paid Storage}{4}
+\contentsline {subsection}{\numberline {2.3}Characteristic features}{4}
+\contentsline {section}{\numberline {3}Requirements and Design}{4}
+\contentsline {subsection}{\numberline {3.1}User Case}{4}
+\contentsline {subsection}{\numberline {3.2}Project Architecture and Design}{5}
+\contentsline {subsection}{\numberline {3.3}Security Design}{6}
+\contentsline {subsection}{\numberline {3.4}Conflict Resolution}{7}
+\contentsline {section}{\numberline {4}Implementation}{8}
+\contentsline {subsection}{\numberline {4.1}Back-End}{8}
+\contentsline {paragraph}{Library use:}{12}
+\contentsline {subsection}{\numberline {4.2}Conflict Resolution}{13}
+\contentsline {subsubsection}{\numberline {4.2.1}Four implementation tool}{13}
+\contentsline {paragraph}{Compare two image file, and get the similarity rate of the picture}{13}
+\contentsline {paragraph}{Compare two text file, get difference in number of characters.}{14}
+\contentsline {paragraph}{Other file compare}{15}
+\contentsline {paragraph}{Change the file path of folder}{16}
+\contentsline {subsubsection}{\numberline {4.2.2}The implementation of the main function }{16}
+\contentsline {paragraph}{Solve the version control problem}{16}
+\contentsline {paragraph}{When the third verison is coming:}{17}
+\contentsline {paragraph}{If the file is text file}{17}
+\contentsline {paragraph}{If the file is image file}{17}
+\contentsline {paragraph}{If the file is other file}{17}
+\contentsline {subsubsection}{\numberline {4.2.3}Flow chart of the whole implementation}{18}
+\contentsline {subsection}{\numberline {4.3}Web Application}{18}
+\contentsline {paragraph}{Library use:}{19}
+\contentsline {subsection}{\numberline {4.4}Android Application}{20}
+\contentsline {subsubsection}{\numberline {4.4.1}Android Introduction}{20}
+\contentsline {subsubsection}{\numberline {4.4.2}Android Implementation}{20}
+\contentsline {subsubsection}{\numberline {4.4.3}Android Testing}{21}
+\contentsline {subsection}{\numberline {4.5}Testing}{21}
+\contentsline {subsubsection}{\numberline {4.5.1}Unit testing}{21}
+\contentsline {subsubsection}{\numberline {4.5.2}Black box testing }{22}
+\contentsline {subsubsection}{\numberline {4.5.3}Stress testing}{23}
+\contentsline {section}{\numberline {5}Team work}{24}
+\contentsline {subsection}{\numberline {5.1}Organization}{24}
+\contentsline {subsection}{\numberline {5.2}Meeting}{24}
+\contentsline {subsection}{\numberline {5.3}Strength}{25}
+\contentsline {subsection}{\numberline {5.4}Weakness}{25}
+\contentsline {section}{\numberline {6}Evaluation}{25}
+\contentsline {subsection}{\numberline {6.1}Advantage of the project}{26}
+\contentsline {subsubsection}{\numberline {6.1.1}The front-end design}{26}
+\contentsline {subsubsection}{\numberline {6.1.2}Basic back-end function}{26}
+\contentsline {subsubsection}{\numberline {6.1.3}Advanced back-end function}{27}
+\contentsline {subsubsection}{\numberline {6.1.4}Security}{27}
+\contentsline {subsection}{\numberline {6.2}Disadvantage of the project}{27}
+\contentsline {subsubsection}{\numberline {6.2.1}Android unfinished}{27}
+\contentsline {subsubsection}{\numberline {6.2.2}Online file edit}{28}
+\contentsline {subsubsection}{\numberline {6.2.3}Unreasonable time allocation}{28}
+\contentsline {section}{\numberline {7}Peer assessment}{28}

@@ -23,8 +23,6 @@ public class InitialListener implements ServletContextListener{
         User u2 = new User();
         boolean ton = u2.registerUser("user2","123456");
         logger.info("registerUser::"+ton);
-        //download test
-        logger.info("initDownload success");
     }
 
     @Override
