@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Mar 26 07:59:53 CST 2019
+#Fri Mar 29 07:15:19 CST 2019
 2.base=C\:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
 5.set=DEX
 0.path=classes.dex
@@ -19,9 +19,9 @@ count=6
 4.path=classes.dex
 1.baseType=DIRECTORY
 5.path=classes.dex
-0.base=C\:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\17
+0.base=C\:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
 0.baseType=DIRECTORY
 3.set=DEX
-1.base=C\:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
+1.base=C\:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
 4.baseType=DIRECTORY
 0.set=DEX

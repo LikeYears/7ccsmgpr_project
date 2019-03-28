@@ -61,8 +61,9 @@ public class MobileFileController {
     //upload file
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
-    public ResultShowing fileUpload(HttpServletRequest request, @RequestAttribute(MobileInterceptor.LOGIN_USER) User loginUser)
+    public ResultShowing fileUpload(HttpServletRequest request, @RequestParam(value = "onebox") String token)
             throws Exception {
+        User loginUser = User.checkMobileToken(token);
         Path uploadDir = Paths.get(loginUser.getDirectory(), "Uploads");
         boolean uploadDirExists = Files.exists(uploadDir, new LinkOption[]{LinkOption.NOFOLLOW_LINKS});
         if (!uploadDirExists) {
@@ -137,39 +138,6 @@ public class MobileFileController {
                                 }
                             }
                         }
-
-//                        Files.move(tmpFile, filePath);
-
-
-
-
-
-// 需要上传文件  然后 获取路径path1，文件可用 FileTool.getVersion("1.2.0") 加版本号。
-//                      得到文件类型 if 文本文件：  String A = FileTool.txtCompare(path1, path2);
-//                        if 文件
-//                      String f1 = "/Users/lxt/Desktop/a/1.zip";
-//                      String f2 = "/Users/lxt/Desktop/b/1.zip";
-//                      boolean compare = isSameMd5(f1,f2);
-//                        if 图片文件：
-//                        File file1 = new File(path1);
-//                        file1.getAbsolutePath();
-//                        String b = multiRequest.getAbsolutePath();
-
-//                        String A = FileTool.compareImage(path1, path2);
-//                        System.out.println("-A--");
-//                        System.out.println(A);
-//                      如果A 相似度不等于100 ，保留文件，else 提示请勿上传相同文件。
-//                        System.out.println("-path2--");
-//                        System.out.println(path2);
-//                        System.out.println("-path1--");
-//                        System.out.println(path1);
-//                        if (FileTool.compareImage( path1, path2) ) {
-//                            throw new CustomException(400, "file exist", null);}
-//                        else{
-
-//                        throw new CustomException(400, "can not upload", null);
-
-//                    }
                     }
                 }
             }
@@ -181,8 +149,9 @@ public class MobileFileController {
     //download file
     @RequestMapping(value = "/{base64filepath}/download")
     public void fileDownload(@PathVariable("base64filepath") String path,
-                             @RequestAttribute(MobileInterceptor.LOGIN_USER) User loginUser, HttpServletRequest request,
+                             @RequestParam(value = "onebox") String token, HttpServletRequest request,
                              HttpServletResponse response) throws Exception {
+        User loginUser = User.checkMobileToken(token);
         Path file = Paths.get(loginUser.getDirectory() + "/" + new String(EncodeTool.decoderURLBASE64(path), "utf-8"));
         FileService.filePlayOrDownload(false, file, request, response);
     }
@@ -199,7 +168,8 @@ public class MobileFileController {
     @RequestMapping(value = "/{base64filepath}", method = RequestMethod.DELETE, produces = "application/json")
     @ResponseBody
     public ResultShowing delFile(@PathVariable("base64filepath") String path,
-                                 @RequestAttribute(MobileInterceptor.LOGIN_USER) User loginUser) throws Exception {
+                                 @RequestParam(value = "onebox") String token) throws Exception {
+        User loginUser = User.checkMobileToken(token);
         if (StringTool.isNullOrEmpty(path)) {
             throw new CustomException(400, "delete file:parameter is null", null);
         } else {
@@ -220,7 +190,8 @@ public class MobileFileController {
     @RequestMapping(value = "/{base64filepath}/{newdirpath}", method = RequestMethod.PUT, produces = "application/json")
     @ResponseBody
     public ResultShowing moveFile(@PathVariable("base64filepath") String filepath, @PathVariable("newdirpath") String newdirpath,
-                                  @RequestAttribute(MobileInterceptor.LOGIN_USER) User loginUser) throws Exception {
+                                  @RequestParam(value = "onebox") String token) throws Exception {
+        User loginUser = User.checkMobileToken(token);
         filepath = loginUser.getDirectory() + "/" + new String(EncodeTool.decoderURLBASE64(filepath), "utf-8");
         if (StringTool.isNullOrEmpty(newdirpath)) {
             newdirpath = loginUser.getDirectory();
@@ -238,7 +209,8 @@ public class MobileFileController {
     @ResponseBody
     public ResultShowing renameFile(@PathVariable("base64filepath") String path,
                                     @PathVariable("base64newfilename") String newfilename,
-                                    @RequestAttribute(MobileInterceptor.LOGIN_USER) User loginUser) throws Exception {
+                                    @RequestParam(value = "onebox") String token) throws Exception {
+        User loginUser = User.checkMobileToken(token);
         if (StringTool.isNullOrEmpty(path)) {
             throw new CustomException(400, "parameter is null", null);
         } else {
@@ -261,16 +233,18 @@ public class MobileFileController {
     @RequestMapping(value = "/{filetype}/{base64filename}", method = RequestMethod.POST, produces = "application/json")
     @ResponseBody
     public ResultShowing createNewFile(@PathVariable("base64filename") String filename, @PathVariable("filetype") String filetype,
-                                       @RequestAttribute(MobileInterceptor.LOGIN_USER) User loginUser) throws Exception {
-        return createNewFile(null, filetype, filename, loginUser);
+                                       @RequestParam(value = "onebox") String token) throws Exception {
+        return createNewFile(null, filetype, filename, token);
     }
 
     //create new file on specific directory
     @RequestMapping(value = "/{base64filepath}/{filetype}/{base64filename}", method = RequestMethod.POST, produces = "application/json")
     @ResponseBody
     public ResultShowing createNewFile(@PathVariable("base64filepath") String path, @PathVariable("filetype") String filetype,
-                                       @PathVariable("base64filename") String filename, @RequestAttribute(MobileInterceptor.LOGIN_USER) User loginUser)
+                                       @PathVariable("base64filename") String filename, @RequestParam(value = "onebox") String token)
             throws Exception {
+        User loginUser = User.checkMobileToken(token);
+
         if (StringTool.isNullOrEmpty(path)) {
             path = loginUser.getDirectory();
         } else {
@@ -297,11 +271,4 @@ public class MobileFileController {
         }
     }
 
-    @RequestMapping(value = "/{base64filepath}/play", method = RequestMethod.GET, produces = "application/json")
-    public void filePlay(@PathVariable("base64filepath") String path,
-                         @RequestAttribute(MobileInterceptor.LOGIN_USER) User loginUser, HttpServletRequest request,
-                         HttpServletResponse response) throws Exception {
-        Path file = Paths.get(loginUser.getDirectory() + "/" + new String(EncodeTool.decoderURLBASE64(path), "utf-8"));
-        FileService.filePlayOrDownload(true, file, request, response);
-    }
 }

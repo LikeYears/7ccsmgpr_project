@@ -4,10 +4,6 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\937398a0623700f02480d75e73e5a5b9\\res\\drawable-mdpi-v4\\notification_bg_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout-watch-v20_abc_alert_dialog_button_bar_material.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\111a488640a342788b4bdff05356fa61\\res\\layout-watch-v20\\abc_alert_dialog_button_bar_material.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item_separator.xml.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\f2b75de8d1d2169d06e5024d8a4082c3\\res\\layout\\design_navigation_item_separator.xml"
     },
@@ -28,10 +24,6 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-ldrtl-xhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\interpolator-v21_mtrl_linear_out_slow_in.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\interpolator-v21\\mtrl_linear_out_slow_in.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_background_transition_holo_light.xml.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
@@ -42,6 +34,10 @@
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\937398a0623700f02480d75e73e5a5b9\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_zip.png.flat",
+        "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\drawable\\zip.png"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21_design_bottom_sheet_slide_in.xml.flat",
@@ -64,28 +60,20 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_colored_ripple_color.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\color\\mtrl_tabs_colored_ripple_color.xml"
+        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
+        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mp4.png.flat",
+        "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\drawable\\mp4.png"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\937398a0623700f02480d75e73e5a5b9\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-watch-v20_abc_dialog_material_background.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\111a488640a342788b4bdff05356fa61\\res\\drawable-watch-v20\\abc_dialog_material_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_material_drawer_item_divider.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\materialdrawer-6.1.2.aar\\4dae8aff129fbbd4e95575b9cb49d758\\res\\layout\\material_drawer_item_divider.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
@@ -106,10 +94,6 @@
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_tab_icon.xml.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\f2b75de8d1d2169d06e5024d8a4082c3\\res\\layout\\design_layout_tab_icon.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_navigation_container.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\navigationdrawer-material-2.5.1.aar\\94bae89ff9f03f733800be87421a8097\\res\\layout\\navigation_container.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
@@ -148,14 +132,6 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_material_drawer_item_profile.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\materialdrawer-6.1.2.aar\\4dae8aff129fbbd4e95575b9cb49d758\\res\\layout\\material_drawer_item_profile.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_navigation_main_dark.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\navigationdrawer-material-2.5.1.aar\\94bae89ff9f03f733800be87421a8097\\res\\layout\\navigation_main_dark.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_16dp.png"
     },
@@ -170,14 +146,6 @@
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_text_btn_ripple_color.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\color\\mtrl_btn_text_btn_ripple_color.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_material_drawer_circle_mask.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\materialdrawer-6.1.2.aar\\4dae8aff129fbbd4e95575b9cb49d758\\res\\drawable\\material_drawer_circle_mask.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -196,24 +164,16 @@
         "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_material_drawer_shadow_right.9.png.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\materialdrawer-6.1.2.aar\\4dae8aff129fbbd4e95575b9cb49d758\\res\\drawable\\material_drawer_shadow_right.9.png"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-mdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_icon_background.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\937398a0623700f02480d75e73e5a5b9\\res\\drawable\\notification_icon_background.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\937398a0623700f02480d75e73e5a5b9\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\interpolator_mtrl_linear.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\interpolator\\mtrl_linear.xml"
+        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_icon_background.xml.flat",
+        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\937398a0623700f02480d75e73e5a5b9\\res\\drawable\\notification_icon_background.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
@@ -240,24 +200,12 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_material_drawer_compact_header.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\materialdrawer-6.1.2.aar\\4dae8aff129fbbd4e95575b9cb49d758\\res\\layout\\material_drawer_compact_header.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_radio_material.xml.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_material_drawer_item_expandable_badge.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\materialdrawer-6.1.2.aar\\4dae8aff129fbbd4e95575b9cb49d758\\res\\layout\\material_drawer_item_expandable_badge.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_fab_transformation_sheet_collapse_spec.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\animator\\mtrl_fab_transformation_sheet_collapse_spec.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
@@ -280,16 +228,8 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_material_drawer_item_primary.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\materialdrawer-6.1.2.aar\\4dae8aff129fbbd4e95575b9cb49d758\\res\\layout\\material_drawer_item_primary.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_snackbar.xml.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\f2b75de8d1d2169d06e5024d8a4082c3\\res\\layout\\design_layout_snackbar.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_material_drawer_item_switch.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\materialdrawer-6.1.2.aar\\4dae8aff129fbbd4e95575b9cb49d758\\res\\layout\\material_drawer_item_switch.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13_design_layout_snackbar.xml.flat",
@@ -312,10 +252,6 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_material_drawer_slider.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\materialdrawer-6.1.2.aar\\4dae8aff129fbbd4e95575b9cb49d758\\res\\layout\\material_drawer_slider.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ratingbar_small_material.xml.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable\\abc_ratingbar_small_material.xml"
     },
@@ -332,44 +268,28 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_drawer.png.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\ldrawer-0.1.aar\\728ad61e47ab22d4ba491f089828d523\\res\\drawable-hdpi-v4\\ic_drawer.png"
+        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_menu.xml.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\f2b75de8d1d2169d06e5024d8a4082c3\\res\\layout\\design_navigation_menu.xml"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_ripple_color.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\color\\mtrl_btn_ripple_color.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\animator-v21_design_appbar_state_list_animator.xml.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\f2b75de8d1d2169d06e5024d8a4082c3\\res\\animator-v21\\design_appbar_state_list_animator.xml"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_navigation_main_actionbar_dark.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\navigationdrawer-material-2.5.1.aar\\94bae89ff9f03f733800be87421a8097\\res\\layout\\navigation_main_actionbar_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\color_switch_thumb_material_dark.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\color\\switch_thumb_material_dark.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_item_layout.xml.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_text_color.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\color\\mtrl_chip_text_color.xml"
+        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\color_switch_thumb_material_dark.xml.flat",
+        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\color\\switch_thumb_material_dark.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
@@ -412,20 +332,12 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_share.xml.flat",
-        "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\layout\\fragment_share.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_design_ic_visibility_off.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\f2b75de8d1d2169d06e5024d8a4082c3\\res\\drawable-xhdpi-v4\\design_ic_visibility_off.png"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_ic_drawer.png.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\ldrawer-0.1.aar\\728ad61e47ab22d4ba491f089828d523\\res\\drawable-mdpi-v4\\ic_drawer.png"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bt_shape.xml.flat",
@@ -440,16 +352,8 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_fab_show_motion_spec.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\animator\\mtrl_fab_show_motion_spec.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_icon_color_selector_colored.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\color\\mtrl_tabs_icon_color_selector_colored.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -488,10 +392,6 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_material_drawer_item_expandable.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\materialdrawer-6.1.2.aar\\4dae8aff129fbbd4e95575b9cb49d758\\res\\layout\\material_drawer_item_expandable.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-mdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
     },
@@ -516,16 +416,8 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable\\abc_ratingbar_material.xml"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_transport.xml.flat",
-        "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\layout\\fragment_transport.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_material_drawer_item_container.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\materialdrawer-6.1.2.aar\\4dae8aff129fbbd4e95575b9cb49d758\\res\\layout\\material_drawer_item_container.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_tile_bg.xml.flat",
@@ -542,6 +434,10 @@
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-mdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_pdf.png.flat",
+        "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\drawable\\pdf.png"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -564,10 +460,6 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\f2b75de8d1d2169d06e5024d8a4082c3\\res\\drawable-anydpi-v21\\design_ic_visibility.xml"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_dialog_material_background.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\111a488640a342788b4bdff05356fa61\\res\\drawable-v21\\abc_dialog_material_background.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_navigation_empty_icon.xml.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\f2b75de8d1d2169d06e5024d8a4082c3\\res\\drawable\\navigation_empty_icon.xml"
     },
@@ -588,20 +480,8 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_tooltip_exit.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\111a488640a342788b4bdff05356fa61\\res\\anim\\abc_tooltip_exit.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg.xml.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\937398a0623700f02480d75e73e5a5b9\\res\\drawable\\notification_bg.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_material_drawer_recycler_view.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\materialdrawer-6.1.2.aar\\4dae8aff129fbbd4e95575b9cb49d758\\res\\layout\\material_drawer_recycler_view.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_material_drawer_fits_not.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\materialdrawer-6.1.2.aar\\4dae8aff129fbbd4e95575b9cb49d758\\res\\layout\\material_drawer_fits_not.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_design_ic_visibility_off.png.flat",
@@ -640,10 +520,6 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-ldrtl-xxhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_stroke_color_selector.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\color\\mtrl_btn_stroke_color_selector.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
@@ -660,12 +536,16 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
+        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
+        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-mdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xxhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-mdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo.png.flat",
+        "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\drawable\\logo.png"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_simple_overlay_action_mode.xml.flat",
@@ -720,12 +600,12 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\color\\abc_secondary_text_material_light.xml"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mtrl_chip_checked_circle.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\drawable\\ic_mtrl_chip_checked_circle.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_btn_checkable.xml.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\color-v23\\abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_cardview_layout.xml.flat",
+        "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\layout\\cardview_layout.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_menu_overflow_material.xml.flat",
@@ -744,14 +624,6 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\interpolator-v21_mtrl_fast_out_linear_in.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\interpolator-v21\\mtrl_fast_out_linear_in.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_layout_snackbar_include.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\layout\\mtrl_layout_snackbar_include.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
@@ -762,10 +634,6 @@
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_btn_state_list_anim.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\animator\\mtrl_btn_state_list_anim.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_dialog_title_material.xml.flat",
@@ -794,10 +662,6 @@
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xxhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_materialize.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\materialize-1.2.0.aar\\bc791b1db4b4f4fcc17c9613efd62b20\\res\\layout\\materialize.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -836,10 +700,6 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable\\tooltip_frame_light.xml"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_icon_color_selector.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\color\\mtrl_tabs_icon_color_selector.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
@@ -868,16 +728,8 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_fab_hide_motion_spec.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\animator\\mtrl_fab_hide_motion_spec.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ratingbar_indicator_material.xml.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable\\abc_ratingbar_indicator_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_rudsonlive.jpg.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\navigationdrawer-material-2.5.1.aar\\94bae89ff9f03f733800be87421a8097\\res\\drawable\\ic_rudsonlive.jpg"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal.9.png.flat",
@@ -886,10 +738,6 @@
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_background_transition_holo_dark.xml.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\animator_design_fab_hide_motion_spec.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\animator\\design_fab_hide_motion_spec.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
@@ -906,10 +754,6 @@
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_custom_big.xml.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\937398a0623700f02480d75e73e5a5b9\\res\\layout-v21\\notification_template_custom_big.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_material_drawer_shadow_left.9.png.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\materialdrawer-6.1.2.aar\\4dae8aff129fbbd4e95575b9cb49d758\\res\\drawable\\material_drawer_shadow_left.9.png"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_material.xml.flat",
@@ -932,16 +776,16 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\f2b75de8d1d2169d06e5024d8a4082c3\\res\\layout\\design_navigation_item.xml"
     },
     {
+        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_txt.png.flat",
+        "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\drawable\\txt.png"
+    },
+    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_drawer.png.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\ldrawer-0.1.aar\\728ad61e47ab22d4ba491f089828d523\\res\\drawable-xhdpi-v4\\ic_drawer.png"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\anim_tooltip_exit.xml.flat",
@@ -960,20 +804,12 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_material_drawer_item_profile_setting.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\materialdrawer-6.1.2.aar\\4dae8aff129fbbd4e95575b9cb49d758\\res\\layout\\material_drawer_item_profile_setting.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_fade_in.xml.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\anim\\abc_fade_in.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_tooltip_enter.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\111a488640a342788b4bdff05356fa61\\res\\anim\\abc_tooltip_enter.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -1032,16 +868,8 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\layout\\abc_search_view.xml"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_fab_ripple_color.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\color\\mtrl_fab_ripple_color.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_btn_colored_borderless_text_material.xml.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_navigation_list_item.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\navigationdrawer-material-2.5.1.aar\\94bae89ff9f03f733800be87421a8097\\res\\layout\\navigation_list_item.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item_header.xml.flat",
@@ -1080,14 +908,6 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_tabs_default_indicator.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\drawable\\mtrl_tabs_default_indicator.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mtrl_chip_checked_black.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\drawable\\ic_mtrl_chip_checked_black.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-ldrtl-xxhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
@@ -1116,6 +936,10 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
     },
     {
+        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_doc.png.flat",
+        "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\drawable\\doc.png"
+    },
+    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-mdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
     },
@@ -1132,18 +956,6 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\937398a0623700f02480d75e73e5a5b9\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_user_background_first.jpg.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\navigationdrawer-material-2.5.1.aar\\94bae89ff9f03f733800be87421a8097\\res\\drawable\\ic_user_background_first.jpg"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_bottom_nav_item_tint.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\color\\mtrl_bottom_nav_item_tint.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_navigation_list_footer.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\navigationdrawer-material-2.5.1.aar\\94bae89ff9f03f733800be87421a8097\\res\\layout\\navigation_list_footer.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
@@ -1154,10 +966,6 @@
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_navigation_list_header.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\navigationdrawer-material-2.5.1.aar\\94bae89ff9f03f733800be87421a8097\\res\\layout\\navigation_list_header.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_time.xml.flat",
@@ -1212,16 +1020,16 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
     {
+        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cloud_download.png.flat",
+        "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\drawable\\cloud_download.png"
+    },
+    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_secondary_text_material_dark.xml.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\color\\abc_secondary_text_material_dark.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_pressed_holo_light.9.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-mdpi-v4\\abc_list_pressed_holo_light.9.png"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_material_drawer_shadow_bottom.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\materialdrawer-6.1.2.aar\\4dae8aff129fbbd4e95575b9cb49d758\\res\\drawable\\material_drawer_shadow_bottom.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -1252,10 +1060,6 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\daad4c778173ec21a1db06db8b4a7f93\\res\\layout\\notification_template_big_media_narrow.xml"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_material_drawer_item_section.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\materialdrawer-6.1.2.aar\\4dae8aff129fbbd4e95575b9cb49d758\\res\\layout\\material_drawer_item_section.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bt_shape_2.xml.flat",
         "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\drawable\\bt_shape_2.xml"
     },
@@ -1274,14 +1078,6 @@
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_16dp.png"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_navigation_list_drawer.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\navigationdrawer-material-2.5.1.aar\\94bae89ff9f03f733800be87421a8097\\res\\layout\\navigation_list_drawer.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_btn_unelevated_state_list_anim.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\animator\\mtrl_btn_unelevated_state_list_anim.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_bottom_navigation_item.xml.flat",
@@ -1304,6 +1100,10 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-hdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
     },
     {
+        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fold1er.png.flat",
+        "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\drawable\\fold1er.png"
+    },
+    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-hdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
     },
@@ -1314,6 +1114,10 @@
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-hdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_css.png.flat",
+        "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\drawable\\css.png"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -1344,10 +1148,6 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-v21\\abc_edit_text_material.xml"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_tooltip.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\111a488640a342788b4bdff05356fa61\\res\\layout\\abc_tooltip.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout-v26_abc_screen_toolbar.xml.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\layout-v26\\abc_screen_toolbar.xml"
     },
@@ -1358,10 +1158,6 @@
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_custom_drawerlayout.xml.flat",
-        "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\layout\\custom_drawerlayout.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
@@ -1380,28 +1176,8 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\f2b75de8d1d2169d06e5024d8a4082c3\\res\\layout\\design_bottom_sheet_dialog.xml"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_material_drawer_shadow_top.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\materialdrawer-6.1.2.aar\\4dae8aff129fbbd4e95575b9cb49d758\\res\\drawable\\material_drawer_shadow_top.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_close_icon_tint.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\color\\mtrl_chip_close_icon_tint.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-mdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mtrl_chip_close_circle.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\drawable\\ic_mtrl_chip_close_circle.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_snackbar_background.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\drawable\\mtrl_snackbar_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_selector_no_check_item_navigation.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\navigationdrawer-material-2.5.1.aar\\94bae89ff9f03f733800be87421a8097\\res\\drawable\\selector_no_check_item_navigation.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_select_dialog_material.xml.flat",
@@ -1412,20 +1188,8 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_selector_check_item_navigation.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\navigationdrawer-material-2.5.1.aar\\94bae89ff9f03f733800be87421a8097\\res\\drawable\\selector_check_item_navigation.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_material_drawer_item_mini_profile.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\materialdrawer-6.1.2.aar\\4dae8aff129fbbd4e95575b9cb49d758\\res\\layout\\material_drawer_item_mini_profile.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\animator_design_fab_show_motion_spec.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\animator\\design_fab_show_motion_spec.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
@@ -1442,10 +1206,6 @@
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_holo_dark.xml.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable\\abc_list_selector_holo_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_text_btn_text_color_selector.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\color\\mtrl_text_btn_text_color_selector.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -1466,14 +1226,6 @@
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_36dp.png"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_drawer.png.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\ldrawer-0.1.aar\\728ad61e47ab22d4ba491f089828d523\\res\\drawable-xxhdpi-v4\\ic_drawer.png"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_cascading_menu_item_layout.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\111a488640a342788b4bdff05356fa61\\res\\layout\\abc_cascading_menu_item_layout.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -1508,6 +1260,10 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\f2b75de8d1d2169d06e5024d8a4082c3\\res\\drawable-v21\\avd_hide_password.xml"
     },
     {
+        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_more.png.flat",
+        "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\drawable\\more.png"
+    },
+    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
     },
@@ -1540,16 +1296,12 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-mdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_material_drawer.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\materialdrawer-6.1.2.aar\\4dae8aff129fbbd4e95575b9cb49d758\\res\\layout\\material_drawer.xml"
+        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_cloud_history.png.flat",
+        "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\drawable\\icon_cloud_history.png"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_design_ic_visibility.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\f2b75de8d1d2169d06e5024d8a4082c3\\res\\drawable-xxhdpi-v4\\design_ic_visibility.png"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_cloud_history.png.flat",
-        "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\drawable\\icon_cloud_history.png"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register.xml.flat",
@@ -1600,14 +1352,6 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_material_drawer_item_secondary_switch.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\materialdrawer-6.1.2.aar\\4dae8aff129fbbd4e95575b9cb49d758\\res\\layout\\material_drawer_item_secondary_switch.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_background_color.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\color\\mtrl_chip_background_color.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
@@ -1616,8 +1360,8 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\color-v23\\abc_tint_spinner.xml"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_user_background_second.jpg.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\navigationdrawer-material-2.5.1.aar\\94bae89ff9f03f733800be87421a8097\\res\\drawable\\ic_user_background_second.jpg"
+        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_iso.png.flat",
+        "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\drawable\\iso.png"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_check_material.xml.flat",
@@ -1634,6 +1378,10 @@
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_jpg.png.flat",
+        "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\drawable\\jpg.png"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_color_highlight_material.xml.flat",
@@ -1654,10 +1402,6 @@
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-mdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_material_drawer_item_secondary.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\materialdrawer-6.1.2.aar\\4dae8aff129fbbd4e95575b9cb49d758\\res\\layout\\material_drawer_item_secondary.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\color-v11_abc_background_cache_hint_selector_material_dark.xml.flat",
@@ -1688,28 +1432,12 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xxhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\interpolator-v21_mtrl_fast_out_slow_in.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\interpolator-v21\\mtrl_fast_out_slow_in.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_layout_snackbar.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\layout\\mtrl_layout_snackbar.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-hdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_navigation_main_light.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\navigationdrawer-material-2.5.1.aar\\94bae89ff9f03f733800be87421a8097\\res\\layout\\navigation_main_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_ripple_color.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\color\\mtrl_chip_ripple_color.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
@@ -1720,12 +1448,8 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\937398a0623700f02480d75e73e5a5b9\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_bg_color_selector.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\color\\mtrl_btn_bg_color_selector.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_fab_transformation_sheet_expand_spec.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\animator\\mtrl_fab_transformation_sheet_expand_spec.xml"
+        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_avi.png.flat",
+        "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\drawable\\avi.png"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
@@ -1742,10 +1466,6 @@
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_mode_bar.xml.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\layout\\abc_action_mode_bar.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13_mtrl_layout_snackbar.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\layout-sw600dp-v13\\mtrl_layout_snackbar.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\transition_fabtransition.xml.flat",
@@ -1770,10 +1490,6 @@
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_support_simple_spinner_dropdown_item.xml.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\layout\\support_simple_spinner_dropdown_item.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_material_drawer_badge.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\materialdrawer-6.1.2.aar\\4dae8aff129fbbd4e95575b9cb49d758\\res\\drawable\\material_drawer_badge.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_simple.xml.flat",
@@ -1810,10 +1526,6 @@
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xxhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_selector_no_item_navigation.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\navigationdrawer-material-2.5.1.aar\\94bae89ff9f03f733800be87421a8097\\res\\drawable\\selector_no_item_navigation.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_grow_fade_in_from_bottom.xml.flat",
@@ -1868,20 +1580,8 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\f2b75de8d1d2169d06e5024d8a4082c3\\res\\color-v23\\design_tint_password_toggle.xml"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_list_divider_material.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\111a488640a342788b4bdff05356fa61\\res\\drawable-v21\\abc_list_divider_material.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_chip_state_list_anim.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\animator\\mtrl_chip_state_list_anim.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_material_drawer_item_mini.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\materialdrawer-6.1.2.aar\\4dae8aff129fbbd4e95575b9cb49d758\\res\\layout\\material_drawer_item_mini.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
@@ -1890,10 +1590,6 @@
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-hdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_file.xml.flat",
-        "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\layout\\fragment_file.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -1920,20 +1616,12 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_navigation_main_actionbar_light.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\navigationdrawer-material-2.5.1.aar\\94bae89ff9f03f733800be87421a8097\\res\\layout\\navigation_main_actionbar_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_text_color_selector.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\color\\mtrl_btn_text_color_selector.xml"
+        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_file.png.flat",
+        "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\drawable\\file.png"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_tab_text.xml.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\f2b75de8d1d2169d06e5024d8a4082c3\\res\\layout\\design_layout_tab_text.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_ripple_color.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\color\\mtrl_tabs_ripple_color.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_drawer_back.png.flat",
@@ -1946,6 +1634,10 @@
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_png.png.flat",
+        "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\drawable\\png.png"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_material_light.xml.flat",
@@ -1996,6 +1688,10 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-hdpi-v4\\abc_list_longpressed_holo.9.png"
     },
     {
+        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\menu_popmenu.xml.flat",
+        "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\menu\\popmenu.xml"
+    },
+    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
@@ -2028,10 +1724,6 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_legacy_text_color_selector.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\color\\mtrl_tabs_legacy_text_color_selector.xml"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-mdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
@@ -2044,20 +1736,12 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_material_drawer_header.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\materialdrawer-6.1.2.aar\\4dae8aff129fbbd4e95575b9cb49d758\\res\\layout\\material_drawer_header.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_material_drawer_item_toggle.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\materialdrawer-6.1.2.aar\\4dae8aff129fbbd4e95575b9cb49d758\\res\\layout\\material_drawer_item_toggle.xml"
+        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-xxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -2080,16 +1764,16 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
+        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_exe.png.flat",
+        "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\drawable\\exe.png"
+    },
+    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_input_cursor.xml.flat",
         "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\drawable\\bg_input_cursor.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_snackbar_out.xml.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\f2b75de8d1d2169d06e5024d8a4082c3\\res\\anim\\design_snackbar_out.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout-watch-v20_abc_alert_dialog_title_material.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\111a488640a342788b4bdff05356fa61\\res\\layout-watch-v20\\abc_alert_dialog_title_material.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
@@ -2114,10 +1798,6 @@
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_switch_thumb_material.xml.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable\\abc_switch_thumb_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_bottom_nav_colored_item_tint.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\d54e30922ad9d15265f38f2062faf184\\res\\color\\mtrl_bottom_nav_colored_item_tint.xml"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_snackbar_include.xml.flat",
@@ -2152,20 +1832,20 @@
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-hdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
-    },
-    {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_in_bottom.xml.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable-hdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_vector_test.xml.flat",
         "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\e954ba7d3da2e02858c192cc006b4fad\\res\\drawable\\abc_vector_test.xml"
     },
     {
-        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\layout_material_drawer_item_secondary_toggle.xml.flat",
-        "source": "C:\\Users\\20875426\\.gradle\\caches\\transforms-1\\files-1.1\\materialdrawer-6.1.2.aar\\4dae8aff129fbbd4e95575b9cb49d758\\res\\layout\\material_drawer_item_secondary_toggle.xml"
+        "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_folder.png.flat",
+        "source": "C:\\Users\\20875426\\Desktop\\onebox\\app\\src\\main\\res\\drawable\\folder.png"
     },
     {
         "merged": "C:\\Users\\20875426\\Desktop\\onebox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_design_ic_visibility.png.flat",
